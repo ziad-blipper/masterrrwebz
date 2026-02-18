@@ -28,46 +28,46 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="relative py-32 overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+    <section className="bg-white py-20 lg:py-24">
+      <div className="max-w-5xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-14"
         >
-          <p className="text-[#22c55e] text-sm font-semibold uppercase tracking-[0.2em] mb-4">
+          <p className="text-[#059669] text-sm font-semibold uppercase tracking-[0.15em] mb-3">
             Client Voices
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-gray-900">
             Don&apos;t take our word for it
           </h2>
         </motion.div>
 
         {/* Testimonial Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-5">
           {testimonials.map((testimonial, i) => (
             <motion.div
               key={testimonial.author}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.15 }}
-              className="card-hover relative p-8 lg:p-10 rounded-2xl border border-[#1a1a1a] bg-[#0a0a0a] group"
+              transition={{ delay: i * 0.1 }}
+              className="card-hover p-7 rounded-xl border border-gray-100 bg-white group"
             >
               {/* Quote mark */}
-              <div className="text-[#22c55e]/20 text-6xl font-serif leading-none mb-4">
+              <div className="text-[#d1fae5] text-5xl font-serif leading-none mb-3">
                 &ldquo;
               </div>
 
-              <p className="text-[#ccc] leading-relaxed text-lg mb-8 font-light">
+              <p className="text-gray-600 leading-relaxed text-sm mb-6">
                 {testimonial.quote}
               </p>
 
-              <div className="pt-6 border-t border-[#1a1a1a]">
-                <p className="text-white font-semibold">{testimonial.author}</p>
-                <p className="text-[#666] text-sm">
+              <div className="pt-5 border-t border-gray-100">
+                <p className="text-gray-900 font-semibold text-sm">{testimonial.author}</p>
+                <p className="text-gray-400 text-xs mt-0.5">
                   {testimonial.role}, {testimonial.company}
                 </p>
               </div>

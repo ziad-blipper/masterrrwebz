@@ -57,44 +57,41 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section id="results" className="relative py-32">
-      {/* Background accent */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#22c55e]/[0.02] to-transparent" />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="results" className="bg-[#f9fafb] py-20 lg:py-24">
+      <div className="max-w-5xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
-          <p className="text-[#22c55e] text-sm font-semibold uppercase tracking-[0.2em] mb-4">
+          <p className="text-[#059669] text-sm font-semibold uppercase tracking-[0.15em] mb-3">
             The Numbers
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-gray-900">
             Results that{" "}
-            <span className="italic gradient-text">compound</span>
+            <span className="italic text-[#059669]">compound</span>
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="text-center p-8 rounded-2xl border border-[#1a1a1a] bg-[#0a0a0a]/50"
+              transition={{ delay: i * 0.08 }}
+              className="text-center p-6 rounded-xl bg-white border border-gray-100"
             >
-              <div className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-3 font-serif">
+              <div className="text-3xl md:text-4xl font-bold text-[#059669] mb-2 font-serif">
                 <AnimatedCounter
                   value={stat.value}
                   suffix={stat.suffix}
                   prefix={stat.prefix}
                 />
               </div>
-              <p className="text-[#666] text-sm font-medium uppercase tracking-wider">
+              <p className="text-gray-500 text-xs font-medium uppercase tracking-wider">
                 {stat.label}
               </p>
             </motion.div>

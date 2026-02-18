@@ -1,56 +1,56 @@
 "use client";
 
 import { motion } from "framer-motion";
-import AnimatedLines from "./AnimatedLines";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <AnimatedLines variant="hero" />
-
-      {/* Grid pattern overlay */}
+    <section className="relative bg-[#064e3b] overflow-hidden">
+      {/* Subtle pattern overlay */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.04]"
         style={{
-          backgroundImage: `linear-gradient(#22c55e 1px, transparent 1px), linear-gradient(90deg, #22c55e 1px, transparent 1px)`,
-          backgroundSize: "80px 80px",
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)`,
+          backgroundSize: "40px 40px",
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-20">
+      {/* Subtle gradient glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#10b981]/10 rounded-full blur-[150px]" />
+
+      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 pt-28 pb-20 lg:pt-36 lg:pb-28">
         <div className="flex flex-col items-center text-center">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-8"
+            className="mb-6"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#22c55e]/20 bg-[#22c55e]/5 text-[#4ade80] text-sm font-medium">
-              <span className="w-2 h-2 rounded-full bg-[#22c55e] animate-pulse" />
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/15 bg-white/5 text-[#a7f3d0] text-sm font-medium">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#6ee7b7] animate-pulse" />
               Strategic Revenue Partner
             </span>
           </motion.div>
 
           {/* Main Headline */}
           <motion.h1
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.05] tracking-tight max-w-5xl"
+            transition={{ duration: 0.8, delay: 0.15 }}
+            className="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.08] tracking-tight text-white max-w-4xl"
           >
             We Build the{" "}
-            <span className="gradient-text italic">Revenue Engine</span>
+            <span className="italic text-[#6ee7b7]">Revenue Engine</span>
             <br />
             Your B2B Deserves
           </motion.h1>
 
           {/* Subtitle */}
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-8 text-lg md:text-xl text-[#a1a1aa] max-w-2xl leading-relaxed font-light"
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="mt-6 text-base md:text-lg text-white/65 max-w-2xl leading-relaxed"
           >
             Rillation is your strategic execution partner — building revenue
             infrastructure through content, outbound, LinkedIn, and paid ads
@@ -59,20 +59,20 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-12 flex flex-col sm:flex-row gap-4"
+            transition={{ duration: 0.8, delay: 0.45 }}
+            className="mt-10 flex flex-col sm:flex-row gap-3"
           >
             <a
               href="#contact"
-              className="px-8 py-4 bg-[#22c55e] text-black font-semibold rounded-full hover:bg-[#4ade80] transition-all duration-300 hover:shadow-[0_0_40px_rgba(34,197,94,0.3)] text-base"
+              className="px-7 py-3.5 bg-white text-[#064e3b] font-semibold rounded-full hover:bg-[#d1fae5] transition-all duration-300 text-sm"
             >
               Build My Revenue Engine
             </a>
             <a
               href="#process"
-              className="px-8 py-4 border border-[#333] text-white font-medium rounded-full hover:border-[#22c55e]/40 hover:bg-[#22c55e]/5 transition-all duration-300 text-base"
+              className="px-7 py-3.5 border border-white/20 text-white font-medium rounded-full hover:border-white/40 hover:bg-white/5 transition-all duration-300 text-sm"
             >
               See How It Works
             </a>
@@ -82,23 +82,20 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.5 }}
-            className="mt-20"
+            transition={{ delay: 1.2 }}
+            className="mt-16"
           >
             <motion.div
-              animate={{ y: [0, 8, 0] }}
+              animate={{ y: [0, 6, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
               className="flex flex-col items-center gap-2"
             >
-              <span className="text-[#555] text-xs uppercase tracking-[0.2em]">Scroll</span>
-              <div className="w-[1px] h-8 bg-gradient-to-b from-[#22c55e]/50 to-transparent" />
+              <span className="text-white/30 text-xs uppercase tracking-[0.2em]">Scroll</span>
+              <div className="w-[1px] h-6 bg-gradient-to-b from-white/30 to-transparent" />
             </motion.div>
           </motion.div>
         </div>
       </div>
-
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#060606] to-transparent" />
     </section>
   );
 }

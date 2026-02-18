@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import AnimatedLines from "./AnimatedLines";
 
 const reasons = [
   {
@@ -38,17 +37,15 @@ const reasons = [
 
 export default function WhyUs() {
   return (
-    <section className="relative py-32">
-      <AnimatedLines variant="section" />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+    <section className="bg-[#f9fafb] py-20 lg:py-24">
+      <div className="max-w-5xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-2xl mx-auto mb-14">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#22c55e] text-sm font-semibold uppercase tracking-[0.2em] mb-4"
+            className="text-[#059669] text-sm font-semibold uppercase tracking-[0.15em] mb-3"
           >
             Why Rillation
           </motion.p>
@@ -57,31 +54,31 @@ export default function WhyUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight"
+            className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-gray-900"
           >
             Built different.{" "}
-            <span className="text-[#555]">On purpose.</span>
+            <span className="text-gray-400">On purpose.</span>
           </motion.h2>
         </div>
 
         {/* Reason Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {reasons.map((reason, i) => (
             <motion.div
               key={reason.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="group p-8 rounded-2xl border border-[#1a1a1a] hover:border-[#22c55e]/20 bg-[#0a0a0a] transition-all duration-500"
+              transition={{ delay: i * 0.08 }}
+              className="group p-6 rounded-xl bg-white border border-gray-100 hover:border-[#d1fae5] transition-all duration-300"
             >
               {/* Green accent line */}
-              <div className="w-8 h-[2px] bg-[#22c55e]/40 group-hover:w-12 group-hover:bg-[#22c55e] transition-all duration-500 mb-6" />
+              <div className="w-8 h-[2px] bg-[#d1fae5] group-hover:w-10 group-hover:bg-[#059669] transition-all duration-300 mb-4" />
 
-              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-[#22c55e] transition-colors duration-300">
+              <h3 className="text-base font-semibold text-gray-900 mb-2 group-hover:text-[#059669] transition-colors duration-300">
                 {reason.title}
               </h3>
-              <p className="text-[#777] leading-relaxed">
+              <p className="text-gray-500 leading-relaxed text-sm">
                 {reason.description}
               </p>
             </motion.div>
