@@ -1,0 +1,766 @@
+<title>The Wrong Antibody</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --ground:        #F7F8F6;
+    --surface:       #FFFFFF;
+    --surface-sunk:  #EFF1EE;
+    --ink:           #11262A;
+    --ink-soft:      #3E5155;
+    --ink-faint:     #6B7B7E;
+    --rule:          #DCE0DB;
+    --rule-strong:   #C2C8C1;
+
+    --accent:        #0F6B63;
+    --accent-deep:   #0A4E48;
+    --accent-wash:   #E4EFED;
+
+    --grade-strong:  #0F6B63;
+    --grade-mod:     #8A6A1F;
+    --grade-weak:    #9E5544;
+
+    --warn-ground:   #FBF1EC;
+    --warn-rule:     #E3BFAE;
+    --warn-ink:      #7E3F2C;
+
+    --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
+    --font-body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+    --measure: 68ch;
+    --pad: clamp(1.25rem, 5vw, 3rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:        #0D1518;
+      --surface:       #141F22;
+      --surface-sunk:  #101A1D;
+      --ink:           #E6EDEA;
+      --ink-soft:      #AFC0BE;
+      --ink-faint:     #7E9290;
+      --rule:          #263437;
+      --rule-strong:   #35474A;
+
+      --accent:        #5FBFB2;
+      --accent-deep:   #8AD6C9;
+      --accent-wash:   #14302E;
+
+      --grade-strong:  #5FBFB2;
+      --grade-mod:     #C9A44E;
+      --grade-weak:    #D18E76;
+
+      --warn-ground:   #2A1A14;
+      --warn-rule:     #5C3325;
+      --warn-ink:      #E9B39A;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:        #0D1518;
+    --surface:       #141F22;
+    --surface-sunk:  #101A1D;
+    --ink:           #E6EDEA;
+    --ink-soft:      #AFC0BE;
+    --ink-faint:     #7E9290;
+    --rule:          #263437;
+    --rule-strong:   #35474A;
+
+    --accent:        #5FBFB2;
+    --accent-deep:   #8AD6C9;
+    --accent-wash:   #14302E;
+
+    --grade-strong:  #5FBFB2;
+    --grade-mod:     #C9A44E;
+    --grade-weak:    #D18E76;
+
+    --warn-ground:   #2A1A14;
+    --warn-rule:     #5C3325;
+    --warn-ink:      #E9B39A;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 54rem;
+    margin: 0 auto;
+    padding: 0 var(--pad) 6rem;
+  }
+
+  /* ---------- masthead ---------- */
+
+  .masthead {
+    border-bottom: 1px solid var(--rule-strong);
+    padding: clamp(3rem, 9vw, 5.5rem) 0 2.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1.5rem;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(2.4rem, 7vw, 3.9rem);
+    line-height: 1.04;
+    letter-spacing: -0.021em;
+    text-wrap: balance;
+    margin: 0 0 1.25rem;
+  }
+
+  .standfirst {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2.4vw, 1.32rem);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 46ch;
+    margin: 0 0 2rem;
+  }
+
+  .byline {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--ink-faint);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+
+  /* ---------- typography ---------- */
+
+  section { margin-bottom: clamp(3.5rem, 8vw, 5rem); }
+
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(1.6rem, 3.6vw, 2.1rem);
+    line-height: 1.16;
+    letter-spacing: -0.014em;
+    text-wrap: balance;
+    margin: 0 0 0.5rem;
+  }
+
+  .sec-num {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    display: block;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h3 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.06rem;
+    line-height: 1.35;
+    letter-spacing: 0.002em;
+    margin: 2.25rem 0 0.6rem;
+  }
+
+  p { margin: 0 0 1.05rem; max-width: var(--measure); }
+  p:last-child { margin-bottom: 0; }
+
+  strong { font-weight: 600; }
+  em { font-style: italic; }
+
+  a {
+    color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .lede {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    max-width: 58ch;
+  }
+
+  ul, ol { max-width: var(--measure); padding-left: 1.15rem; margin: 0 0 1.05rem; }
+  li { margin-bottom: 0.5rem; }
+  li::marker { color: var(--ink-faint); }
+
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-weight: 500; }
+
+  /* ---------- pull statement ---------- */
+
+  .thesis {
+    border-left: 3px solid var(--accent);
+    padding: 0.35rem 0 0.35rem 1.5rem;
+    margin: 2rem 0;
+    max-width: 52ch;
+  }
+  .thesis p {
+    font-family: var(--font-display);
+    font-size: clamp(1.22rem, 2.8vw, 1.5rem);
+    line-height: 1.42;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  /* ---------- profile grid ---------- */
+
+  .profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin: 2rem 0;
+  }
+  .profile div {
+    background: var(--surface);
+    padding: 1.15rem 1.25rem 1.25rem;
+  }
+  .profile dt {
+    font-family: var(--font-mono);
+    font-size: 0.67rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 0.6rem;
+  }
+  .profile dd {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+  .profile .val {
+    font-family: var(--font-display);
+    font-size: 1.12rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  .profile .why { color: var(--ink-soft); font-size: 0.88rem; }
+
+  /* ---------- chart ---------- */
+
+  figure { margin: 2.5rem 0; }
+
+  .chart-frame {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    padding: 1.5rem 1.25rem 1.25rem;
+    overflow-x: auto;
+  }
+  .chart-frame svg { display: block; min-width: 560px; width: 100%; height: auto; }
+
+  figcaption {
+    font-size: 0.87rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin-top: 0.9rem;
+    max-width: 62ch;
+  }
+
+  .ax-label { font-family: var(--font-mono); font-size: 11px; fill: var(--ink-faint); }
+  .ax-val   { font-family: var(--font-mono); font-size: 11px; fill: var(--ink-soft); font-weight: 500; }
+  .plot-note{ font-family: var(--font-body); font-size: 12px; fill: var(--ink-soft); }
+  .plot-key { font-family: var(--font-mono); font-size: 11px; fill: var(--accent); font-weight: 600; }
+
+  /* ---------- two clocks ---------- */
+
+  .clocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  .clock {
+    border-top: 2px solid var(--accent);
+    padding-top: 1rem;
+  }
+  .clock.muted { border-top-color: var(--rule-strong); }
+  .clock h4 {
+    font-family: var(--font-display);
+    font-size: 1.16rem;
+    font-weight: 500;
+    margin: 0 0 0.15rem;
+  }
+  .clock .driver {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 0.7rem;
+  }
+  .clock p { font-size: 0.94rem; margin-bottom: 0.7rem; }
+
+  /* ---------- callouts ---------- */
+
+  .callout {
+    background: var(--accent-wash);
+    border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
+    padding: 1.35rem 1.5rem;
+    margin: 2rem 0;
+  }
+  .callout p { margin-bottom: 0.7rem; }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout .tag {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    display: block;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+  }
+
+  .caution {
+    background: var(--warn-ground);
+    border: 1px solid var(--warn-rule);
+    padding: 1.35rem 1.5rem;
+    margin: 2rem 0;
+  }
+  .caution .tag {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--warn-ink);
+    display: block;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+  }
+  .caution p { margin-bottom: 0.7rem; }
+  .caution p:last-child { margin-bottom: 0; }
+
+  /* ---------- evidence chips ---------- */
+
+  .grade {
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding: 0.14em 0.5em;
+    border: 1px solid currentColor;
+    white-space: nowrap;
+    vertical-align: 0.09em;
+  }
+  .g-strong { color: var(--grade-strong); }
+  .g-mod    { color: var(--grade-mod); }
+  .g-weak   { color: var(--grade-weak); }
+
+  /* ---------- tracks ---------- */
+
+  .track {
+    border-top: 1px solid var(--rule-strong);
+    padding-top: 1.4rem;
+    margin-top: 2.5rem;
+  }
+  .track-head {
+    display: flex;
+    gap: 0.9rem;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .track-id {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .track-head h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.24rem, 2.7vw, 1.5rem);
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: -0.008em;
+  }
+
+  /* ---------- tables ---------- */
+
+  .scroll { overflow-x: auto; margin: 1.5rem 0; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 480px;
+    font-size: 0.9rem;
+  }
+  caption {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding-bottom: 0.7rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.62rem 0.9rem 0.62rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    border-bottom-color: var(--rule-strong);
+  }
+  td.figure { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+
+  /* ---------- plan ---------- */
+
+  .plan { list-style: none; padding: 0; margin: 1.75rem 0 0; max-width: var(--measure); }
+  .plan > li {
+    display: grid;
+    grid-template-columns: 2.6rem 1fr;
+    gap: 0.4rem 0.9rem;
+    padding: 1.05rem 0;
+    border-bottom: 1px solid var(--rule);
+    margin: 0;
+  }
+  .plan > li:first-child { border-top: 1px solid var(--rule-strong); }
+  .plan .step {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    padding-top: 0.12rem;
+  }
+  .plan .what { font-weight: 600; margin: 0 0 0.25rem; }
+  .plan .detail { font-size: 0.92rem; color: var(--ink-soft); margin: 0; }
+
+  .phase {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 2.25rem 0 0.35rem;
+  }
+
+  /* ---------- questions ---------- */
+
+  .questions { counter-reset: q; list-style: none; padding: 0; max-width: var(--measure); }
+  .questions li {
+    counter-increment: q;
+    position: relative;
+    padding-left: 2.3rem;
+    margin-bottom: 0.95rem;
+  }
+  .questions li::before {
+    content: counter(q, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0.16em;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--ink-faint);
+  }
+
+  /* ---------- debunk ---------- */
+
+  .debunk { list-style: none; padding: 0; max-width: var(--measure); }
+  .debunk li {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.94rem;
+  }
+  .debunk .claim { font-weight: 600; }
+  .debunk .verdict { color: var(--ink-soft); }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    border-top: 1px solid var(--rule-strong);
+    padding-top: 2rem;
+    margin-top: 4rem;
+    font-size: 0.89rem;
+    color: var(--ink-soft);
+    max-width: var(--measure);
+  }
+  footer p { max-width: none; }
+  footer .disclaimer {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    line-height: 1.7;
+    color: var(--ink-faint);
+    letter-spacing: 0.01em;
+    margin-top: 1.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">Diagnostic reconstruction · August 2026</p>
+    <h1>The wrong antibody</h1>
+    <p class="standfirst">A decade of illness, a year of treatment, and a diagnosis that her own bloodwork never supported. Here is what the evidence actually shows.</p>
+    <p class="byline">Research synthesis for discussion with treating clinicians<br>Not a diagnosis, and not medical advice</p>
+  </header>
+
+  <section>
+    <span class="sec-num">Safety first</span>
+    <h2>These reactions meet the criteria for anaphylaxis</h2>
+
+    <p class="lede">Before any diagnostic question: her reaction pattern crosses the threshold that defines anaphylaxis under the standard US criteria, and she does not appear to be carrying epinephrine.</p>
+
+    <p>The NIAID/FAAN definition requires two organ systems. Hers involves three.</p>
+
+    <div class="scroll">
+      <table>
+        <caption>NIAID/FAAN Criterion 2</caption>
+        <thead><tr><th scope="col">Organ system</th><th scope="col">Her symptom</th></tr></thead>
+        <tbody>
+          <tr><td>Mucosal</td><td>Itchy mouth and throat</td></tr>
+          <tr><td>Cardiovascular</td><td><strong>Dizziness</strong> — presyncope</td></tr>
+          <tr><td>Gastrointestinal</td><td>Nausea</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="caution">
+      <span class="tag">Two auto-injectors, and why it isn't close</span>
+      <p><strong>Specific IgE level predicts whether someone will react — not how badly.</strong> There is no reliable severity biomarker in food allergy.</p>
+      <p>Which means a decade of moderate reactions offers <strong>no assurance that the next one won't be severe.</strong> Severity varies episode to episode with dose and cofactors. Steak with wine after a workout is a materially different exposure than steak alone.</p>
+    </div>
+
+    <p><strong>Flag her records for surgery.</strong> There is a published case of this syndrome discovered only when a patient anaphylaxed on the operating table — to a <strong>bovine serum albumin tissue adhesive.</strong> Bovine and porcine hemostatics, gelatin colloids, heparin and bioprosthetic valves all matter here.</p>
+  </section>
+
+  <section>
+    <span class="sec-num">01 — The finding</span>
+    <h2>Her highest antibody is to a food she has never eaten</h2>
+
+    <div class="scroll">
+      <table>
+        <caption>Serology</caption>
+        <thead><tr><th scope="col">Test</th><th scope="col">Result</th><th scope="col"></th></tr></thead>
+        <tbody>
+          <tr><td><strong>Alpha-gal</strong></td><td class="figure"><strong>&lt;0.10 kU/L</strong></td><td>Below limit of detection — at diagnosis <em>and</em> a year later</td></tr>
+          <tr><td>Pork</td><td class="figure">14.40</td><td><strong>She has never eaten pork</strong></td></tr>
+          <tr><td>Lamb</td><td class="figure">10.20</td><td>—</td></tr>
+          <tr><td>Beef</td><td class="figure">2.38</td><td>—</td></tr>
+          <tr><td>Total IgE</td><td class="figure">—</td><td><strong>Never drawn</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Sensitization requires exposure. An antibody of 14.40 to a meat she has never consumed cannot have arisen in her gut. It came from somewhere else — and there is only one plausible route.</p>
+
+    <div class="thesis">
+      <p>She had cats for most of her life. Cat serum albumin is 82% identical to pork albumin. The antibody was raised against the cat and binds the pig.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="sec-num">02 — The evidence</span>
+    <h2>Her serology reproduces the homology ladder exactly</h2>
+
+    <p class="lede">Cross-reactivity between albumins tracks how similar they are to the original sensitizer. If one cat-driven antibody explains all three of her meat results, they should fall in the same order as their sequence identity to cat albumin.</p>
+
+    <figure>
+      <div class="chart-frame">
+        <svg viewBox="0 0 680 250" role="img" aria-label="Chart comparing albumin sequence identity to cat albumin against the patient's specific IgE. Pig 81.8 percent identity and IgE 14.40; sheep 78.8 percent and 10.20; cattle 77.3 percent and 2.38. Both measures fall in the same rank order.">
+          <text class="plot-key" x="115" y="28">Identity to cat albumin</text>
+          <text class="plot-key" x="400" y="28">Her specific IgE (kU/L)</text>
+
+          <g class="ax-val" text-anchor="end">
+            <text x="98" y="80">Pig</text>
+            <text x="98" y="140">Sheep</text>
+            <text x="98" y="200">Cattle</text>
+          </g>
+
+          <g fill="var(--accent)" opacity="0.85">
+            <rect x="112" y="58" width="182" height="28" rx="2"></rect>
+            <rect x="112" y="118" width="88"  height="28" rx="2"></rect>
+            <rect x="112" y="178" width="41"  height="28" rx="2"></rect>
+          </g>
+          <g class="ax-label" fill="var(--ink-soft)">
+            <text x="302" y="80">81.8%</text>
+            <text x="208" y="140">78.8%</text>
+            <text x="161" y="200">77.3%</text>
+          </g>
+
+          <g fill="var(--accent-deep)" opacity="0.85">
+            <rect x="400" y="58" width="230" height="28" rx="2"></rect>
+            <rect x="400" y="118" width="163" height="28" rx="2"></rect>
+            <rect x="400" y="178" width="38"  height="28" rx="2"></rect>
+          </g>
+          <g class="ax-label" fill="var(--ink-soft)">
+            <text x="638" y="80">14.40</text>
+            <text x="571" y="140">10.20</text>
+            <text x="446" y="200">2.38</text>
+          </g>
+
+          <line x1="112" y1="228" x2="630" y2="228" stroke="var(--rule)" stroke-width="1"></line>
+          <text class="ax-label" x="371" y="245" text-anchor="middle">Both measures descend in identical rank order</text>
+        </svg>
+      </div>
+      <figcaption>Sequence identity figures derive from albumin characterization studies; the ordering is robust across sources while exact percentages vary by alignment method. The argument rests on the rank order, not the precise values.</figcaption>
+    </figure>
+
+    <p><strong>Perfect rank correlation.</strong> That is the signature of a single cross-reactive sensitizer. It is not what three independent food allergies look like — and alpha-gal, a sugar shared evenly across mammalian meats, produces no gradient of this shape at all.</p>
+
+    <h3>The clinical picture fits too</h3>
+    <p>Her reactions begin <strong>immediately</strong>, opening with <strong>itchy mouth and throat</strong> before progressing to dizziness and nausea. Oral itching during the meal is the described opening symptom of albumin-mediated meat allergy — proteins contact mast cells in the mouth while chewing.</p>
+    <p>And her two trigger foods are <strong>steak and lamb</strong>: the two mammalian meats habitually served pink. Albumin begins denaturing above 60&nbsp;°C; a medium-rare steak reaches only 52–57&nbsp;°C internally. That is not a coincidence in her history — it is the mechanism showing itself.</p>
+  </section>
+
+  <section>
+    <span class="sec-num">03 — Exclusion</span>
+    <h2>Why it is not alpha-gal syndrome</h2>
+
+    <p class="lede">The original diagnosis was reasonable to consider — she had a meat allergy in tick country, and GI-predominant alpha-gal is a real, under-recognized phenotype. The error was keeping the label after the confirmatory test came back undetectable.</p>
+
+    <div class="scroll">
+      <table>
+        <caption>The case that could still be made, assessed</caption>
+        <thead><tr><th scope="col">Argument for alpha-gal</th><th scope="col">Assessment</th></tr></thead>
+        <tbody>
+          <tr><td>Immediate reactions occur in ~16% of cases</td><td>True — but overwhelmingly with <strong>organ meats</strong> or under cofactor conditions, not reproducibly with steak over ten years</td></tr>
+          <tr><td>The assay misses roughly 1 in 8 cases</td><td>True — but the salvage literature applies to the <strong>0.1–0.35 grey zone.</strong> She is <em>below</em> it, twice</td></tr>
+          <tr><td>Alpha-gal IgE wanes over time</td><td>True — but waning IgE accompanies <em>resolving</em> reactivity. She cannot have too little to detect and enough to cause presyncope</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Two findings close it</h3>
+
+    <p><strong>Oral itching.</strong> Fewer than <span class="num">1%</span> of alpha-gal patients experience it. It is her leading symptom. This follows necessarily from the biology: alpha-gal rides on glycolipids requiring digestion and lymphatic transport — which is <em>why</em> the reaction is delayed. There is no free alpha-gal at the mouth during a meal.</p>
+
+    <div class="callout">
+      <span class="tag">And the arithmetic</span>
+      <p>Alpha-gal is the dominant epitope on mammalian meat. The alpha-gal assay measures that epitope directly, on a carrier protein denser in alpha-gal than any meat extract. <strong>If her meat IgE were alpha-gal-directed, that assay would read high.</strong></p>
+      <p>It reads undetectable while pork sits at 14.40. Her meat antibodies are aimed at proteins, not the sugar.</p>
+    </div>
+
+    <p><strong>Verdict: excluded, under 5% residual probability.</strong> Worth closing formally with a total IgE and one repeat — not because it will be positive, but because a diagnosis closed properly stays closed.</p>
+  </section>
+
+  <section>
+    <span class="sec-num">04 — Correction</span>
+    <h2>"Just cook it well done" is not a safety plan</h2>
+
+    <p>Heat-lability is real, and it likely explains why steak is her trigger. That makes it a valuable <strong>diagnostic clue.</strong> It does not make it a rule she can live by.</p>
+
+    <div class="caution">
+      <span class="tag">What the controlled data show</span>
+      <p>In the one double-blind placebo-controlled study to test this, heating reduced but did not abolish reactivity: <strong>4 of 10 patients still reacted to heated bovine albumin.</strong> Only industrially sterilized preparations gave uniformly negative challenges.</p>
+      <p>Beef also carries genuinely <strong>heat-stable</strong> allergens — myoglobin, Bos&nbsp;d&nbsp;13, and six protein fractions that survive 85&nbsp;°C for two hours.</p>
+    </div>
+
+    <p>A ~40% failure rate, unverifiable restaurant doneness, cofactor stacking, and a cardiovascular symptom in her history make this the wrong candidate for a rule of thumb. If it proves true it could return real food to her diet — but that finding belongs to a supervised challenge, not the kitchen table.</p>
+  </section>
+
+  <section>
+    <span class="sec-num">05 — Honesty</span>
+    <h2>The counterweight</h2>
+
+    <p>A 2021 cohort followed 15 cat-allergic patients with albumin sensitization. Seven carried bovine albumin antibodies. <strong>All of them ate beef, pork and milk with no symptoms at all.</strong></p>
+
+    <p><strong>Albumin sensitization is common; albumin allergy is much rarer.</strong> This is the strongest argument against the leading hypothesis, and it belongs in the record rather than smoothed over.</p>
+
+    <p>What separates her from that cohort is a decade of reproducible, stereotyped, multi-system reactions. Her <em>diagnosis</em> rests on that history. Component testing confirms the <em>mechanism</em>.</p>
+
+    <p>One consequence worth carrying forward: if milk or bovine albumin IgE comes back positive later, <strong>do not automatically call it a dairy allergy.</strong> In a cat-sensitized patient that is frequently a silent cross-reaction — and diagnosing on serology alone would repeat the exact error that produced the alpha-gal label.</p>
+  </section>
+
+  <section>
+    <span class="sec-num">06 — Discipline</span>
+    <h2>What this does not explain</h2>
+
+    <p class="lede">The greatest risk now is replacing one over-unifying label with another.</p>
+
+    <p>Albumin allergy accounts for her <strong>meat allergy.</strong> It does not account for her <strong>illness</strong>:</p>
+
+    <ul>
+      <li><strong>Ten years of GI-predominant symptoms</strong> — which did not improve after a full year of complete mammalian avoidance. That non-response is itself evidence that meat is not the driver</li>
+      <li><strong>Chronic headache</strong>, distinct from the migraine that ends an acute reaction</li>
+      <li><strong>Bread-associated joint pain and inflammation</strong></li>
+      <li><strong>Reactions to multiple unrelated medications</strong></li>
+      <li><strong>The "serious histamine problem"</strong></li>
+      <li><strong>Gelatin reactivity</strong> — a genuine discordance. Gelatin is denatured collagen and contains no albumin at all</li>
+    </ul>
+
+    <div class="callout">
+      <span class="tag">The candidate that would tie it together</span>
+      <p><strong>Untreated celiac disease</strong> would account for the GI symptoms, the headache, the bread-associated joint pain — and the histamine problem itself. <strong>Diamine oxidase, the enzyme that degrades histamine, is a brush-border enzyme made by the small intestinal lining that celiac destroys.</strong></p>
+      <p>Adult onset after a lifetime of eating bread is the norm, not the exception — mean diagnosis age is 46–56, and roughly a quarter are diagnosed after 60.</p>
+    </div>
+
+    <div class="caution">
+      <span class="tag">⏳ This one has a clock on it</span>
+      <p><strong>tTG-IgA falls by roughly half within 30–60 days off gluten.</strong> Test before any gluten-free trial — a few well-intentioned weeks can turn diagnosable celiac into undiagnosable celiac.</p>
+      <p>And <strong>total serum IgA must be drawn on the same specimen.</strong> IgA deficiency runs 2–3% in celiac — ten to fifteen times background — and makes a negative result uninterpretable. That is the likeliest reason a prior "not celiac" was wrong.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="sec-num">07 — Tests</span>
+    <h2>What to order</h2>
+
+    <ol class="plan">
+      <li><span class="step">01</span><div><p class="what">Fel d 2 — cat serum albumin</p><p class="detail">The decisive test. Should be her highest value if the reconstruction holds. <strong>Order it directly, not through a reflex panel</strong> — see the warning below.</p></div></li>
+      <li><span class="step">02</span><div><p class="what">Bos d 6 — bovine serum albumin</p><p class="detail">The direction of the gradient settles the mechanism. Cat albumin higher means the cat was the sensitizer; bovine higher means a milk-bridge allergy instead.</p></div></li>
+      <li><span class="step">03</span><div><p class="what">tTG-IgA + total serum IgA — while still eating gluten</p><p class="detail">Both on the same draw. The total IgA is non-negotiable. Add HLA-DQ2/DQ8, which is diet-independent and rules celiac out permanently if negative.</p></div></li>
+      <li><span class="step">04</span><div><p class="what">Total serum IgE</p><p class="detail">Never drawn. Every specific IgE above is uninterpretable without the denominator.</p></div></li>
+      <li><span class="step">05</span><div><p class="what">Baseline serum tryptase</p><p class="detail">Her histamine problem has never been objectively measured. If ≥8 ng/mL, follow with TPSAB1 copy number for hereditary alpha-tryptasemia.</p></div></li>
+      <li><span class="step">06</span><div><p class="what">Repeat alpha-gal, alongside the total IgE</p><p class="detail">Formal closure of a label she has carried for a year.</p></div></li>
+    </ol>
+
+    <div class="caution">
+      <span class="tag">⚠️ An ordering trap that would waste the most important test</span>
+      <p>Combined cat panels typically run components <strong>only if whole-cat IgE is ≥0.35.</strong> She has been cat-free for 3–4 years and that value may well have fallen — which would silently cancel the Fel d 2 result. <strong>Order Fel d 2 as a standalone component.</strong></p>
+    </div>
+
+    <h3>Pending results, avoid</h3>
+    <p><strong>All mammalian meat — including pork.</strong> Her pork antibody is her highest value and has never been clinically tested. "She's never had a problem with pork" must not become "she should try pork." Especially avoid anything rare or medium, and cured, dried or smoked products, which are documented as <em>more</em> reactive than well-cooked meat.</p>
+    <p><strong>No self-directed home challenge of any kind.</strong> Not a small bite of well-done steak to see.</p>
+  </section>
+
+  <footer>
+    <p><strong>What to tell her.</strong> She does not have alpha-gal syndrome — the test that confirms it was negative twice, and her reaction pattern does not fit the disease. She does have a real IgE-mediated food allergy, and her reactions have met the criteria for anaphylaxis, which makes this more serious than the label she was given, not less. The likely cause is a protein shared between cats and mammalian meat, and her cats are the probable original source.</p>
+    <p>And some of her symptoms have a separate cause. Solving the meat allergy will not necessarily solve the chronic illness — and assuming one diagnosis explains everything is precisely the error that produced the alpha-gal label in the first place.</p>
+    <p class="disclaimer">Prepared as a research synthesis for discussion with treating clinicians. Not medical advice and not a substitute for specialist evaluation. Journal full texts were largely inaccessible during this research; most figures derive from search-engine extraction of primary sources rather than full-text reading. Directions of effect are corroborated across independent sources, but the albumin homology percentages, the symptom-frequency figures, and the oral-pruritus rate in alpha-gal should be verified against primary text before being quoted clinically or entered in a record.</p>
+  </footer>
+
+</div>
