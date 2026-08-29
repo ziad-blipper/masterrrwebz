@@ -1,321 +1,366 @@
-# Case Reconstruction: When the Diagnosis Is the Problem
+# Case Reconstruction
 
-**August 2026.** This document supersedes the alpha-gal management strategy in `README.md`
-for this specific patient. That strategy was built on a mistaken premise. This is the corrected
-analysis, and it points somewhere entirely different.
+**Goal: determine what she actually has.** Not a cure for alpha-gal syndrome — the evidence
+establishes she does not have it.
 
-> Research synthesis for discussion with treating clinicians. Not a diagnosis, and not medical
-> advice. Every test named here must be ordered and interpreted by a physician.
+*August 2026. Research synthesis for discussion with treating clinicians. Not a diagnosis and not
+medical advice. Every test named here must be ordered and interpreted by a physician.*
 
 ---
 
-## The finding
+## ⚠️ Safety first
 
-**The patient was labeled with alpha-gal syndrome. Her alpha-gal IgE has been undetectable
-throughout — `<0.10 kU/L`, below the assay's limit of detection, both at diagnosis a year ago and
-now.**
+**Her reactions meet the criteria for anaphylaxis.** Under the standard US definition
+(NIAID/FAAN Criterion 2), two organ systems are required. Hers involves three:
 
-Meanwhile her mammalian meat IgE is markedly elevated:
+| System | Symptom |
+| --- | --- |
+| Mucosal | Itchy mouth and throat |
+| Cardiovascular | **Dizziness** (presyncope) |
+| Gastrointestinal | Nausea |
 
-| Test | Result | Interpretation |
+Severity by Brown grading: **moderate** — that tier explicitly names dizziness and throat tightness.
+
+**She should carry two epinephrine auto-injectors, with a written anaphylaxis action plan.** The
+decisive reasoning: **specific IgE level does not predict reaction severity.** Her class-3 values
+indicate she is *likely to react*, not *how badly*. A decade of moderate reactions therefore gives
+**no assurance the next will not be severe** — severity varies episode to episode with dose and
+cofactors (alcohol, exercise, NSAIDs, intercurrent illness).
+
+**Flag her records for surgery and anesthesia.** There is a published case of this syndrome
+discovered only when a patient anaphylaxed intraoperatively to a **bovine serum albumin tissue
+adhesive** (PMID 30951882). Bovine and porcine hemostatic agents, gelatin colloids, heparin, and
+bioprosthetic valves all matter.
+
+---
+
+## The reconstruction in one paragraph
+
+She has a genuine, immediate, IgE-mediated allergy to mammalian meat — almost certainly to **serum
+albumin**, cross-sensitized from decades of cat exposure rather than from a tick bite. That accounts
+for her meat and dairy reactions. It does **not** account for her decade of GI-predominant illness,
+headache, joint symptoms or "histamine problem," which remain unexplained and require their own
+workup. The alpha-gal label was never supported by her serology and is now excluded.
+
+---
+
+## 1. What the evidence shows
+
+### 1.1 The serology
+
+| Test | Result |
+| --- | --- |
+| **Alpha-gal (o215)** | **`<0.10 kU/L` — below limit of detection**, at diagnosis and one year later |
+| Pork | 14.40 kU/L — **and she has never eaten pork** |
+| Lamb | 10.20 kU/L |
+| Beef | 2.38 kU/L |
+| Total IgE | **never drawn** |
+
+### 1.2 The homology ladder — the strongest single finding
+
+Albumin cross-reactivity tracks sequence identity to cat albumin (Fel d 2). Her results reproduce
+that ladder in exact rank order:
+
+| Species | Identity to cat albumin | Her IgE |
 | --- | --- | --- |
-| **Alpha-gal (o215)** | **`<0.10 kU/L`** | **Undetectable** |
-| Pork | 14.40 kU/L | High (~class 3) |
-| Lamb | 10.20 kU/L | High (~class 3) |
-| Beef | 2.38 kU/L | Moderate (~class 2) |
+| **Pig** | **81.8%** | **14.40** (highest) |
+| **Sheep** | **78.8%** | **10.20** |
+| **Cattle** | **77.3%** | **2.38** (lowest) |
 
-### Why this is decisive rather than ambiguous
+**This is the signature of one cross-reactive sensitizer.** It is not what three independent food
+allergies look like, and alpha-gal — a glycan shared across mammalian meats — produces no gradient of
+this shape.
 
-The alpha-gal ImmunoCAP (o215) is built on **bovine thyroglobulin** — the most densely
-alpha-gal-decorated molecule available, and a *more* sensitive vehicle for detecting alpha-gal IgE
-than any crude meat extract.
+*(Confidence note: the ordering is robust across sources; the exact percentages derive from a dog-albumin
+characterization paper and vary by alignment method. The argument does not depend on the precise values.)*
 
-In genuine alpha-gal syndrome, the meat tests are positive **because of** alpha-gal. Meat IgE is a
-downstream readout of alpha-gal IgE. So the alpha-gal value normally **equals or exceeds** the meat
-values. A representative published case: alpha-gal 42.7, beef 18.4, pork 7.62, lamb 6.71.
+### 1.3 Her highest antibody is to a food she has never eaten
 
-Her pattern is the exact inversion, by more than 140-fold. For alpha-gal to drive a class-3 pork
-result while the high-density alpha-gal assay reads at zero is immunologically incoherent.
+Sensitization requires exposure. A pork IgE of 14.40 in someone who has never eaten pork cannot have
+arisen in the gut. It must be cross-reactive from a non-oral route — and the classic route is
+**respiratory/epidermal exposure to cat albumin**, which is the defining mechanism of this syndrome.
 
-### The published comparison that matches her precisely
+She had cats for most of her life, stopping 3–4 years ago.
 
-**Sim et al., *Mol Nutr Food Res* 2017 (PMID 28497612)** compared three groups:
+### 1.4 The clinical phenotype fits
 
-> All alpha-gal syndrome patients had **high** concentrations of sIgE against bovine thyroglobulin
-> and cetuximab, whereas patients with immediate allergic reactions to meat and those with
-> asymptomatic sensitization had **significantly lower** BTG and cetuximab sIgE and **a high
-> prevalence of sIgE against bovine or porcine serum albumin.**
-
-**Her results match the non-alpha-gal group exactly.** This is not an inference from absence — it is
-a positive match to a described, published serological phenotype.
-
-### On the lab's interpretive comment
-
-Her report carried standard boilerplate with two halves, and neither rescues the diagnosis:
-
-1. *"Circulating IgE antibodies may remain undetectable despite a convincing clinical history..."* —
-   generic seronegativity language. It requires a **convincing clinical history** as its premise (AGS
-   is episodic and delayed 3–6 h after mammalian meat; hers is a decade of continuous GI symptoms),
-   and it is contradicted by her own panel: if alpha-gal epitopes were being destroyed in digestion,
-   the alpha-gal-driven meat IgE would be low too. It is high.
-2. *"...may cross-react with the bovine thyroglobulin used in ImmunoCAP o215, leading to a
-   **false-positive** test result."* — **This warns about false positives. Her result is negative.
-   The paragraph does not apply to her.**
-
----
-
-## The reconstruction: two diagnoses, not one
-
-Neither has been tested for. Both are testable within a week.
-
-### Diagnosis 1 — Mammalian serum albumin allergy (pork-cat syndrome)
-
-**Explains: the meat IgE, the dairy reactions, possibly the medication reactions.**
-
-Chronic airway exposure to cat dander sensitizes to **cat serum albumin (Fel d 2)**, which
-cross-reacts with the highly conserved albumins of other mammals — pork **Sus s 1** (79.4% identical
-to Fel d 2), beef **Bos d 6** (78.3%), and ovine albumin.
-
-**The patient had cats for most of her life, stopping only 3–4 years ago.** That is the required
-primary sensitizer, present for decades.
-
-| Her finding | Pork-cat syndrome predicts |
-| --- | --- |
-| Lifelong cat exposure | The primary sensitizer ✓ |
-| **Pork highest (14.40)** | **Pork is the textbook dominant trigger** ✓ |
-| Alpha-gal undetectable | Correct — alpha-gal is not involved ✓ |
-| Dairy reactivity | Bovine albumin (Bos d 6) cross-reactivity ✓ |
-
-#### The decisive detail: she has never eaten pork
-
-**Her highest meat IgE is to pork (14.40) — a food she has never consumed.**
-
-Sensitization to a food requires exposure to it. That antibody did not arise in her gut, so it must
-be cross-reactive from a non-food source. This is the defining mechanism of pork-cat syndrome: the
-sensitization occurs through the **airway**, to cat serum albumin, and the pork reactivity is
-cross-recognition of a 79.4%-identical protein the patient has never eaten.
-
-The homology gradient tracks her results rather than her diet:
-
-| Albumin | Identity to cat Fel d 2 | Her IgE |
+| Feature | Her presentation | Albumin allergy |
 | --- | --- | --- |
-| Pork (Sus s 1) | **79.4%** | **14.40** (highest) |
-| Beef (Bos d 6) | 78.3% | 2.38 |
+| Onset | Immediate, "right away" | ✓ 30–45 min, oral symptoms immediate |
+| First symptom | **Itchy mouth and throat** | ✓ described as the characteristic opening symptom |
+| Progression | Dizziness, nausea, migraine | ✓ anaphylaxis is documented |
+| Trigger foods | **Steak and lamb** — served rare to medium | ✓ albumin is heat-labile; under-denatured meat is worst |
+| Butter as co-trigger | Steak often cooked in butter | ✓ butter carries bovine serum albumin |
 
-The same pattern is seen across allergy — birch pollen producing apple reactivity, dust mite
-producing shrimp reactivity, latex producing fruit reactivity. **A high IgE to a never-eaten food is
-a classic signature of inhalant-driven cross-sensitization**, and decades of cat exposure is the
-inhalant source in evidence.
+**Why steak and lamb specifically:** albumin begins denaturing above ~60 °C. Rare-to-medium steak
+reaches only 52–57 °C internally. Lamb in Western cooking is likewise served pink. **Her two trigger
+foods are the two mammalian meats habitually served under-denatured.**
 
-It also further weakens the alpha-gal label from a second direction: in alpha-gal syndrome a person is
-sensitized by a tick bite and reacts to meat they eat. Her strongest meat antibody is to a meat she
-has never had.
+---
 
-**A hopeful corollary:** her pork IgE has never been clinically tested, because she has never eaten
-pork. A positive antibody to a never-eaten food is frequently **sensitization without clinical
-allergy**. Part of what appears to be a broad mammalian meat allergy may be laboratory reactivity
-that has never been challenged — meaning she may be restricting more food than her biology requires.
-That is a question for a supervised challenge, never for a home experiment.
+## 2. Why alpha-gal is excluded
 
-**What changes if this is right:**
+### The case that could still be made — and why it fails
 
-| | Alpha-gal syndrome | Serum albumin allergy |
+| Argument for alpha-gal | Assessment |
+| --- | --- |
+| Beef and lamb are the classic AGS triggers | True, but non-specific — they are also the meats she eats |
+| GI-predominant AGS is real (AGA published a practice update on it) | True, and it is why the original diagnosis was reasonable to *consider* |
+| Immediate reactions occur in ~16% of AGS cases | True — but overwhelmingly with **organ meats** or under **cofactor** conditions, not reproducibly with skeletal muscle over ten years |
+| The assay misses ~1 in 8 cases | True — but the salvage literature applies to the **0.1–0.35 grey zone**. She is **below** it, twice |
+| Alpha-gal IgE wanes over time | True — but waning IgE accompanies *resolving* reactivity. She cannot have IgE too low to detect and simultaneously enough to cause presyncope |
+
+### The two findings that close it
+
+**1. Oral pruritus.** Fewer than **1%** of alpha-gal patients experience oral itching. It is her
+*leading* symptom. This is mechanistically necessary: alpha-gal is presented on glycoproteins and
+glycolipids that require digestion, chylomicron packaging and lymphatic transport — which is *why* the
+reaction is delayed. There is no free alpha-gal at the oral mucosa during a meal. **Proteins contact
+oral mast cells directly while chewing.**
+
+**2. The arithmetic.** Alpha-gal is the dominant epitope on mammalian meat glycoproteins. If her meat
+IgE were alpha-gal-directed, the alpha-gal assay — which measures that same epitope directly, on a
+bovine thyroglobulin carrier denser in alpha-gal than any meat extract — would read **high**. It reads
+undetectable while pork sits at 14.40. **Her meat-specific IgE is therefore directed at protein
+epitopes, not the glycan.**
+
+**Verdict: alpha-gal syndrome excluded. Residual probability under 5%.**
+
+To close it formally and cheaply: **draw a total IgE and repeat the alpha-gal once alongside it.**
+Not because it will be positive, but because a diagnosis closed properly stays closed.
+
+---
+
+## 3. ⚠️ Correction: "just cook it well done" is not a safety plan
+
+An earlier draft of this document was too optimistic about cooking. The correction matters.
+
+**What is true:** heating reduces albumin allergenicity, and this likely explains why steak is her
+trigger. It is a real, well-described phenomenon and a useful **diagnostic clue.**
+
+**What is not safe to act on:** the one study that tested it properly — Fiocchi/Restani, *Allergy*
+1998, double-blind placebo-controlled — found that heating reduced but **did not abolish** reactivity:
+**4 of 10 patients still reacted to heated bovine albumin on formal challenge.** Only industrially
+sterilized/homogenized preparations gave uniformly negative challenges.
+
+On top of that, beef carries genuinely **heat-stable** allergens: **myoglobin**, **Bos d 13**
+(myosin light chains), and six protein fractions that survive 85 °C for two hours.
+
+**Therefore:** a ~40% failure rate, unverifiable restaurant doneness, cofactor stacking, and a
+cardiovascular symptom in her history make this the wrong candidate for a rule of thumb. **Cooking
+degree is a hypothesis to test under supervision, not a self-managed avoidance strategy.**
+
+---
+
+## 4. The honest counterweight
+
+A 2021 cohort (AAIR, PMC8255353) studied 15 cat-allergic patients with albumin sensitization. Seven
+had bovine albumin IgE. **All of them ate beef, pork and cow's milk with no allergic symptoms
+whatsoever.**
+
+**Albumin sensitization is common; clinical albumin allergy is much rarer.** This is the strongest
+argument against the leading hypothesis and it should be stated rather than smoothed over.
+
+What distinguishes her from that cohort is a decade of **reproducible, stereotyped, multi-system
+clinical reactions** — which those patients did not have. Her diagnosis rests on that history.
+Component testing confirms the *mechanism*, not the fact that she is allergic.
+
+**Overall probability the meat allergy is albumin-mediated: roughly 70–80%.**
+
+There is a second implication worth carrying forward: if milk or bovine albumin IgE later comes back
+positive, **do not automatically call it a dairy allergy.** In a cat-sensitized patient that is
+frequently a clinically silent cross-reaction — and diagnosing dairy allergy on serology alone would
+repeat the exact error that produced the alpha-gal label.
+
+---
+
+## 5. What this does NOT explain
+
+**This is the most important discipline point in the document.**
+
+The following remain unaccounted for and must not be forced into the albumin box:
+
+- **Ten years of GI-predominant illness** — abdominal pain, nausea, diarrhea, which did **not** improve
+  after a year of complete mammalian avoidance. That non-response is itself strong evidence that meat
+  is not driving her chronic illness.
+- **Headache** as a chronic feature, distinct from the migraine that terminates an acute reaction.
+- **Bread-associated joint pain and inflammation.**
+- **Reactions to multiple unrelated medications.**
+- **The "serious histamine problem."**
+- **Gelatin reactivity** — a genuine discordance. Gelatin is denatured collagen and contains **no
+  albumin**. If real and IgE-mediated, it runs through bovine type I collagen (α1/α2 chains), which is
+  a separate test.
+
+**The single greatest risk now is replacing one over-unifying label with another.** "Pork-cat
+syndrome" explains her *meat allergy*. It does not explain her *illness*.
+
+### Leading candidates for the separate process
+
+**Untreated celiac disease** — would account for the GI symptoms, the headache, the bread-associated
+joint pain, and potentially the histamine problem itself: **diamine oxidase, the enzyme that degrades
+histamine, is a brush-border enzyme produced by the small intestinal lining that celiac destroys.**
+Adult onset after lifelong gluten tolerance is the norm (mean diagnosis age 46–56; ~25% after 60).
+
+⏳ **Time-critical: tTG-IgA falls roughly by half within 30–60 days off gluten. Test before any
+gluten-free trial.** And **total serum IgA must be drawn on the same specimen** — IgA deficiency runs
+2–3% in celiac, ten to fifteen times background, and renders a negative tTG-IgA uninterpretable. That
+is the likeliest reason a prior "not celiac" result was wrong.
+
+If she is already off gluten: **HLA-DQ2/DQ8** is diet-independent, and a negative result carries
+>99% negative predictive value.
+
+**A mast cell / tryptase trait** — hereditary alpha-tryptasemia (~5% prevalence) produces GI symptoms
+mimicking IBS, migraine, multi-substance reactivity, and **amplifies the severity of other allergies**,
+which would explain disproportionate reactions. **No baseline tryptase has ever been drawn.**
+
+---
+
+## 6. Test plan
+
+### Tier 1 — now
+
+| Test | Purpose | Note |
 | --- | --- | --- |
-| Cause | Tick bite | **Cat exposure** |
-| Disease-modifying lever | Tick avoidance | **Remove cat — already done 3–4 yrs ago** |
-| Reaction timing | Delayed 3–6 h, often nocturnal | **Immediate, 20–45 min** |
-| Cooking | Heat-stable; irrelevant | **Heat-labile — thoroughly cooked meat may be tolerated** |
-| Prognosis | Await alpha-gal decline | **Sensitization declines once cat exposure ends** |
+| **Fel d 2 — cat serum albumin (e220)** | ⭐ **The decisive test.** Should be her highest value | **Order directly, not via reflex panel** — see below |
+| **Bos d 6 — bovine serum albumin (e204)** | The direction of the gradient settles the mechanism | Quest 2612 |
+| **Total serum IgE** | The missing denominator; contextualizes every specific IgE | Never drawn |
+| **Repeat alpha-gal IgE** | Formal closure, paired with total IgE | Mayo ALGAL / 609737 |
+| **Baseline serum tryptase** | The histamine problem has never been objectively measured | Draw ≥24 h from any reaction |
+| **tTG-IgA + total serum IgA** | Celiac — **while still eating gluten** | Total IgA is non-negotiable |
+| **HLA-DQ2/DQ8** | Diet-independent celiac insurance | Order regardless |
 
-An instructive precedent: an adult with reactions to beef, lamb, pork and rabbit plus dairy, shown by
-immunoblot inhibition to be entirely albumin-driven, whose total and specific IgE **normalized
-completely over three years** of avoidance (Fiocchi et al., PMID 16261963).
+> **⚠️ Ordering trap.** Labcorp 606650 (Allergen Profile, Cat, with Component Reflex) only runs the
+> components if **whole-cat IgE is ≥0.35**. She has been cat-free 3–4 years and that value may have
+> fallen — which would silently cancel the single most important test in her workup. **Order Fel d 2
+> directly.**
 
-**She may already be years into recovery, because nobody has been measuring the antibody that
-actually matters.**
+**The decisive comparison:**
+- **Fel d 2 > Bos d 6** → cat is the primary sensitizer; the whole ladder is explained
+- **Bos d 6 > Fel d 2**, with positive milk components → a milk-bridge allergy instead; but then her
+  pork value being highest becomes very hard to explain
 
-> ### ⚠️ Safety warning
->
-> A clinician following the standard alpha-gal algorithm will see "alpha-gal undetectable" and
-> conclude she is ready to reintroduce meat. **That would be dangerous.** If her meat IgE is
-> albumin-mediated and clinically real, a reaction arrives in **20–45 minutes**, not 4 hours — and a
-> patient counseled to watch for a delayed nocturnal reaction is watching for the wrong thing at the
-> wrong time. Class-3 pork IgE is not a trivial baseline.
->
-> **Any reintroduction must be a supervised challenge, not a home protocol, and must not be justified
-> by the low alpha-gal number.**
+### Tier 2
 
-### Diagnosis 2 — Untreated celiac disease
+**Multiplex component array (ALEX2 or ISAC)** — one send-out covering Fel d 2, Can f 3, Equ c 3,
+Bos d 6, Sus s 1, alpha-gal and milk components together. The most efficient single move if available.
 
-**Explains: the decade of GI symptoms, the headache, the joint inflammation, and — critically — the
-"serious histamine problem."**
+Also: **Sus s 1** (swine albumin, e222 — limited US availability) · **Can f 3** (dog albumin; ~87%
+identical to Fel d 2, often co-positive) · **milk components** (Bos d 4/5/8) · **bovine type I
+collagen IgE** for the gelatin question.
 
-The mechanistic link that ties it together: **diamine oxidase (DAO), the enzyme that degrades
-histamine, is a brush-border enzyme produced by the small intestinal lining.** Untreated celiac
-disease destroys that lining. **Low DAO from villous atrophy produces exactly the histamine picture
-she has** — meaning her histamine problem may be a *downstream consequence* of an undiagnosed gut
-disease rather than a separate condition.
+### Tier 3 — in a fully equipped allergy office only
 
-| Her symptom | Untreated celiac accounts for it |
-| --- | --- |
-| Decade of abdominal pain, nausea, diarrhea | Core presentation |
-| Headache | Up to **75%** of celiac adults report headache resolution on a gluten-free diet |
-| Joint pain and inflammation | Present in **15–26%** at diagnosis; arthralgia 16%, arthritis 15% |
-| **"Serious histamine problem"** | **Villous atrophy destroys brush-border DAO** |
-| Dairy reactions | Secondary lactose intolerance from the same mucosal damage |
+**Prick-to-prick with fresh RAW versus WELL-DONE beef and lamb, side by side.** Commercial meat
+extracts are unreliable for labile proteins. **A raw ≫ cooked wheal gradient is strong in-vivo
+evidence for a heat-labile allergen**; raw ≈ cooked points toward myoglobin or Bos d 13.
 
-**"She ate bread her whole life without problems" is not evidence against celiac.** Mean age at adult
-diagnosis is **46–56**, and roughly **a quarter are diagnosed after 60**. Activation after decades of
-uneventful gluten intake is the normal natural history, commonly following infection, surgery,
-pregnancy, or major physiological stress.
-
-**The most likely reason a prior "not celiac" result was wrong: total serum IgA was probably never
-measured.** The standard test is tTG-**IgA**, but **2–3% of celiac patients are IgA-deficient** —
-ten to fifteen times background. In an IgA-deficient patient, **tTG-IgA reads falsely negative
-regardless of how much disease is present.** Guidelines direct that total IgA be measured at the
-outset. It is routinely skipped.
+**IgE inhibition assay** — pre-incubate her serum with cat albumin and test whether pork/beef/lamb IgE
+binding is abolished. This is the experiment that originally established the syndrome. Academic
+centers only.
 
 ---
 
-## ⏳ The time-critical instruction
+## 7. What to avoid pending workup
 
-> **Do not begin a gluten-free diet before celiac blood tests are drawn.**
->
-> tTG-IgA falls roughly **by half within 30–60 days** off gluten; median time to full normalization
-> is **9 months**. Duodenal histology heals on a similar timescale. **A few weeks of well-intentioned
-> gluten reduction can convert diagnosable celiac disease into undiagnosable celiac disease**,
-> committing her either to permanent uncertainty or to a months-long formal gluten challenge.
+- **All mammalian meat — including pork.** Her pork IgE is her highest value and has never been
+  clinically tested. **"She's never had a problem with pork" must not become "she should try pork."**
+- **Especially** anything rare or medium, and **cured, dried or smoked products** (prosciutto, salami,
+  jerky), documented as *more* reactive than well-cooked meat.
+- **Cofactor discipline:** no mammalian-derived food within ~4 hours of exercise; no alcohol or NSAIDs
+  around such meals.
+- **No self-directed home challenge of any kind** — including "a small bite of well-done steak to see."
 
-**If she is already off gluten:** order **HLA-DQ2/DQ8** — genetic, diet-independent, valid any day.
-A negative result carries **>99% negative predictive value** and closes the question permanently. A
-positive result means only "not excluded" (30–40% of the general population carry it) and would
-require a gluten challenge: 3–6 g/day, provider check-in at 4–6 weeks, ideally continued to ~12 weeks.
-
----
-
-## Test list
-
-### This week — while still eating gluten
-
-| Test | Why |
-| --- | --- |
-| **tTG-IgA** | Primary celiac test (~95% sensitivity/specificity) |
-| **Total serum IgA — same draw** | **Mandatory.** Without it a negative tTG-IgA is uninterpretable |
-| **DGP-IgG**, **EMA-IgA** (request reflex explicitly) | Backup if IgA-deficient; EMA near-100% specific |
-| **HLA-DQ2/DQ8** | Diet-independent insurance; order regardless |
-| **Baseline serum tryptase** | The "histamine problem" has never been objectively assessed. If ≥8 ng/mL → **TPSAB1 copy number** for hereditary alpha-tryptasemia (~5% prevalence; GI symptoms, migraine, multi-drug reactivity; amplifies other allergies) |
-| **Total IgE** | Never drawn. Every specific IgE above is uninterpretable without it |
-| **TSH, free T4, anti-TPO, anti-thyroglobulin** | Strongest celiac-associated autoimmunity; hypothyroid arthralgia is a treatable mimic |
-| **CBC, ESR, CRP, ferritin, B12, folate, vitamin D** | Malabsorption markers *and* treatable causes of joint pain and fatigue |
-
-### Then — re-characterize the allergy
-
-| Test | Why |
-| --- | --- |
-| **Fel d 2 — cat serum albumin** (Quest 93382) | **The single highest-yield new test.** Confirms or eliminates pork-cat syndrome |
-| **Bos d 6 — bovine serum albumin** (Quest 2612) | Tests the milk-primary albumin route; links meat and dairy reactivity |
-| **Cat dander (e1)**, **Can f 3 (dog)** | Primary sensitizer confirmation |
-| **Repeat alpha-gal on a split sample, same lab as the meat panel** | Excludes platform/lab discordance |
-| **Chicken IgE (f83)** | **Internal control.** Should be negative under both hypotheses. If positive, these values are nonspecific noise on a high-IgE background |
-| **Milk components** (casein, β-lactoglobulin) | Separates heat-stable casein allergy from heat-labile albumin reactivity — determines whether baked milk is tolerable |
-
-### Do not order
-
-**Serum DAO** (not a validated diagnostic test; fluctuates widely; does not track dietary response) ·
-**IgG / IgG4 food sensitivity panels** (measure exposure and tolerance, not disease — a primary
-engine of unnecessary restriction) · **untargeted 90-food IgE panels** (guarantee more clinically
-irrelevant positives in a patient who already carries one wrong label).
+**Do not order:** serum DAO (not a validated diagnostic test) · IgG/IgG4 food sensitivity panels
+(measure exposure and tolerance, not disease) · untargeted broad food IgE panels (guarantee more
+clinically irrelevant positives in a patient who already carries one wrong label).
 
 ---
 
-## Free tests, no lab required
+## 8. If a challenge is pursued
 
-Three history questions worth more than most of the panel:
+**Prerequisites:** component testing complete · alpha-gal formally closed with a total IgE · baseline
+tryptase known · epinephrine prescribed and trained on.
 
-1. **When she reacted to meat, how long after eating?** Under an hour → albumin. Waking her in the
-   middle of the night → alpha-gal.
-2. **Does she react to onion, garlic and legumes** as she does to bread? Those share fructans with
-   wheat but contain no gluten. If yes → fructans. If only bread, pasta, barley and rye → gluten.
-3. **How long does morning stiffness last, and are the joints visibly swollen?** Over 30–60 minutes,
-   with visible swelling → inflammatory, and a rheumatology referral on its own timeline.
+**Setting:** physician-supervised with full resuscitation capability. **IV access before the first
+dose**, given the cardiovascular component of her history. Ideally **blinded** — a decade of a
+mistaken label creates real risk of subjective attribution.
 
-Have her **photograph the joints at their worst.** Synovitis is intermittent and frequently absent in
-the clinic room.
+**The mechanistically informative design — two stages, separate days:**
+1. **Thoroughly cooked beef.** Tolerance here is strong evidence for a heat-labile allergen and
+   effectively rules out clinically significant myoglobin/Bos d 13 reactivity.
+2. **Rare beef.** A reaction here after a negative stage 1 **proves the heat-labile mechanism in her**,
+   converting the cooking question from inference into a personalized dietary rule.
 
----
+**Observation: minimum 4 hours, preferably 6.** Not because alpha-gal is expected, but because the
+window costs nothing and a short observation cannot exclude a delayed reaction.
 
-## Two cautions against false disconfirmation
-
-**Joint symptoms respond to a gluten-free diet in only ~30% of celiac patients**, versus 94% for
-diarrhea. If her joints do not improve on the diet, that is the expected outcome in most patients. It
-must **not** be read as "so it wasn't celiac," and it must **not** trigger further dietary restriction.
-
-**The joints must not be absorbed into the food narrative.** Early treatment of inflammatory arthritis
-produces substantially better outcomes than late treatment, and that window does not reopen. Note that
-**up to 40% of rheumatoid arthritis patients have normal ESR and CRP** — a normal inflammatory marker
-does not close the door.
+**Do not challenge pork.** Her IgE predicts a high probability of reaction, she derives no benefit
+from eating it, and the only good outcome available is a negative.
 
 ---
 
-## What went wrong, and why it is worth naming
+## 9. What to tell her
 
-The reasoning that produced the original label was defensible at the first step: she had a meat
-allergy and lived in tick country, and there is a genuine, under-recognized GI-only alpha-gal
-phenotype that is missed for years. Ordering the test was correct.
-
-**The error was retaining the diagnosis after the confirmatory test came back undetectable** — and
-then treating it as settled for a year, during which the far more probable and more consequential
-possibility, celiac disease, was never properly tested for.
-
-A year of mammalian avoidance that produced no improvement was itself the strongest available
-evidence that the target was wrong. Twelve months without benefit is a result, and it should have
-reopened the diagnosis rather than extended the diet.
-
----
-
-## On SAAT
-
-The patient underwent Soliman Auricular Allergy Treatment three times and was told her gluten allergy
-had resolved.
-
-The supporting literature is essentially author-generated; the alpha-gal report is a single
-uncontrolled series with laboratory values unavailable for many patients. An overview of systematic
-reviews of auricular acupuncture rated methodological quality **critically low, with only 5.9% of
-outcomes supported by high-quality evidence.** In a 58-patient omalizumab cohort, **nine patients had
-previously failed SAAT** — patients who fail do not appear in the clinic's own case series.
-
-**The safety point is mechanistic, not ideological: auricular acupuncture cannot alter tTG antibody
-production or reverse gluten-driven mucosal injury.** If she has celiac disease and resumes gluten
-believing she has been treated, damage accumulates silently — bone loss, nutritional deficiency, and
-long-term malignancy risk — while she believes the problem is solved.
+1. **You do not have alpha-gal syndrome.** The blood test that confirms it was negative, twice, and
+   your reaction pattern does not fit the disease.
+2. **You do have a real IgE-mediated food allergy, and your reactions have met the criteria for
+   anaphylaxis.** That is more serious than the label you were given, not less.
+3. **The likely cause is serum albumin — a protein shared between cats and mammalian meat.** Your cats
+   are the probable original source. That is why your strongest blood result is to pork, a meat you
+   have never eaten.
+4. **Carry two epinephrine auto-injectors.** Use one at the first sign of a systemic reaction and call
+   911. Antihistamines do not treat anaphylaxis.
+5. **Avoid all mammalian meat until the workup is complete — including pork.**
+6. **Do not test the well-done theory yourself.** It may prove true and give you real food back, but it
+   failed in about 40% of patients in the one study that tested it properly.
+7. **Some of your symptoms have a separate cause.** Solving the meat allergy will not necessarily solve
+   the chronic GI symptoms. Assuming one diagnosis explains everything is the error that produced the
+   alpha-gal label in the first place.
 
 ---
 
 ## Sources
 
-- [Sim et al. — Accurate assessment of alpha-gal syndrome using cetuximab and bovine thyroglobulin-specific IgE (PMID 28497612)](https://pubmed.ncbi.nlm.nih.gov/28497612/)
-- [Fiocchi et al. — Allergy to mammal's meat in adult life (PMID 16261963)](https://pubmed.ncbi.nlm.nih.gov/16261963/)
+**Albumin / pork-cat syndrome**
 - [Posthumus et al. — Initial description of pork-cat syndrome in the United States, JACI](https://www.jacionline.org/article/S0091-6749(12)02645-0/fulltext)
-- [Albumins represent highly cross-reactive animal allergens, Front Immunol 2023](https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2023.1241518/full)
-- [Cat serum albumin IgE cross-reacting with pork albumin (PMC7642134)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7642134/)
-- [ThermoFisher — e220 Fel d 2](https://www.thermofisher.com/phadia/us/en/resources/allergen-encyclopedia/e1/e220.html) · [o215 Alpha-Gal](https://www.thermofisher.com/phadia/us/en/resources/allergen-encyclopedia/f27/o215.html)
+- [Allergic reactions to pork reflect IgE antibodies to cat albumin that cross-react with other albumins, JACI](https://www.jacionline.org/article/S0091-6749(11)02190-7/fulltext)
+- [The Feline and the Swine: A Peculiar Case in an Allergy Clinic (PMC10615587)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10615587/)
+- [Albumins represent highly cross-reactive animal allergens, Front Immunol 2023 (PMC10623431)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10623431/)
+- [Spitzauer et al. — Molecular characterization of dog albumin as a cross-reactive allergen, JACI](https://www.sciencedirect.com/science/article/abs/pii/S0091674994700737)
+- [Pork-cat syndrome revealed after surgery: anaphylaxis to bovine serum albumin tissue adhesive (PMID 30951882)](https://pubmed.ncbi.nlm.nih.gov/30951882/)
+- [Milk-specific IgE reactivity without symptoms in albumin-sensitized cat-allergic patients, AAIR 2021 (PMC8255353)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8255353/)
+- [Vicente-Serrano et al. — Sensitization to serum albumins (PMID 17680908)](https://pubmed.ncbi.nlm.nih.gov/17680908/)
+- [ThermoFisher — e220 Fel d 2](https://www.thermofisher.com/phadia/us/en/resources/allergen-encyclopedia/e1/e220.html) · [e204 Bos d 6](https://www.thermofisher.com/phadia/wo/en/resources/allergen-encyclopedia/f2/e204.html)
+
+**Heat lability**
+- [Fiocchi, Restani et al. — Heat treatment modifies the allergenicity of beef and bovine serum albumin, Allergy 1998 (PMID 9722230)](https://pubmed.ncbi.nlm.nih.gov/9722230/)
+- [Fuentes et al. — Isolation and characterization of a heat-resistant beef allergen: myoglobin, Allergy 2004](https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1398-9995.2004.00266.x)
+- [Bos d 13, a novel heat-stable beef allergen (PMC10909433)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10909433/)
+
+**Alpha-gal exclusion**
+- [Sim et al. — Accurate assessment of alpha-gal syndrome using cetuximab and bovine thyroglobulin-specific IgE (PMID 28497612)](https://pubmed.ncbi.nlm.nih.gov/28497612/)
+- [Fischer et al. — Clinical spectrum of α-Gal syndrome (PMC4861743)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4861743/)
+- [Alpha-gal Information — Symptoms](https://alphagalinformation.org/symptoms/) · [Diagnosis and Testing](https://alphagalinformation.org/diagnosis-and-testing/)
+- [AGA Clinical Practice Update on Alpha-Gal Syndrome for the GI Clinician](https://www.cghjournal.org/article/S1542-3565(23)00040-X/fulltext)
+- [Connecting diagnostics and clinical relevance of the α-Gal syndrome (PMC12073179)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12073179/)
+
+**Anaphylaxis and severity**
+- [Anaphylaxis: A 2023 practice parameter update, Ann Allergy Asthma Immunol](https://www.annallergy.org/article/S1081-1206(23)01304-2/fulltext)
+- [Anaphylaxis — 2020 practice parameter update, systematic review and GRADE analysis (AAAAI)](https://www.aaaai.org/Aaaai/media/MediaLibrary/PDF%20Documents/Practice%20and%20Parameters/Anaphylaxis-2020-grade-document.pdf)
+- [Prediction of food allergy reaction severity: biomarkers and host factors (PMC12380843)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12380843/)
+- [ACAAI — Epinephrine Auto-Injector](https://acaai.org/allergies/management-treatment/epinephrine-auto-injector/)
+
+**The separate illness**
 - [ACG Clinical Guideline: Diagnosis and Management of Celiac Disease, 2023](https://journals.lww.com/ajg/fulltext/2023/01000/acg_guideline__diagnosis_and_management_of_celiac.12.aspx)
-- [Singh — A Clinician's Guide to Gluten Challenge, JPGN](https://onlinelibrary.wiley.com/doi/10.1097/MPG.0000000000003923)
 - [tTG normalization after gluten-free diet](https://www.sciencedirect.com/science/article/abs/pii/S1590865821003406)
 - [Musculoskeletal consequences of coeliac disease, Eur J Med Res](https://link.springer.com/article/10.1186/s40001-026-04010-x)
-- [Headache in celiac disease and response to the gluten-free diet (PMID 30893404)](https://www.jofph.com/articles/10.11607/ofph.2079)
-- [Celiac Disease and Autoimmune Thyroid Disease (PMC9312543)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9312543/)
-- [BadGut — Elderly Onset Celiac Disease](https://badgut.org/information-centre/a-z-digestive-topics/elderly-onset-celiac-disease/)
-- [AGA Clinical Practice Update on Alpha-Gal Syndrome for the GI Clinician](https://www.cghjournal.org/article/S1542-3565(23)00040-X/fulltext)
 - [Non-allergic GI manifestations of hereditary alpha-tryptasemia (PMC12185444)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12185444/)
 - [Evaluation of serum DAO as a diagnostic test for histamine intolerance (PMC10574399)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10574399/)
-- [Auricular acupuncture: overview of systematic reviews (PMC7244956)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7244956/)
-- [Skodje et al. — Fructan rather than gluten, Gastroenterology 2018](https://www.gastrojournal.org/article/S0016-5085(17)36302-3/fulltext)
 
 ---
 
 **Verification note.** Journal full texts were largely blocked by network egress policy during this
-research; most figures derive from search-engine extraction of primary sources rather than full-text
-reading. Directions of effect are corroborated across independent sources. Precise figures — the
-joint-complaint prevalences, the ~2% seronegative alpha-gal rate, and the exact guideline wording —
-should be verified against full text before being quoted clinically or entered in a record.
+research; most figures derive from search-engine extraction rather than full-text reading. Directions
+of effect are corroborated across independent sources. The albumin homology percentages, the Posthumus
+symptom frequencies, and the <1% oral-pruritus figure in alpha-gal should be verified against primary
+text before being quoted clinically or entered in a record.
