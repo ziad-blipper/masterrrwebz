@@ -1,0 +1,914 @@
+<title>The Alpha-Gal Decay Window</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --ground:        #F7F8F6;
+    --surface:       #FFFFFF;
+    --surface-sunk:  #EFF1EE;
+    --ink:           #11262A;
+    --ink-soft:      #3E5155;
+    --ink-faint:     #6B7B7E;
+    --rule:          #DCE0DB;
+    --rule-strong:   #C2C8C1;
+
+    --accent:        #0F6B63;
+    --accent-deep:   #0A4E48;
+    --accent-wash:   #E4EFED;
+
+    --grade-strong:  #0F6B63;
+    --grade-mod:     #8A6A1F;
+    --grade-weak:    #9E5544;
+
+    --warn-ground:   #FBF1EC;
+    --warn-rule:     #E3BFAE;
+    --warn-ink:      #7E3F2C;
+
+    --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
+    --font-body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+    --measure: 68ch;
+    --pad: clamp(1.25rem, 5vw, 3rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:        #0D1518;
+      --surface:       #141F22;
+      --surface-sunk:  #101A1D;
+      --ink:           #E6EDEA;
+      --ink-soft:      #AFC0BE;
+      --ink-faint:     #7E9290;
+      --rule:          #263437;
+      --rule-strong:   #35474A;
+
+      --accent:        #5FBFB2;
+      --accent-deep:   #8AD6C9;
+      --accent-wash:   #14302E;
+
+      --grade-strong:  #5FBFB2;
+      --grade-mod:     #C9A44E;
+      --grade-weak:    #D18E76;
+
+      --warn-ground:   #2A1A14;
+      --warn-rule:     #5C3325;
+      --warn-ink:      #E9B39A;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:        #0D1518;
+    --surface:       #141F22;
+    --surface-sunk:  #101A1D;
+    --ink:           #E6EDEA;
+    --ink-soft:      #AFC0BE;
+    --ink-faint:     #7E9290;
+    --rule:          #263437;
+    --rule-strong:   #35474A;
+
+    --accent:        #5FBFB2;
+    --accent-deep:   #8AD6C9;
+    --accent-wash:   #14302E;
+
+    --grade-strong:  #5FBFB2;
+    --grade-mod:     #C9A44E;
+    --grade-weak:    #D18E76;
+
+    --warn-ground:   #2A1A14;
+    --warn-rule:     #5C3325;
+    --warn-ink:      #E9B39A;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 54rem;
+    margin: 0 auto;
+    padding: 0 var(--pad) 6rem;
+  }
+
+  /* ---------- masthead ---------- */
+
+  .masthead {
+    border-bottom: 1px solid var(--rule-strong);
+    padding: clamp(3rem, 9vw, 5.5rem) 0 2.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1.5rem;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(2.4rem, 7vw, 3.9rem);
+    line-height: 1.04;
+    letter-spacing: -0.021em;
+    text-wrap: balance;
+    margin: 0 0 1.25rem;
+  }
+
+  .standfirst {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2.4vw, 1.32rem);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 46ch;
+    margin: 0 0 2rem;
+  }
+
+  .byline {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--ink-faint);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+
+  /* ---------- typography ---------- */
+
+  section { margin-bottom: clamp(3.5rem, 8vw, 5rem); }
+
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(1.6rem, 3.6vw, 2.1rem);
+    line-height: 1.16;
+    letter-spacing: -0.014em;
+    text-wrap: balance;
+    margin: 0 0 0.5rem;
+  }
+
+  .sec-num {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    display: block;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h3 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.06rem;
+    line-height: 1.35;
+    letter-spacing: 0.002em;
+    margin: 2.25rem 0 0.6rem;
+  }
+
+  p { margin: 0 0 1.05rem; max-width: var(--measure); }
+  p:last-child { margin-bottom: 0; }
+
+  strong { font-weight: 600; }
+  em { font-style: italic; }
+
+  a {
+    color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .lede {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    max-width: 58ch;
+  }
+
+  ul, ol { max-width: var(--measure); padding-left: 1.15rem; margin: 0 0 1.05rem; }
+  li { margin-bottom: 0.5rem; }
+  li::marker { color: var(--ink-faint); }
+
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-weight: 500; }
+
+  /* ---------- pull statement ---------- */
+
+  .thesis {
+    border-left: 3px solid var(--accent);
+    padding: 0.35rem 0 0.35rem 1.5rem;
+    margin: 2rem 0;
+    max-width: 52ch;
+  }
+  .thesis p {
+    font-family: var(--font-display);
+    font-size: clamp(1.22rem, 2.8vw, 1.5rem);
+    line-height: 1.42;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  /* ---------- profile grid ---------- */
+
+  .profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin: 2rem 0;
+  }
+  .profile div {
+    background: var(--surface);
+    padding: 1.15rem 1.25rem 1.25rem;
+  }
+  .profile dt {
+    font-family: var(--font-mono);
+    font-size: 0.67rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 0.6rem;
+  }
+  .profile dd {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+  .profile .val {
+    font-family: var(--font-display);
+    font-size: 1.12rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  .profile .why { color: var(--ink-soft); font-size: 0.88rem; }
+
+  /* ---------- chart ---------- */
+
+  figure { margin: 2.5rem 0; }
+
+  .chart-frame {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    padding: 1.5rem 1.25rem 1.25rem;
+    overflow-x: auto;
+  }
+  .chart-frame svg { display: block; min-width: 560px; width: 100%; height: auto; }
+
+  figcaption {
+    font-size: 0.87rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin-top: 0.9rem;
+    max-width: 62ch;
+  }
+
+  .ax-label { font-family: var(--font-mono); font-size: 11px; fill: var(--ink-faint); }
+  .ax-val   { font-family: var(--font-mono); font-size: 11px; fill: var(--ink-soft); font-weight: 500; }
+  .plot-note{ font-family: var(--font-body); font-size: 12px; fill: var(--ink-soft); }
+  .plot-key { font-family: var(--font-mono); font-size: 11px; fill: var(--accent); font-weight: 600; }
+
+  /* ---------- two clocks ---------- */
+
+  .clocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  .clock {
+    border-top: 2px solid var(--accent);
+    padding-top: 1rem;
+  }
+  .clock.muted { border-top-color: var(--rule-strong); }
+  .clock h4 {
+    font-family: var(--font-display);
+    font-size: 1.16rem;
+    font-weight: 500;
+    margin: 0 0 0.15rem;
+  }
+  .clock .driver {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 0.7rem;
+  }
+  .clock p { font-size: 0.94rem; margin-bottom: 0.7rem; }
+
+  /* ---------- callouts ---------- */
+
+  .callout {
+    background: var(--accent-wash);
+    border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
+    padding: 1.35rem 1.5rem;
+    margin: 2rem 0;
+  }
+  .callout p { margin-bottom: 0.7rem; }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout .tag {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    display: block;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+  }
+
+  .caution {
+    background: var(--warn-ground);
+    border: 1px solid var(--warn-rule);
+    padding: 1.35rem 1.5rem;
+    margin: 2rem 0;
+  }
+  .caution .tag {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--warn-ink);
+    display: block;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+  }
+  .caution p { margin-bottom: 0.7rem; }
+  .caution p:last-child { margin-bottom: 0; }
+
+  /* ---------- evidence chips ---------- */
+
+  .grade {
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding: 0.14em 0.5em;
+    border: 1px solid currentColor;
+    white-space: nowrap;
+    vertical-align: 0.09em;
+  }
+  .g-strong { color: var(--grade-strong); }
+  .g-mod    { color: var(--grade-mod); }
+  .g-weak   { color: var(--grade-weak); }
+
+  /* ---------- tracks ---------- */
+
+  .track {
+    border-top: 1px solid var(--rule-strong);
+    padding-top: 1.4rem;
+    margin-top: 2.5rem;
+  }
+  .track-head {
+    display: flex;
+    gap: 0.9rem;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .track-id {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .track-head h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.24rem, 2.7vw, 1.5rem);
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: -0.008em;
+  }
+
+  /* ---------- tables ---------- */
+
+  .scroll { overflow-x: auto; margin: 1.5rem 0; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 480px;
+    font-size: 0.9rem;
+  }
+  caption {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding-bottom: 0.7rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.62rem 0.9rem 0.62rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    border-bottom-color: var(--rule-strong);
+  }
+  td.figure { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+
+  /* ---------- plan ---------- */
+
+  .plan { list-style: none; padding: 0; margin: 1.75rem 0 0; max-width: var(--measure); }
+  .plan > li {
+    display: grid;
+    grid-template-columns: 2.6rem 1fr;
+    gap: 0.4rem 0.9rem;
+    padding: 1.05rem 0;
+    border-bottom: 1px solid var(--rule);
+    margin: 0;
+  }
+  .plan > li:first-child { border-top: 1px solid var(--rule-strong); }
+  .plan .step {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    padding-top: 0.12rem;
+  }
+  .plan .what { font-weight: 600; margin: 0 0 0.25rem; }
+  .plan .detail { font-size: 0.92rem; color: var(--ink-soft); margin: 0; }
+
+  .phase {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 2.25rem 0 0.35rem;
+  }
+
+  /* ---------- questions ---------- */
+
+  .questions { counter-reset: q; list-style: none; padding: 0; max-width: var(--measure); }
+  .questions li {
+    counter-increment: q;
+    position: relative;
+    padding-left: 2.3rem;
+    margin-bottom: 0.95rem;
+  }
+  .questions li::before {
+    content: counter(q, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0.16em;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--ink-faint);
+  }
+
+  /* ---------- debunk ---------- */
+
+  .debunk { list-style: none; padding: 0; max-width: var(--measure); }
+  .debunk li {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.94rem;
+  }
+  .debunk .claim { font-weight: 600; }
+  .debunk .verdict { color: var(--ink-soft); }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    border-top: 1px solid var(--rule-strong);
+    padding-top: 2rem;
+    margin-top: 4rem;
+    font-size: 0.89rem;
+    color: var(--ink-soft);
+    max-width: var(--measure);
+  }
+  footer p { max-width: none; }
+  footer .disclaimer {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    line-height: 1.7;
+    color: var(--ink-faint);
+    letter-spacing: 0.01em;
+    margin-top: 1.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">Alpha-gal syndrome · Evidence review</p>
+    <h1>The window where alpha-gal lets go</h1>
+    <p class="standfirst">There is no drug that cures this disease. But unlike almost every other serious food allergy, it frequently ends on its own — and the ending can be measured, protected, and planned for.</p>
+    <p class="byline">Compiled August 2026 · Built around one patient profile<br>Research summary for discussion with a treating allergist — not medical advice</p>
+  </header>
+
+  <section>
+    <span class="sec-num">01 — The honest answer</span>
+    <h2>What "cure" actually means here</h2>
+
+    <p class="lede">As of August 2026 there is no FDA-approved therapy for alpha-gal syndrome specifically, and not a single randomized controlled trial of any drug in this disease. Anyone selling certainty is selling something.</p>
+
+    <p>But the disease has a property that changes everything about how to approach it. Alpha-gal IgE is not a permanent setting — it is an actively maintained antibody response that decays once the thing driving it stops. In the University of Virginia longitudinal cohort, alpha-gal IgE fell at a <strong>median of about 53% per year</strong> — roughly halving annually — in people who stopped being bitten by ticks. <strong>89% of successful tick-bite avoiders showed declining titers.</strong> Around <span class="num">12%</span> of patients followed beyond five years became fully seronegative and went back to eating mammalian meat.</p>
+
+    <p>In November 2025 a Washington University group published what amounts to a mapped route to the other side. Of 263 alpha-gal patients, 21 met criteria for reintroduction and 19 chose to proceed. Following a graded nine-day at-home protocol stepping up through lean and then fatty beef, <strong>19 of 19 succeeded and fully liberalized their diets, with no relapses.</strong></p>
+
+    <div class="thesis">
+      <p>Remission is a real, documented, reproducible endpoint in this disease. It is reached by subtraction rather than addition — by removing the driver and letting the immune system forget.</p>
+    </div>
+
+    <p>Which means the useful question was never <em>what cures it.</em> It is: <strong>how do we protect the decay, measure it, and stay functional during the years it takes?</strong> That question has answers.</p>
+  </section>
+
+  <section>
+    <span class="sec-num">02 — The profile</span>
+    <h2>Four facts that set the strategy</h2>
+
+    <dl class="profile">
+      <div>
+        <dt>Alpha-gal IgE</dt>
+        <dd><span class="val">Above 20 kU/L</span><span class="why">Strongly sensitized, long runway — but this number does <em>not</em> predict how severe reactions will be.</span></dd>
+      </div>
+      <div>
+        <dt>Symptom pattern</dt>
+        <dd><span class="val">GI-predominant, with head pain</span><span class="why">The most misdiagnosed phenotype, and one with a different treatment path than skin-predominant disease.</span></dd>
+      </div>
+      <div>
+        <dt>Tick exposure</dt>
+        <dd><span class="val">Moved out of tick country</span><span class="why">The single most favorable prognostic factor available. The clock driving the illness has likely already stopped.</span></dd>
+      </div>
+      <div>
+        <dt>Reactivity</dt>
+        <dd><span class="val">Dairy, gelatin, medications</span><span class="why">A high-sensitivity pattern matching a specific, named, treatable subtype.</span></dd>
+      </div>
+    </dl>
+
+    <h3>One number that should be reassuring</h3>
+    <p>A high alpha-gal IgE is frightening to look at, and it is widely misread. Across multiple studies, <strong>alpha-gal titers do not predict reaction severity.</strong> In a study of 261 children and adults, IgE and IgG titers were "not a predictor of the symptoms, the severity of reactions, or the time taken to respond after eating meat," and a 2025 analysis looking specifically for a severity correlation found none.</p>
+    <p>What <em>does</em> predict severity: reaction history, cofactors, asthma, and comorbid mast cell disease. Those are the things to assess. The titer's job is to track the decay — nothing else.</p>
+  </section>
+
+  <section>
+    <span class="sec-num">03 — The trajectory</span>
+    <h2>What the decay actually looks like</h2>
+
+    <p>Alpha-gal IgE decays exponentially once tick bites stop, which means on a logarithmic axis it falls in a straight line toward the threshold. Below <span class="num">0.35 kU/L</span> — combined with a stretch of no reactions — is where the documented reintroduction protocol becomes available.</p>
+
+    <figure>
+      <div class="chart-frame">
+        <svg viewBox="0 0 680 400" role="img" aria-label="Logarithmic chart showing alpha-gal IgE decaying from about 25 kU/L, crossing the 0.35 kU/L reintroduction threshold at roughly 5.7 years at the median decay rate, with a faster-slower range spanning about 4 to more than 8 years.">
+          <defs>
+            <clipPath id="plotclip"><rect x="70" y="40" width="550" height="300"></rect></clipPath>
+          </defs>
+
+          <!-- eligible zone -->
+          <rect x="70" y="248.7" width="550" height="91.3" fill="var(--accent)" opacity="0.07"></rect>
+
+          <!-- gridlines -->
+          <g stroke="var(--rule)" stroke-width="1">
+            <line x1="70" y1="48.5"  x2="620" y2="48.5"></line>
+            <line x1="70" y1="91.5"  x2="620" y2="91.5"></line>
+            <line x1="70" y1="167"   x2="620" y2="167"></line>
+            <line x1="70" y1="307.5" x2="620" y2="307.5"></line>
+          </g>
+
+          <!-- y axis values -->
+          <g class="ax-val" text-anchor="end">
+            <text x="60" y="52.5">25</text>
+            <text x="60" y="95.5">10</text>
+            <text x="60" y="171">2</text>
+            <text x="60" y="311.5">0.1</text>
+          </g>
+          <text class="ax-label" x="60" y="252.7" text-anchor="end" fill="var(--accent)" font-weight="600">0.35</text>
+
+          <!-- uncertainty cone -->
+          <g clip-path="url(#plotclip)">
+            <path d="M70,48.5 L477,340 L620,340 L620,240 Z" fill="var(--accent)" opacity="0.13"></path>
+          </g>
+
+          <!-- threshold line -->
+          <line x1="70" y1="248.7" x2="620" y2="248.7" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="5 4"></line>
+
+          <!-- median decay line -->
+          <line x1="70" y1="48.5" x2="620" y2="331.8" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></line>
+
+          <!-- year points on median line -->
+          <g fill="var(--accent)">
+            <circle cx="70"    cy="48.5"  r="4.5"></circle>
+            <circle cx="138.8" cy="83.9"  r="2.6"></circle>
+            <circle cx="207.5" cy="119.4" r="2.6"></circle>
+            <circle cx="276.3" cy="154.7" r="2.6"></circle>
+            <circle cx="345"   cy="190.2" r="2.6"></circle>
+            <circle cx="413.8" cy="225.5" r="2.6"></circle>
+            <circle cx="482.5" cy="261"   r="2.6"></circle>
+            <circle cx="551.3" cy="296.3" r="2.6"></circle>
+          </g>
+
+          <!-- crossing marker -->
+          <circle cx="458.4" cy="248.7" r="6" fill="var(--ground)" stroke="var(--accent)" stroke-width="2.5"></circle>
+          <line x1="458.4" y1="248.7" x2="458.4" y2="345" stroke="var(--accent)" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"></line>
+
+          <!-- labels -->
+          <text class="plot-key" x="80" y="35">Median decay · 53% per year</text>
+          <text class="plot-note" x="452" y="368" text-anchor="middle" fill="var(--accent)" font-weight="600">≈ 5.7 years</text>
+          <text class="plot-note" x="614" y="243" text-anchor="end">Reintroduction threshold · 0.35 kU/L</text>
+
+          <!-- x axis -->
+          <line x1="70" y1="340" x2="620" y2="340" stroke="var(--rule-strong)" stroke-width="1"></line>
+          <g class="ax-label" text-anchor="middle">
+            <text x="70"    y="356">0</text>
+            <text x="138.8" y="356">1</text>
+            <text x="207.5" y="356">2</text>
+            <text x="276.3" y="356">3</text>
+            <text x="345"   y="356">4</text>
+            <text x="413.8" y="356">5</text>
+            <text x="482.5" y="356">6</text>
+            <text x="551.3" y="356">7</text>
+            <text x="620"   y="356">8</text>
+          </g>
+          <text class="ax-label" x="345" y="390" text-anchor="middle">Years without a new tick bite</text>
+          <text class="ax-label" x="18" y="190" text-anchor="middle" transform="rotate(-90 18 190)">Alpha-gal IgE (kU/L, log scale)</text>
+        </svg>
+      </div>
+      <figcaption>Modelled from the published median decay rate of 53% per year, starting at 25 kU/L. The shaded band spans plausible faster and slower individual rates — roughly 4 years to beyond 8. This is a projection of population data, not a prediction about one person: about 11% of tick-avoiders show no decline at all, which is exactly why the trajectory has to be measured rather than assumed.</figcaption>
+    </figure>
+
+    <p>Two honest caveats, one in each direction. She is currently <strong>above the range of anyone in the published reintroduction cohort</strong>, whose members averaged 2.0 kU/L at diagnosis — so she is not a near-term candidate and shouldn't be led to expect one. But decay rates vary widely, the 53% figure is a median rather than a rule, and if she was diagnosed some years ago she may already be well along this curve. Which is the entire argument for getting a current number and plotting the trend.</p>
+
+    <div class="caution">
+      <span class="tag">Do not shortcut this</span>
+      <p>A falling titer is not permission to test the diet. The pathway requires near-seroreversion <em>plus</em> a prolonged symptom-free interval <em>plus</em> supervision. Roughly <strong>15–20% of alpha-gal patients undergoing supervised food challenge require epinephrine or EMS transport</strong> — the 19-of-19 result depended on the eligibility gate, not on the protocol being gentle.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="sec-num">04 — The reframe</span>
+    <h2>Two clocks, not one</h2>
+
+    <p class="lede">This is the idea that reorganizes everything, and it is the thing most commonly gotten wrong by patients and physicians alike. Two independent processes are running, and they respond to completely different interventions.</p>
+
+    <div class="clocks">
+      <div class="clock">
+        <h4>The sensitization clock</h4>
+        <p class="driver">Driven by tick bites — only</p>
+        <p>Determines whether she is ever cured. Prospective follow-up after tick bites showed <strong>20-fold or greater increases</strong> in alpha-gal IgE. Thomas Platts-Mills, who co-discovered the disease, put it plainly in 2025: <em>"the only thing that can allow IgE to decrease is avoidance of tick bites."</em></p>
+        <p>Eating mammalian meat does not boost alpha-gal IgE. In a screening-colonoscopy population, <span class="num">31.4%</span> were sensitized, ate meat normally, and showed no escalation.</p>
+      </div>
+      <div class="clock muted">
+        <h4>The symptom clock</h4>
+        <p class="driver">Driven by exposure and cofactors</p>
+        <p>Determines how she feels this week. Dietary alpha-gal, hidden exposures in medications, alcohol, exercise, NSAIDs, illness — plus the mast cell component described below.</p>
+        <p>This is what makes today good or bad. It has <strong>no effect whatsoever on whether she is cured.</strong></p>
+      </div>
+    </div>
+
+    <p>Conflating them causes real harm. Patients who believe diet drives the antibody restrict far beyond what symptom control requires — shrinking their lives for no immunological benefit — and then become demoralized when years of rigorous avoidance produce no remission, concluding the disease is hopeless when they were never working on the right variable.</p>
+
+    <div class="callout">
+      <span class="tag">The operating rule</span>
+      <p><strong>If the antibody stops falling, look for a tick — not for a food.</strong> Hunting hidden dietary traces is the right response to ongoing <em>symptoms</em>. It is the wrong response to a <em>non-declining antibody</em>.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="sec-num">05 — The key finding</span>
+    <h2>Why a stricter diet is probably not the answer</h2>
+
+    <p>In a Washington University cohort of 260 alpha-gal patients, <strong>34.3% had a distinct comorbidity the authors called mast cell hyperactivity</strong> — defined as patients who get only <em>partial</em> relief from dietary elimination and keep having episodic itching, flushing, abdominal pain, and headache.</p>
+
+    <p>That subgroup was distinguished by precisely the features in this profile:</p>
+
+    <div class="scroll">
+      <table>
+        <caption>Mast cell hyperactivity subgroup vs. alpha-gal alone</caption>
+        <thead>
+          <tr><th scope="col">Feature</th><th scope="col">With MCH</th><th scope="col">Without</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Tolerates dairy</td><td class="figure">34.4%</td><td class="figure">69.1%</td></tr>
+          <tr><td>Tolerates gelatin</td><td class="figure">13.8%</td><td class="figure">42.2%</td></tr>
+          <tr><td>Migraine</td><td class="figure">21%</td><td class="figure">4%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The authors' conclusion is the operative sentence: these patients <em>"may warrant additional interventions beyond alpha-gal avoidance."</em> Dairy reactivity plus gelatin reactivity plus headache plus GI-predominant symptoms is not a coincidental cluster — it is a described phenotype with a described treatment implication.</p>
+
+    <div class="callout">
+      <span class="tag">What this changes</span>
+      <p>If she is still suffering while genuinely avoiding mammalian products, <strong>the answer is probably not a stricter diet. It is mast-cell-directed treatment that has never been tried.</strong></p>
+    </div>
+
+    <p>One nuance worth stating honestly: the MCH group in that cohort had <em>lower</em> median IgE (1.9 vs 3.8 kU/L), while hers is high. The likeliest reading is that she has <strong>both</strong> high-titer classical alpha-gal syndrome <em>and</em> a mast cell component layered on top — which argues for treating both: the antibody with time and tick avoidance, the mast cells with drugs.</p>
+  </section>
+
+  <section>
+    <span class="sec-num">06 — The plan</span>
+    <h2>Three tracks, run in parallel</h2>
+
+    <div class="track">
+      <div class="track-head">
+        <span class="track-id">Track A</span>
+        <h3>Protect the cure</h3>
+      </div>
+      <p>For this disease, tick prevention is not hygiene advice — <strong>it is the only disease-modifying therapy that exists.</strong> A single new bite can reset years of progress. She has already done the biggest thing available by leaving a high-tick area; the job now is making sure nothing quietly undoes it.</p>
+      <p>Factory-treated permethrin clothing <span class="grade g-strong">Strong</span> reduced tick bites by <span class="num">65%</span> in year one and <span class="num">50%</span> in year two in field studies of outdoor workers — and commercial treatment substantially outperforms home spraying. Apply to clothing, boots and gear, never skin.</p>
+      <p>Because she has moved, the risk is no longer ambient but episodic, which makes it easier to miss. The routes that matter: <strong>travel back to endemic areas</strong> (treat every trip as requiring preparation), <strong>pets that go outdoors</strong> and carry lone star ticks inside, yard and garden work, and <strong>nymphal ticks</strong> the size of a poppy seed. A remembered bite is not required for sensitization — "I haven't been bitten" is not evidence of no exposure. After any known bite, re-check IgE in 2–3 months.</p>
+    </div>
+
+    <div class="track">
+      <div class="track-head">
+        <span class="track-id">Track B</span>
+        <h3>Treat the mast cells</h3>
+      </div>
+      <p>Stated honestly up front: there are <strong>no published trials of any medicine for symptom control in alpha-gal syndrome.</strong> Everything here is off-label and extrapolated from chronic urticaria and mastocytosis. That doesn't make it unreasonable — it makes it something to trial deliberately, with a defined endpoint and a stop date.</p>
+
+      <h3>Oral cromolyn — the most apt and most underused option <span class="grade g-mod">Moderate</span></h3>
+      <p>This is the single most specific suggestion here for a GI-predominant presentation. Cromolyn is an oral mast cell stabilizer of which <strong>less than 1% is absorbed</strong> — it works topically on the gut lining, which makes it mechanistically well-matched to GI symptoms and systemically very safe. FDA-approved for mastocytosis, where it improves diarrhea, flushing, <strong>headache</strong>, abdominal pain and nausea. The usual failure mode is abandoning it early: onset takes <strong>2–6 weeks</strong>, and the four-times-daily pre-meal dosing is a genuine adherence burden. It needs a real 4–6 week trial before being judged.</p>
+
+      <h3>Antihistamines, used correctly <span class="grade g-mod">Moderate</span></h3>
+      <p>Guidelines support <strong>up-dosing a single second-generation antihistamine to as much as four times the standard dose</strong> — and explicitly advise against combining two different ones. Prefer long-acting agents (fexofenadine, levocetirizine, effective 22–28 hours), with bedtime dosing given the nocturnal risk. A H2 blocker such as famotidine is a cheap adjunct.</p>
+
+      <div class="caution">
+        <span class="tag">The most important safety sentence here</span>
+        <p><strong>Antihistamines do not treat anaphylaxis.</strong> Their most dangerous property is making a developing reaction <em>feel</em> managed, which delays epinephrine. Epinephrine first, always.</p>
+      </div>
+
+      <h3>Omalizumab — the strongest option, and a genuine strategy <span class="grade g-mod">Moderate</span></h3>
+      <p>An anti-IgE antibody that cuts free IgE by <strong>over 95% within days</strong> and downregulates mast cell and basophil IgE receptors by around <span class="num">73%</span> within a week. In the best alpha-gal evidence that exists — a retrospective cohort of 58 patients — <strong>50 of 58 (86%) reported reduced frequency or severity of reactions, with zero epinephrine use for food events</strong>, and <strong>7 of 10 patients with mast-cell-associated symptoms improved.</strong> Notably, a few patients on treatment were able to reintroduce small amounts of mammalian meat.</p>
+
+      <div class="callout">
+        <span class="tag">The bridge strategy</span>
+        <p>Use omalizumab to restore function and cut symptom burden <em>now</em>, while the antibody decays naturally over the following years on the tick-avoidance track. Then, as the titer approaches threshold, taper and attempt the graded reintroduction. <strong>The drug buys quality of life during exactly the years the immune system needs to forget</strong> — rather than treating the wait as time to simply endure.</p>
+      </div>
+
+      <p>Omalizumab was FDA-approved in February 2024 for IgE-mediated food allergy, which alpha-gal syndrome is — though the pivotal trial studied only protein allergens, so expect prior-authorization friction. Draw <strong>baseline total IgE before the first dose</strong>; it is uninterpretable afterward and it sets the dosing.</p>
+
+      <div class="caution">
+        <span class="tag">A safety point that is easy to miss</span>
+        <p>Omalizumab is manufactured in <strong>Chinese hamster ovary cells, which variably glycosylate with alpha-gal</strong> — the same mechanism behind cetuximab anaphylaxis. The published alpha-gal literature explicitly warns the risk may be elevated in this population. <strong>The first dose should be given with full anaphylaxis readiness.</strong> A manageable risk, not a reason to decline.</p>
+      </div>
+    </div>
+
+    <div class="track">
+      <div class="track-head">
+        <span class="track-id">Track C</span>
+        <h3>Audit the medications</h3>
+      </div>
+      <p>Flagged as urgent because she reacts to medications. This is where a serious, preventable reaction is most likely hiding, and almost no general allergist does it systematically.</p>
+
+      <h3>Check these today <span class="grade g-strong">Strong</span></h3>
+      <ul>
+        <li><strong>Conjugated equine estrogens — Premarin, Prempro.</strong> Derived from pregnant mare urine, and specifically named as a medication for alpha-gal patients to avoid. If she takes hormone therapy containing these, it is <strong>a daily alpha-gal exposure that will never appear on any food diary</strong> and could single-handedly explain persistent symptoms on a clean diet. Synthetic and plant-derived estradiol alternatives exist.</li>
+        <li><strong>Desiccated thyroid — Armour, NP Thyroid, Nature-Throid.</strong> Porcine thyroid gland. This matters more than its obscurity suggests: in 2026 potency testing, <strong>thyroglobulin was the single most potent alpha-gal allergen measured</strong>, active below 10 pg/mL in every patient tested. Synthetic levothyroxine is the alternative.</li>
+        <li><strong>Gelatin capsule shells</strong> — described as the excipient of greatest concern, and directly relevant given her gelatin reactivity. HPMC (plant-derived) capsules are the substitute.</li>
+        <li><strong>Pancreatic enzymes</strong> (Creon, Zenpep) — porcine, and among the most potent products tested. Reactivity is brand-specific and skin-test positivity does not equal clinical reactivity, so this warrants supervised testing rather than blanket avoidance.</li>
+      </ul>
+
+      <h3>On the usual "avoid" lists, but not supported</h3>
+      <p>Accuracy matters here, because over-restriction has real costs and distracts from what is genuinely dangerous. <strong>Magnesium stearate</strong> <span class="grade g-weak">Weak</span> is not structurally similar to alpha-gal, and its major commercial sources have been plant-based since at least 2022. <strong>Personal care products</strong> <span class="grade g-weak">Weak</span> — no published study demonstrates transdermal absorption sufficient to cause systemic reactions, and advocacy guidance itself says most patients tolerate lanolin. <strong>Carrageenan</strong> <span class="grade g-weak">Disputed</span> — genuinely unsettled; a reasonable targeted elimination trial for someone with unexplained medication reactions, which is her situation, but not a routine avoid.</p>
+
+      <h3>Cofactors — why the same food is fine on Tuesday and dangerous on Saturday</h3>
+      <p>Alcohol, exercise, NSAIDs, illness, stress, poor sleep and high-fat meals all lower the reaction threshold <span class="grade g-mod">Moderate</span>, and they explain the inconsistency that makes patients doubt their own diagnosis. Practical rule: avoid alcohol, vigorous exercise and NSAIDs in the hours around any possible exposure, and prefer acetaminophen.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="sec-num">07 — Safety</span>
+    <h2>What could actually cause serious harm</h2>
+
+    <p class="lede">The realistic worst-case outcomes in this disease are not dietary slip-ups. They are medical procedures — and they are preventable with a phone call made weeks in advance.</p>
+
+    <h3>Surgery and anesthesia</h3>
+    <p>Get alpha-gal entered into the medical record as a formal allergy, and request a pre-surgical consult with both surgeon and anesthesiologist. Name specific products, because "no mammal products" is too abstract to action: <strong>heparin</strong> (in 8,819 cardiac surgery patients, <span class="num">4 of 17</span> with positive pre-op alpha-gal tests reacted — rising to <span class="num">50%</span> among those with recent IgE levels), <strong>gelatin hemostatics</strong> (Gelfoam, Surgiflo, FloSeal), <strong>gelatin colloids</strong> (Gelofusine), bovine and porcine valves and patches, collagen dressings, catgut suture, glycerin-containing propofol. One neurosurgical review audited 25 commonly used agents and found <strong>64% potentially unsafe</strong> — with safe substitutes available for essentially all of them.</p>
+
+    <h3>Transfusion</h3>
+    <p>The alpha-gal antigen closely resembles the ABO blood group B antigen. <strong>Group O recipients receiving group B or AB plasma or platelets can have severe reactions</strong> — at least five documented severe cases including one death. <strong>Find out her blood type</strong> and get it recorded alongside the diagnosis.</p>
+
+    <h3>The delayed reaction, and why it is the real danger</h3>
+    <p>Dinner at 7pm plus a 3–6 hour delay puts symptom onset between 10pm and 1am — asleep, unobserved, with early symptoms easily slept through. A fatal anaphylaxis four hours after eating beef is documented. Eat unfamiliar or higher-risk meals <strong>early in the day</strong> so the window falls during waking hours; keep two epinephrine doses <strong>on the bedside table, not in a bag downstairs</strong>; and keep a timestamped diary of both ingestion and onset.</p>
+
+    <div class="caution">
+      <span class="tag">Customize the action plan</span>
+      <p>Generic food-allergy action plans are built around immediate oral and respiratory symptoms, which makes them actively misleading for a GI-predominant patient. Hers must <strong>explicitly name severe abdominal pain, repetitive vomiting and faintness as epinephrine-level symptoms</strong> — because those are the symptoms she will actually have.</p>
+      <p>And what emergency departments get wrong: the observation clock runs from <em>symptom onset</em>, not from ingestion. Arriving five hours after eating means being <em>at</em> peak allergen presentation, not past it.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="sec-num">08 — Next 30 days</span>
+    <h2>Ordered by expected value</h2>
+
+    <p class="phase">Week one · Establish the baseline</p>
+    <ol class="plan">
+      <li><span class="step">01</span><div><p class="what">Order the Alpha-Gal IgE Panel — with total IgE</p><p class="detail">Labcorp 650003 bundles alpha-gal, total, beef, pork and lamb IgE in one draw. Total IgE is needed both for the diagnostic ratio and for omalizumab dosing. Gather any prior results with dates so a trend line can be plotted.</p></div></li>
+      <li><span class="step">02</span><div><p class="what">Add a baseline serum tryptase</p><p class="detail">Drawn at clinical baseline, not after a reaction. If it comes back at 8 ng/mL or above, request TPSAB1 copy-number testing for hereditary alpha-tryptasemia — which independently increases anaphylaxis severity and is rarely looked for.</p></div></li>
+      <li><span class="step">03</span><div><p class="what">Audit the medicine cabinet</p><p class="detail">Conjugated estrogens, desiccated thyroid, gelatin capsules, pancreatic enzymes. This is the highest-yield hour in the entire plan and it can be done today, at home, for free.</p></div></li>
+      <li><span class="step">04</span><div><p class="what">Start a timestamped symptom diary</p><p class="detail">Ingestion time and onset time, plus cofactors. For a GI-predominant patient this is the single most useful diagnostic instrument available.</p></div></li>
+    </ol>
+
+    <p class="phase">Week two · Secure the safety floor</p>
+    <ol class="plan" start="5">
+      <li><span class="step">05</span><div><p class="what">Two in-date epinephrine devices, one at the bedside</p><p class="detail">And rewrite the action plan so it names GI symptoms as epinephrine-level.</p></div></li>
+      <li><span class="step">06</span><div><p class="what">Record blood type and formal allergy status</p><p class="detail">Alpha-gal entered in the EMR triggers allergy banding and flags anesthesia before any future procedure.</p></div></li>
+      <li><span class="step">07</span><div><p class="what">Lock down tick prevention</p><p class="detail">Permethrin-treated clothing for travel to endemic areas, veterinary tick prevention for pets, and a standing rule treating trips back to tick country as requiring preparation.</p></div></li>
+    </ol>
+
+    <p class="phase">Weeks three and four · Get the right specialist</p>
+    <ol class="plan" start="8">
+      <li><span class="step">08</span><div><p class="what">Request referral to a center that actually knows this disease</p><p class="detail">Sarah McGill at UNC defined the GI-predominant phenotype; Cosby Stone at Vanderbilt covers drug and excipient reactions; Scott Commins at UNC and Jeffrey Wilson at UVA lead the field. Given GI symptoms <em>plus</em> medication reactions, McGill and Stone map most precisely onto her two problems. Expect a wait — start now.</p></div></li>
+      <li><span class="step">09</span><div><p class="what">Open two specific conversations</p><p class="detail">A four-to-six week trial of oral cromolyn with a defined endpoint, and omalizumab candidacy including the first-dose precaution and baseline total IgE.</p></div></li>
+      <li><span class="step">10</span><div><p class="what">Re-test in 6–12 months, same lab</p><p class="detail">Two points make a trend, and the trend is the entire prognosis. Record tick exposure history at every draw.</p></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <span class="sec-num">09 — At the appointment</span>
+    <h2>Questions worth asking out loud</h2>
+    <ol class="questions">
+      <li>What is her current alpha-gal IgE, what was it before, and <strong>what is the trend line?</strong></li>
+      <li>What is her alpha-gal IgE as a <strong>percentage of total IgE?</strong></li>
+      <li>What is her baseline tryptase — and if it is 8 ng/mL or above, will you test TPSAB1 for hereditary alpha-tryptasemia?</li>
+      <li>Given GI-predominant symptoms plus headache plus dairy and gelatin reactivity, <strong>does she fit the mast cell hyperactivity phenotype, and does that change the plan?</strong></li>
+      <li>Can we trial oral cromolyn for the GI symptoms, for a full four to six weeks before judging it?</li>
+      <li><strong>Is she a candidate for omalizumab?</strong> And are you aware it is produced in CHO cells that can carry alpha-gal, so the first dose needs full anaphylaxis readiness?</li>
+      <li>Have we audited every medication and supplement — including capsule shells, conjugated estrogens and desiccated thyroid?</li>
+      <li>Does her action plan name GI symptoms as epinephrine-level? Does she carry two devices?</li>
+      <li>Do you agree that tick-bite prevention is the only disease-modifying intervention available?</li>
+      <li><strong>What IgE level would make you consider supervised reintroduction, and what is our re-testing schedule between now and then?</strong></li>
+    </ol>
+  </section>
+
+  <section>
+    <span class="sec-num">10 — Filter</span>
+    <h2>What will be sold to you anyway</h2>
+
+    <p>This section exists because desperation is a market, and this disease has a structural feature that makes it unusually easy to exploit.</p>
+
+    <div class="caution">
+      <span class="tag">The trap</span>
+      <p><strong>The disease remits on its own at roughly 53% per year.</strong> Any intervention followed by months of observation will appear to work. That makes alpha-gal a near-perfect environment for attributing natural recovery to whatever the patient happened to be doing at the time. Hold every claimed cure to that standard — <em>including the ones in this document.</em></p>
+    </div>
+
+    <ul class="debunk">
+      <li><span class="claim">SAAT / auricular acupuncture.</span> <span class="verdict">Claims 94.8–96% remission from an uncontrolled retrospective review with lab values missing for many patients and no mechanism. The decisive data point: in the 58-patient omalizumab cohort, <strong>nine patients had previously failed SAAT.</strong> Patients who fail don't appear in acupuncture clinic case series.</span></li>
+      <li><span class="claim">"Treat the chronic Lyme and the alpha-gal resolves."</span> <span class="verdict">No mechanism, no data. Alpha-gal follows the <em>bite</em>, not the infection. Prolonged antibiotic courses have failed in randomized trials and carry real harm.</span></li>
+      <li><span class="claim">IgG or IgG4 food sensitivity panels.</span> <span class="verdict">Every human makes natural anti-alpha-gal IgG. A positive result is normal physiology sold as a diagnosis.</span></li>
+      <li><span class="claim">"Aspirin desensitization."</span> <span class="verdict">A therapy for a different disease entirely — and the relationship runs the opposite way, since NSAIDs are a documented cofactor that <em>worsens</em> alpha-gal reactions.</span></li>
+      <li><span class="claim">Dupilumab monotherapy, rituximab.</span> <span class="verdict">Dupilumab failed to induce tolerance in peanut allergy and has zero alpha-gal data; the case report often cited was in a patient who tested <em>negative</em>. Rituximab is mechanistically wrong — plasma cells lack CD20 and are spared.</span></li>
+      <li><span class="claim">Herbal detox, ozone, chelation, parasite cleanses.</span> <span class="verdict">No evidence, and several are directly harmful.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="sec-num">11 — On the horizon</span>
+    <h2>What may change the options during the wait</h2>
+
+    <p><strong>BTK inhibitors</strong> are the most promising near-term development, for a mechanistic reason that matters here: BTK sits downstream of the IgE receptor and is <strong>allergen-agnostic</strong> — it doesn't care whether the epitope is a peanut protein or a carbohydrate. Which means it should work in alpha-gal syndrome, where drugs developed against protein allergens might not. <strong>Remibrutinib</strong> is already FDA-approved for chronic urticaria, and in Phase 2 for peanut allergy produced <span class="num">86.7%</span> tolerating a full challenge dose at four weeks versus <span class="num">0%</span> on placebo, with a Phase 3 food allergy program planned for late 2026. The honest caveat: <strong>zero alpha-gal patients have ever received one in a trial.</strong></p>
+
+    <p><strong>GalSafe pork</strong> — from alpha-gal knockout pigs, FDA-approved in 2020 — exists in an unusual state. It is sold commercially nowhere, because no agriculture partner would take it on. Instead Revivicor gives it away: the herd lives in Iowa, and frozen shipments are mailed free to patients who apply. FDA found no detectable alpha-gal across generations but did not formally determine it is safe for alpha-gal patients to eat, so this stays a conversation to have with the allergist first.</p>
+
+    <p>Also worth tracking: <strong>H.R. 1178, the Alpha-gal Allergen Inclusion Act</strong>, which would make alpha-gal the tenth labeled major food allergen and reached a House subcommittee agenda in April 2026. If it passes, the hidden-ingredient problem shrinks dramatically.</p>
+  </section>
+
+  <footer>
+    <p><strong>The caveat that governs everything above.</strong> There is no randomized controlled trial of any drug in alpha-gal syndrome. Every efficacy figure quoted here comes from an uncontrolled study, in a disease that improves on its own at a median 53% per year. "86% improved" and "19 of 19 tolerated" are real and meaningful results — and they are also both consistent with a substantial contribution from natural history.</p>
+    <p>The honest position is that these are the best available options, held with appropriate uncertainty, and that the one intervention with an unambiguous mechanism and an unambiguous effect on this disease's trajectory remains the simplest one: <strong>do not get bitten again.</strong></p>
+    <p class="disclaimer">Sources include the University of Virginia longitudinal cohort (JACI 2022) · home reintroduction protocol (JACI: In Practice 2025) · mast cell hyperactivity cohort (JACI 2025) · omalizumab case series, n=58 (JACI 2025) · Platts-Mills, Immunological Reviews 2025 · AGA Clinical Practice Update · CDC MMWR seroprevalence 2026. Full referenced dossier with evidence grading accompanies this summary.<br><br>Prepared as a research summary for discussion with a treating physician. Not medical advice, and not a substitute for specialist assessment. Nothing here should be started, stopped, or changed without the treating allergist.</p>
+  </footer>
+
+</div>
