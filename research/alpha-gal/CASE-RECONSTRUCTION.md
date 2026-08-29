@@ -86,6 +86,37 @@ primary sensitizer, present for decades.
 | Alpha-gal undetectable | Correct — alpha-gal is not involved ✓ |
 | Dairy reactivity | Bovine albumin (Bos d 6) cross-reactivity ✓ |
 
+#### The decisive detail: she has never eaten pork
+
+**Her highest meat IgE is to pork (14.40) — a food she has never consumed.**
+
+Sensitization to a food requires exposure to it. That antibody did not arise in her gut, so it must
+be cross-reactive from a non-food source. This is the defining mechanism of pork-cat syndrome: the
+sensitization occurs through the **airway**, to cat serum albumin, and the pork reactivity is
+cross-recognition of a 79.4%-identical protein the patient has never eaten.
+
+The homology gradient tracks her results rather than her diet:
+
+| Albumin | Identity to cat Fel d 2 | Her IgE |
+| --- | --- | --- |
+| Pork (Sus s 1) | **79.4%** | **14.40** (highest) |
+| Beef (Bos d 6) | 78.3% | 2.38 |
+
+The same pattern is seen across allergy — birch pollen producing apple reactivity, dust mite
+producing shrimp reactivity, latex producing fruit reactivity. **A high IgE to a never-eaten food is
+a classic signature of inhalant-driven cross-sensitization**, and decades of cat exposure is the
+inhalant source in evidence.
+
+It also further weakens the alpha-gal label from a second direction: in alpha-gal syndrome a person is
+sensitized by a tick bite and reacts to meat they eat. Her strongest meat antibody is to a meat she
+has never had.
+
+**A hopeful corollary:** her pork IgE has never been clinically tested, because she has never eaten
+pork. A positive antibody to a never-eaten food is frequently **sensitization without clinical
+allergy**. Part of what appears to be a broad mammalian meat allergy may be laboratory reactivity
+that has never been challenged — meaning she may be restricting more food than her biology requires.
+That is a question for a supervised challenge, never for a home experiment.
+
 **What changes if this is right:**
 
 | | Alpha-gal syndrome | Serum albumin allergy |
