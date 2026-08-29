@@ -63,6 +63,94 @@ That is an answerable question, and the rest of this document answers it.
 
 ---
 
+## 1b. Why there is no cure — the mechanism, precisely
+
+This section exists because "there's no cure" is an unsatisfying answer, and it deserves a real one.
+There is a specific, structural reason no drug cures this, and understanding it also explains why the
+slow natural route is genuinely the good one rather than a consolation prize.
+
+### First, what the decay curve is actually measuring
+
+Free IgE in serum has a half-life of roughly **1–2 days**. IgE bound to receptors on mast cells
+persists for **weeks**. But the observed decay of alpha-gal IgE is **~53% per year — a half-life of
+about 16 months.**
+
+No pool of protein with a two-day or even eight-week half-life can produce a sixteen-month decay
+constant. The arithmetic forces a conclusion:
+
+> **The decay curve is not measuring antibody clearance. It is measuring the slow attrition of the
+> cells that secrete the antibody.** The bottleneck is cellular, not molecular.
+
+This single realization explains a great deal — including why anything that merely clears or
+neutralizes antibody (omalizumab, plasmapheresis) changes the lab value and the symptoms **without
+touching the clock.**
+
+### Second, the reservoir problem — two hiding places with opposite fingerprints
+
+Allergic memory does not sit in one place. It sits in at least two, and this is the crux:
+
+| Reservoir | Surface markers | What it does |
+| --- | --- | --- |
+| **IgG1⁺ memory B cells** | **CD19-positive**, CD38-negative | The durable memory. IgE-committed B cells are intrinsically unstable and largely excluded from long-term memory, so the lasting record is held in IgG1⁺ memory cells that **class-switch back to IgE on re-exposure** |
+| **Long-lived IgE plasma cells** | **CD19-negative**, CD38-positive | The secretors. Newly characterized in two 2025 *Immunity* papers: while most IgE plasma cells have a ~3-day half-life, a **long-lived subset with a half-life exceeding 49 days** persists **outside the bone marrow**, in the spleen and secondary lymphoid tissue, accumulating with prolonged allergen exposure |
+
+Read the marker columns again. **They are opposites.** And that is the whole problem:
+
+- **Anti-CD19 CAR-T** — the therapy that has produced genuine resets in severe autoimmune disease —
+  spares long-lived plasma cells precisely *because* they are CD19-negative. It would clear the memory
+  reservoir and leave the secreting reservoir intact.
+- **Anti-CD38 (daratumumab) or BCMA-targeted therapy** would deplete the plasma cells and leave the
+  memory B cells that regenerate them.
+
+> **No approved agent hits both reservoirs. That is the structural reason there is no cure — not a gap
+> in effort or funding, but a real problem in immunology that nobody has solved for any allergy.**
+
+### Third, the failure that proves the model
+
+**Quilizumab** targeted membrane IgE on IgE-committed B cells — precisely the intuitive target. It
+**reduced total and allergen-specific IgE durably by roughly a third, and produced no clinical
+benefit** in asthma and chronic urticaria trials. Development stopped.
+
+It failed exactly as the two-reservoir model predicts: it removed IgE-committed cells but could touch
+neither the IgG1⁺ memory pool that regenerates them nor existing plasma cells, which have
+downregulated surface IgE. **This is a principled dead end, not merely a commercial one** — and it is
+the reason to be skeptical of any future "next-generation anti-IgE" pitched as curative.
+
+### What this means practically — and it is not despair
+
+Three things follow, and the third is the important one.
+
+1. **The oncology-grade options are mechanistically coherent and clinically indefensible.** Anti-CD38,
+   BCMA CAR-T, and stem cell transplantation all carry mortality risk measured in percent. Allergy has
+   been documented as both transferred *and* resolved by bone marrow transplant, which proves allergic
+   memory is haematopoietic and ablatable — but that is a proof of principle, never a treatment for a
+   food allergy.
+2. **Tolerance-induction platforms remain prophylactic.** Nearly all convincing nanoparticle and
+   mRNA-LNP tolerance data come from mice given the intervention *before* sensitization. Reversing
+   established memory is a different and much harder problem, and nobody has durably eliminated an
+   established human allergen-specific IgE response by any route.
+3. **The natural-history route is not the booby prize — it is the only thing that actually clears both
+   reservoirs.** Removing the antigenic drive lets both compartments attrit on their own schedule. It
+   is slow precisely *because* it is doing the thing no drug can do. Framed correctly, five years of
+   tick avoidance is not "waiting because medicine has nothing"; it is **the one intervention that
+   reaches the cells that matter.**
+
+> ### ⚠️ One safety warning that follows directly from this
+>
+> Gut bacteria expressing alpha-gal, and "alpha-gal-producing probiotic" concepts, circulate in patient
+> communities as a theoretical tolerance strategy. **The direction of that effect is unknown and could
+> plausibly go either way.** A sensitized patient deliberately ingesting alpha-gal-bearing probiotics is
+> self-administering their own allergen, by an uncontrolled route, at an unknown dose, without
+> supervision — in a disease characterized by delayed anaphylaxis. **Do not try this.**
+
+*Evidence note: the long-lived IgE plasma cell findings are from two 2025 papers in* Immunity *and are
+cited below. The sequential class-switch model and the quilizumab result are well-established in the
+field but the specific figures here were not independently re-verified in this session and should be
+confirmed before being quoted clinically. The synthesis — that two reservoirs with opposite markers
+explain the absence of a cure — is reasoning from those findings, not a claim any single paper makes.*
+
+---
+
 ## 2. The clinical formulation for this patient
 
 Four facts define the strategy:
@@ -496,6 +584,46 @@ $15,000/year for commercially insured patients, with a foundation pathway for th
 placebo, no food-challenge confirmation, 16-month follow-up — in a disease that improves on its own at
 53%/year. The authors themselves call for prospective studies. It is the best available option, and
 the confidence interval around it is wide.
+
+> ### ⚠️ The tracks interfere — sequence this deliberately
+>
+> This is a mechanistic caution rather than a cited finding, and it should be put to the allergist as a
+> question. But it follows directly from how the drug and the assay work, and it is the kind of thing
+> that gets discovered too late.
+>
+> **Omalizumab binds free IgE into drug–IgE complexes.** Standard immunoassays do not cleanly separate
+> free from complexed IgE, which is why **measured total IgE characteristically rises on therapy** even
+> as biologically active free IgE collapses. The unavoidable implication is that **alpha-gal IgE values
+> drawn while on omalizumab may not be interpretable in the same way as values drawn off it** — and
+> almost certainly cannot be used to certify that she has crossed the 0.35 kU/L reintroduction
+> threshold.
+>
+> **Why this matters strategically:** Door 1 depends entirely on being able to watch the decay curve.
+> Starting omalizumab could obscure the very measurement that tells her when she has arrived.
+>
+> **The practical resolution:** establish the trend *first*. Get two or three clean alpha-gal IgE
+> measurements, 6–12 months apart, off any anti-IgE therapy, so the slope is known. Then start
+> omalizumab with eyes open about what monitoring will and won't be available, and agree in advance
+> with the allergist how readiness for reintroduction will be judged — whether by a washout period off
+> drug before re-testing, or by clinical challenge under supervision.
+>
+> **Question to ask directly:** *"If she starts omalizumab, how will we still be able to tell when her
+> alpha-gal IgE has fallen below the reintroduction threshold?"* A good allergist will have a plan. If
+> they haven't considered it, that's worth knowing before the first injection rather than three years
+> in.
+
+### A tempering note on both doors
+
+It is worth being clear-eyed that **omalizumab and oral immunotherapy are most likely
+*threshold-raising* interventions rather than *decay-accelerating* ones.** They change what she can
+tolerate while on them; that is not the same as making the underlying antibody response resolve
+faster. The telemedicine OIT case did report alpha-gal IgE falling after therapy, which is at least
+suggestive of something more — but a single uncontrolled case in a disease that declines at 53% a year
+on its own cannot distinguish an accelerated fall from a normal one.
+
+**The one lever with an unambiguous effect on the disease's actual trajectory remains tick-bite
+avoidance.** Everything else changes how well she lives while the trajectory plays out — which is
+genuinely worth having, and should not be confused with changing the trajectory itself.
 
 ---
 
@@ -933,6 +1061,17 @@ Ordered by expected value.
    intervention available?
 10. **What alpha-gal IgE level would make you consider supervised reintroduction, and what is our
     re-testing schedule between now and then?**
+11. **If she starts omalizumab, how will we still be able to tell when her alpha-gal IgE has crossed
+    the reintroduction threshold** — given that anti-IgE therapy makes those measurements harder to
+    interpret? Should we establish a clean baseline trend first?
+12. **Does she have to wait for seroreversion at all?** Alpha-gal oral immunotherapy has been done
+    successfully at IgE levels of 5 and 11 kU/L, including a remote-monitored protocol from
+    Vanderbilt. Is she a candidate for a referral to discuss desensitization rather than waiting?
+13. **Would you consider omalizumab-facilitated desensitization** — anti-IgE to cover the updosing
+    phase, as is standard in other food allergies? What would make her a candidate or rule her out?
+14. **How much of her current symptom burden is actually alpha-gal?** Would a blinded challenge — or
+    the UNC GI Alpha-Gal Study (NCT06268717), which is recruiting her exact phenotype — be worth
+    pursuing to find out?
 
 ---
 
@@ -950,6 +1089,11 @@ Ordered by expected value.
 - [Mast Cell Hyperactivity and Alpha-Gal Syndrome: Characterization of a Missouri Cohort — *JACI*, 2025](https://www.jacionline.org/article/S0091-6749(25)01390-9/fulltext)
 - [Alpha-Gal Allergy and Mast Cell Hyperactivity Overlap — *JACI*](https://www.jacionline.org/article/S0091-6749(21)02484-2/fulltext)
 - [NCT07526558 — Mast Cell Treatment in Post-tick Bite Illness (Commins, UNC)](https://clinicaltrials.gov/study/NCT07526558)
+
+**IgE memory biology — why there is no cure**
+- [Long-lived IgE plasma cells persist in secondary lymphoid tissues using a navitoclax-sensitive survival program — *Immunity*, 2025](https://www.cell.com/immunity/fulltext/S1074-7613(25)00460-1)
+- [Long-lived IgE plasma cells that reside in the spleen contribute to the persistence of the IgE response — *Immunity*, 2025](https://www.cell.com/immunity/abstract/S1074-7613(25)00465-0)
+- [IgE plasma cells are transcriptionally and functionally distinct from other isotypes — *Science Immunology*](https://www.science.org/doi/10.1126/sciimmunol.adm8964)
 
 **Mechanism**
 - [Only α-Gal bound to lipids is transported across enterocytes — Román-Carrasco](https://pmc.ncbi.nlm.nih.gov/articles/PMC6852507/)
