@@ -40,48 +40,113 @@ after the model was built to fit it.
 
 ---
 
-## 2. The failed year is the most useful piece of evidence in the case
+## 2. The failed year is evidence — but of something narrower than I first claimed
 
 She completed **a full year of complete mammalian meat and dairy elimination with essentially no
 improvement** in the chronic illness.
 
-This is usually filed as a disappointment. It should be filed as **a negative experiment with real
-inferential power.** It does not mean nothing was found; it means something specific was excluded.
+This is usually filed as a disappointment. It should be filed as **a negative experiment.** It does
+not mean nothing was learned; it means something specific was excluded.
 
-**The rule it generates:** any candidate diagnosis for the chronic illness must survive a year of
-mammalian elimination. Only two categories do.
+### ⚠️ Correction to an earlier draft of this document
 
-| Category | Members |
-| --- | --- |
-| **Diet-independent** — the food didn't matter | Bile acid diarrhea · microscopic colitis · endometriosis · hereditary alpha-tryptasemia · thyroid disease · autoimmune disease · structural/pelvic causes |
-| **Depends on a food she did NOT eliminate** | **Gluten** — she is still eating bread, and she is the one who noticed the bread association |
+An earlier version of this section argued that the failed year cleared the field for
+"diet-independent" diagnoses, and named **bile acid diarrhea** as the leading example. Adversarial
+review found the stated mechanism to be **wrong**, and the conclusion to be **much weaker than
+claimed**. The correction is worth stating precisely, because the corrected version is still useful.
 
-Everything else — the histamine-diet framing, the mast-cell-from-meat framing, the dairy framing —
-has already been tested for a year and failed. **This is why the differential below looks the way it
-does.** It is not a shopping list; it is what remains standing after the evidence she already
-generated.
+**Bile acid diarrhea is not diet-independent. It is fat-modifiable.** Three lines of evidence:
 
----
+1. **Fat restriction is an established BAD treatment.** A diet at 20% of energy from fat produced
+   significant reductions in abdominal pain, stool urgency and nocturnal diarrhea in 116 BAD
+   patients.
+2. **The reference diagnostic test is defined on a fat challenge.** Mayo's 48-hour fecal bile acid
+   test (BA48F) requires **100–150 g of fat per day for three days before and throughout
+   collection.** A test does not standardize dietary fat unless the analyte moves with it.
+3. **BAD patients report food-triggered symptoms** (McKenzie et al., *J Hum Nutr Diet* 2024, n=434).
+
+### What survives — and it is sharper than what it replaced
+
+Her elimination was **antigen-directed**, not **fat-quantity-directed**. Those are different
+experiments:
+
+- The BAD-relevant variable is **total daily fat grams**, not which animal the protein came from.
+- People who cut meat and dairy **substitute** — eggs, poultry, fish, nuts, seeds, avocado, olive and
+  coconut oil. Total fat frequently stays flat or rises.
+- The published BAD dietary intervention is aggressive — roughly **40–45 g of fat per day**. An
+  antigen elimination essentially never reaches that.
+
+**So the failed year refuted an immunologic hypothesis and left the bile acid hypothesis almost
+untouched.** The corrected rule is narrower but still does real work:
+
+> **Any candidate for the chronic illness must survive a year with no mammalian meat or dairy
+> antigen.** That excludes mammalian-food-antigen-mediated causes. It does **not** exclude causes
+> mediated by fat quantity, by a food she kept eating (**gluten** — she is still eating bread), or by
+> anything not mediated by food at all.
+
+### ❓ The question this generates — ask her before the appointment
+
+**What did her total fat intake look like during the elimination year?** If she was eating high-fat
+throughout (nuts, oils, avocado, fatty fish), the negative year carries almost no information about
+bile acids. If she happened to eat very low-fat for a year and still had no change, that is a
+stronger argument against BAD than anything else in her history.
 
 ## 3. The ranked differential for the chronic illness
 
+Ranked by **prior probability × consequence of missing it × how cheaply it can be settled** — not by
+prior alone. A cheap, time-critical, disease-modifying diagnosis outranks a likelier one that is
+neither.
+
 | # | Candidate | Prior | Explains | Does **not** explain | Test |
 | --- | --- | --- | --- | --- | --- |
-| 1 | **Bile acid diarrhea** | **~25–40%** of IBS-D labels in pooled data | Loose stool, urgency, daytime randomness, and crucially **why a year of diet change did nothing** | Headache, joints, allergy severity | 48-h fecal bile acids or serum 7αC4; or a supervised colesevelam trial |
-| 2 | **Untreated celiac disease** | **Moderate** | GI symptoms, headache, **bread-associated joint pain**, and via brush-border DAO loss, the "histamine problem" itself | Why she has no obvious deficiency state | **tTG-IgA + total serum IgA — while still eating gluten** |
-| 3 | **Hereditary alpha-tryptasemia** (as an *amplifier*, not a root) | 5–7% population × ~33% penetrance | Disproportionate anaphylaxis severity, multi-drug reactivity, IBS-like GI symptoms | Onset, bread association, a decade of GI disease on its own | **Baseline serum tryptase.** <8 ng/mL falsifies it for ~$50 |
-| 4 | **Eosinophilic gastritis / duodenitis** | Elevated — **atopy raises odds 5–16×**, and she is unambiguously atopic | Nausea, abdominal pain, early satiety in an allergic patient | Joints, headache | **Directed biopsies.** Invisible on a normal-looking EGD |
-| 5 | **Endometriosis / adenomyosis** | Real and systematically under-considered | A decade of abdominal pain + nausea + bowel symptoms in a woman | Headache, drug reactivity | History first (cyclical patterning), then imaging |
-| 6 | **Carbohydrate malabsorption** (sucrase-isomaltase, lactase) | Under-tested | Loose stool, bloating, pain after carbohydrate | Joints, headache | **Duodenal disaccharidase assay — tissue must be snap-frozen at endoscopy** |
-| 7 | **Microscopic colitis** | **Downgraded** by the absence of nocturnal watery diarrhea | Chronic loose stool | Most of the rest | Random colonic biopsies — free during the same procedure |
-| 8 | **Disorder of gut–brain interaction with central sensitization** | Genuinely high | The whole GI picture, plus headache via shared central mechanisms | Bread–joint association | Positive Rome IV criteria — **not** a diagnosis of exclusion |
+| 1 | **Untreated celiac disease** | Moderate | GI symptoms, headache, **bread-associated joint pain**, and via brush-border DAO loss, possibly the "histamine problem" | Why she has no obvious deficiency state | **tTG-IgA + total serum IgA — while still eating gluten.** ⏳ The only test with a deadline |
+| 2 | **Eosinophilic gastritis / duodenitis** | Elevated — **atopy raises odds 5–16×**, and she is unambiguously atopic | Nausea, abdominal pain, early satiety in an allergic patient | Joints, headache | **Directed biopsies.** Invisible on a normal-looking scope |
+| 3 | **Disorder of gut–brain interaction with central sensitization** | **Genuinely the highest single prior** | The whole GI picture, and headache via shared central mechanisms | The bread–joint association | Positive Rome IV criteria — **not** a diagnosis of exclusion |
+| 4 | **Hereditary alpha-tryptasemia** (as an *amplifier*, not a root) | 5–7% population × ~33% penetrance | Disproportionate anaphylaxis severity, multi-drug reactivity, IBS-like GI symptoms | Onset, bread association, a decade of GI disease on its own | **Baseline serum tryptase.** <8 ng/mL falsifies it for ~$50 |
+| 5 | **Microscopic colitis** | Downgraded by the absence of nocturnal watery diarrhea — but she is the right demographic | Chronic loose stool | Most of the rest | Random colonic biopsies, **right and left in separate pots** |
+| 6 | **Endometriosis / adenomyosis** | Real and systematically under-considered | A decade of abdominal pain + nausea + bowel symptoms in a woman | Headache, drug reactivity | History first (cyclical patterning), then imaging |
+| 7 | **Carbohydrate malabsorption** (sucrase-isomaltase, lactase) | Under-tested | Loose stool, bloating, pain after carbohydrate | Joints, headache | **Duodenal disaccharidase assay — tissue snap-frozen at endoscopy** |
+| 8 | **Bile acid diarrhea** | **~5–10% as sole cause; ~15–20% as a contributor** — see below | The loose-stool component only | Headache, joints, and most of her pain pattern | Mayo **BAMRP** (serum C4 + fecal bile acids) — **after** mucosal disease is excluded |
 
-**Note on #8.** It sits last by rank but it is not a consolation prize, and it is not "it's in her
-head." It is the only entry on this list with **grade-A treatments she has never been offered**
-(amitriptyline, gut-directed hypnotherapy, GI-specific CBT) — see `INTERIM-PLAN.md`. It also
-coexists with everything above it. Finding bile acid diarrhea does not un-find this.
+### ⚠️ Bile acid diarrhea moved from #1 to #8. Why.
 
----
+The earlier draft led with BAD. Adversarial review of the actual literature demoted it, and the
+reasons are specific enough to be worth keeping:
+
+**Her phenotype matches the negative half of the expert consensus.** A UK expert survey (PMID
+32879719) listed which features should and should not prompt BAD testing:
+
+| Considered suggestive | Considered **not** suggestive |
+| --- | --- |
+| >6 bowel movements/day (86%) | 1–3 bowel movements/day |
+| **Consistently** loose stools (86%) | **Alternating loose and normal stools** |
+| Fecal urgency ≥ weekly (67%) | **Abdominal pain associated with or relieved by defecation** |
+| Fecal incontinence ≥ weekly (62%) | Weight change with diarrhea |
+
+**She sits substantially in the right-hand column.** Stool fluctuating between normal and loose, with
+prominent pain, is the pattern experts specifically said should *not* trigger BAD testing.
+
+Four more problems:
+
+- **The prevalence figure does not apply to her.** The famous "25–33% of IBS-D" comes from Wedlake
+  2009 and Slattery 2015 (pooled 28.1%, but **I² = 72%** — substantial unexplained heterogeneity,
+  and Wedlake's own thresholds are internally inconsistent). Every one of those studies enrolled
+  **IBS-D**. **No pooled figure exists for IBS-M.** Her stool alternates. The number does not
+  transfer, and a 2024 critical appraisal (*Dig Liver Dis*) argues the realistic figure is nearer
+  **10%** anyway, since referral-based sampling inflates it.
+- **No nocturnal diarrhea removes the discriminator.** Nocturnal stool is one of the few features
+  that separates BAD from IBS. Its absence is a moderate argument against — though, honestly, **the
+  fraction of BAD patients who have nocturnal diarrhea appears never to have been published**, so
+  nobody can quote a likelihood ratio here. Anyone who says it rules BAD out is overstating.
+- **BAD explains none of her headache and none of her joint pain.** Fatigue is the only
+  extraintestinal symptom that appears anywhere in the BAD literature. BAD is a candidate for at most
+  one third of her presentation.
+- **If BAD is present, it is probably secondary.** Celiac, microscopic colitis, Crohn's ileitis and
+  prior cholecystectomy all *cause* bile acid diarrhea. Finding it without finding its cause would
+  mean treating a downstream symptom of an undiagnosed primary disease.
+
+**The sequencing rule that follows:** ⚠️ **do not test bile acids before excluding mucosal disease.**
+That inverts the diagnostic order. Scope first.
 
 ## 4. Models A and B are not competing — they are sequential
 
@@ -150,8 +215,25 @@ Everything below can be drawn on the same day, in the same visit.
 | TSH (+ free T4) | Both hypo- and hyperthyroidism change bowel habit | — |
 | CRP, ESR | The joint symptoms deserve one objective number | — |
 
-**Stool, same week:** fecal calprotectin · fecal bile acids (48-h quantitative, or serum 7αC4) ·
-*Giardia* antigen and a GI pathogen panel.
+**Stool, same week:** fecal calprotectin · fecal elastase (pancreatic insufficiency) · *Giardia*
+antigen and a GI pathogen panel.
+
+**Not yet: bile acid testing.** It belongs *after* the scope, for the sequencing reason in §3 — and
+if it is ordered, the details matter more than usual:
+
+- **Mayo BAMRP** (unit 619919) bundles serum C4 with fecal bile acids and is the efficient single
+  order. **BA48F** (unit 607368) is the 48-hour fecal collection alone.
+- ⚠️ **Serum C4 alone cannot rule BAD in.** Sensitivity 85%, **specificity 71%** — and the healthy
+  5th–95th percentile runs **6–60.7 ng/mL**, which extends *above* the 52.5 ng/mL "specific" cutoff.
+  A mid-range result in her would be genuinely uninterpretable. It is a rule-*out* test.
+- ⚠️ **The 48-hour collection requires 100–150 g of fat per day for three days beforehand.** For
+  someone with a year of restrictive eating and an IgE meat allergy, that prep needs planning with a
+  dietitian **in advance** — non-mammalian fat (olive and avocado oil, nuts, seeds, fish, eggs,
+  poultry, coconut) — or the collection is uninterpretable. Stool must be **frozen immediately**
+  after each passage.
+- C4 needs a **fasting morning draw** (marked diurnal variation), **statins held 5 days**,
+  sequestrants held 24 h, and serum **separated within 2 hours and frozen** — a real preanalytic
+  failure point at a small draw site.
 
 **Do not order:** serum DAO (not a validated diagnostic) · IgG/IgG4 food sensitivity panels (they
 measure exposure and tolerance, not disease — and they are the main engine of unnecessary
@@ -173,6 +255,8 @@ action in the entire case — it addresses five of the eight candidates in one p
 - **Off any PPI for 3–4 weeks.** A PPI can resolve esophageal and gastric eosinophilia and produce a
   falsely normal read.
 - **Off NSAIDs**, which cause their own mucosal changes.
+- **Terminal ileal intubation**, not just a colonoscopy to the cecum — ileal Crohn's is both a
+  diagnosis in its own right and the classic cause of secondary bile acid malabsorption.
 
 ### The biopsy protocol
 
@@ -199,15 +283,30 @@ action in the entire case — it addresses five of the eight candidates in one p
 
 ## 8. Sequence
 
+The order matters, and one ordering error would waste the whole workup.
+
 | When | Do |
 | --- | --- |
 | **This week** | Epinephrine ×2 + written anaphylaxis action plan. Blood draw (§6) **before any gluten change.** Photograph every supplement bottle |
-| **Weeks 0–2** | Stool studies. Start the symptom diary (`toolkit.md` §3) — two timestamps per event |
-| **Weeks 2–6** | GI referral with this document. Book the endoscopy with the protocol in §7. Allergy/immunology referral with the component results |
-| **In parallel, no waiting** | The grade-A symptom treatments in `INTERIM-PLAN.md` — none of them depend on a diagnosis |
+| **Weeks 0–2** | Stool studies (calprotectin, elastase, pathogens). Start the symptom diary — and add **meal timing and fat content**, which would settle the one genuinely unanswered question about her stool pattern |
+| **Weeks 2–6** | GI referral with this document. **Endoscopy + ileocolonoscopy with the §7 biopsy protocol** — the single highest-yield action in the case. Allergy/immunology referral with the component results |
+| **After the scope** | Bile acid testing, *only if* the mucosal workup is clean and loose stool persists. Ordering it earlier inverts the diagnostic sequence |
+| **In parallel, no waiting** | The grade-A symptom treatments in `INTERIM-PLAN.md` — none depend on a diagnosis |
 | **Only after §6 is drawn** | A structured gluten trial, if serology and biopsy are negative |
 
----
+### ⚠️ Do not lead with an empiric bile acid sequestrant trial
+
+It is a reasonable *therapeutic* strategy and a poor *diagnostic* one. Schiepatti et al. 2024 found
+**initial response to cholestyramine was similar in SeHCAT-positive and SeHCAT-negative patients** —
+an early response does not confirm BAD. Blinded empiric trial performance is roughly **63%
+sensitivity, 65% specificity**, and about a third of true positives don't respond anyway. In a
+patient who already reacts to multiple medications, that buys an ambiguous answer at real cost.
+
+If one is ever run: **colesevelam**, not cholestyramine — 4–6× more potent, tablet rather than resin
+powder, GI side effects comparable to placebo, and no clinically significant fat-soluble vitamin
+depletion at one year (cholestyramine has documented vitamin A and D deficiency cases). Give it
+**2–4 weeks at a titrated dose** before calling it a failure, and write down the separation rule:
+**every other medication and supplement 1 hour before, or 4–6 hours after.**
 
 ## 9. The three things that do not wait
 
@@ -234,7 +333,8 @@ Stated in advance, so it can be checked honestly rather than rationalized later.
 | **tTG-IgA positive** | Model A is confirmed and becomes the organizing diagnosis. Everything reorders |
 | **Baseline tryptase <8 ng/mL** | HaT is out. The "histamine problem" needs a different explanation — most likely a symptom pattern, not a mediator disorder |
 | **Fecal calprotectin high** | Organic inflammation. IBD moves to the front and the functional entries drop away |
-| **Fecal bile acids high** | The #1 candidate is confirmed, and a year of failed dieting is explained in one number |
+| **Fecal bile acids high** | A contributor is confirmed — then **look for its cause** (celiac, microscopic colitis, ileal Crohn's), because secondary BAD is commoner than primary |
+| **She ate high-fat all through the elimination year** | The failed year says nothing about bile acids, and BAD moves back up the list |
 | **Every test above normal** | Then the answer is most likely a disorder of gut–brain interaction with central sensitization — which is a **positive diagnosis with the best-evidenced treatments on this entire list**, and would be good news, not a dead end |
 
 ---
