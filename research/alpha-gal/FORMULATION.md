@@ -96,56 +96,137 @@ after calling the question decisive.** The honest reading:
 
 ---
 
-## 0c. ⭐ The postprandial pattern — the most useful new observation in the case
+## 0c. The postprandial pattern — a search heuristic, not a syndrome
 
-Her joint pain **happens after food.** That single word changes the shape of the problem.
+Her joint pain **happens after food.** Not inflammatory (no morning stiffness), not mechanical (not
+use-related). **Meal-linked.**
 
-Not inflammatory (no morning stiffness). Not mechanical (not use-related). **Meal-linked.** And if
-the joint pain is postprandial, the obvious question is whether **everything else is too** — the
-nausea, the abdominal pain, the loose stool, the headache.
+### ⚠️ Correction to my first reading of this
 
-If it is, she does not have four unrelated chronic symptoms. **She has one postprandial multi-system
-symptom complex**, and that is a far more tractable object than what has been described for ten
-years.
+I initially wrote that she may have "one postprandial multi-system symptom complex" and called a
+post-meal tryptase "the best idea in this document." Research review disciplined both claims:
 
-### ❓ The question this generates — and it is now the most important one
+**There is no recognized syndrome called postprandial multi-system disease.** Postprandial *GI*
+syndromes are well defined. Postprandial *cardiovascular* syndromes are well defined. **Postprandial
+arthralgia is essentially absent from the primary literature as an entity.** What exists instead are
+conditions that are *themselves* multi-system and happen to worsen after meals — celiac, clonal or
+hereditary mast cell disease, dysautonomia.
 
-> **Do her GI symptoms, headache and joint aching all cluster after meals — and how long after?**
+**The honest reframe:** if her symptoms really are meal-locked, that is a **clue** pointing at a small
+number of individually testable diagnoses — plus a much larger probability mass of overlapping
+disorders of gut–brain interaction. It is a search heuristic. It is not a diagnosis, and I should not
+have implied otherwise.
+
+### ⭐ And before any of it: the free confound check nobody has run
+
+> **"Postprandial" and "later in the day" are confounded, and nobody has separated them for her.**
 >
-> And: **after *all* meals, or only some?** If only some, which — and is size, fat content or
-> carbohydrate load the variable, rather than any specific food?
+> Meals cluster in the afternoon and evening. So does cumulative joint use, fatigue, and circadian
+> symptom drift. **A patient who says "it happens after food" on direct questioning may be reporting
+> "it happens in the afternoon."**
 
-### What a postprandial multi-system complex can be
+**The single most valuable thing she can produce before her next appointment** is not a test. It is a
+**time-stamped log with onset latency** — not "after food" but *"meal 13:10, joint pain 15:40."*
 
-| Candidate | Fit |
-| --- | --- |
-| **⭐ Food-triggered mast cell mediator release** | **The one that would finally make the "histamine problem" label testable.** A postprandial multi-system complex is exactly what that label was gesturing at — and it has never once been measured |
-| **Postprandial distress syndrome** (Rome IV functional dyspepsia) | Postprandial fullness, early satiety, nausea. A positive diagnosis with real treatments |
-| **Postprandial hypotension / dysautonomia** | Explains meal-linked **dizziness** specifically — and she has dizziness |
-| **Bile acid diarrhea** | Classically **postprandial**. This partially resurrects it from the demotion in §5 — though it still explains neither the joints nor the headache |
-| **Carbohydrate malabsorption** | Postprandial bloating, pain, loose stool. Doesn't reach the joints |
-| **Celiac** | Fits the bread–joint observation directly |
+Then plot two things:
 
-### ⭐ The test that follows, and it is the best idea in this document
+1. **A latency histogram** for each symptom — how many minutes after a meal it starts.
+2. **The confound plot:** does joint pain track *time since last meal*, or *time of day*? If it is
+   flat against meal latency but rises through the afternoon regardless of when she ate, **the
+   postprandial hypothesis is dead and months have been saved for free.**
 
-**A postprandial tryptase.**
+### ⚠️ The latency also decides whether the tryptase idea is worth doing at all
 
-She has a "serious histamine problem" that has never been tested, and the reason is that **nobody
-ever drew a baseline** — so no acute value could ever be interpreted. But now there is a
-*predictable* trigger window.
+Tryptase rises within **30–60 minutes** and decays with a **~2 hour half-life**.
 
-1. Draw a **baseline serum tryptase** on a symptom-free day, ≥24 h from any reaction.
-2. Then draw an **acute tryptase within 1–4 hours of a meal that produces her symptoms.**
-3. Apply the consensus rule: a rise exceeding **baseline × 1.2 + 2 ng/mL** is objective evidence of
-   systemic mast cell degranulation.
+- **Joint pain starting 4–12 hours after eating** → mast cell mediator release is not a plausible
+  mechanism, and no amount of post-meal tryptase drawing will show anything.
+- **Symptoms within 1–2 hours** → the measurement becomes worth attempting.
 
-**Ten years of symptoms have generated zero tryptase measurements.** This converts an untested label
-into a yes-or-no answer for about $100, and it is the single most direct route to settling the
-question she has been managed on for a year.
+**And even then, expectations need lowering.** In Dua et al.'s 160 adult peanut challenges —
+unambiguous, objectively observed, IgE-mediated food reactions — a tryptase rise meeting a 30%
+threshold had **53% sensitivity** (specificity 0.85, AUC 0.72). Median rise across all reactions was
+25%; it reached 71% only during frank anaphylaxis. **A negative post-meal tryptase would therefore
+prove very little.** I presented this as a clean yes-or-no answer. It is not one.
 
-⚠️ Two caveats to attach: the formula proves **that** mast cells degranulated, not **why** — it
-cannot separate IgE from non-IgE mechanisms. And a flat tryptase does not exclude a reaction,
-particularly a mild one.
+There is also **no published protocol** for post-meal tryptase in suspected food-triggered mast cell
+disease. What can be offered is the oral-food-challenge design repurposed — present it to an
+allergist as an adaptation, not a standard.
+
+⚠️ **One more constraint:** under the ECNM/AIM consensus criteria, only respiratory, cardiovascular,
+gastrointestinal, naso-ocular and cutaneous systems count toward the "≥2 organ systems" requirement
+for MCAS. **Musculoskeletal symptoms do not count.** Her joint pain cannot be used as evidence *for*
+a mast cell diagnosis, even though patients with proven mast cell disease report it.
+
+**What still stands:** the **baseline** tryptase. Cheap, no timing required, does two jobs — anchors
+any future calculation and screens for hereditary alpha-tryptasemia. That she has carried a mast cell
+label for ten years without one is the clearest single gap in this case.
+
+### 🩺 The measurement I underweighted, and it is the cheapest objective thing available
+
+**Postprandial hypotension.** A fall in systolic BP of **≥20 mmHg within 2 hours of a meal.** She has
+dizziness — this would be an **objectively measured, multi-system postprandial finding**, and it
+explains dizziness directly and plausibly contributes to headache. *(It explains nothing at all about
+joint pain, which is worth saying.)*
+
+**Protocol, at home, with a cuff:** seated and rested 5 minutes · BP + HR immediately pre-meal · then
+**every 15 minutes for 2 hours**, recording symptoms at each point · repeat on ≥3 days, including one
+high-carbohydrate meal. *(The published evidence supports every 10 minutes for 60 minutes; every 15
+is a practical compromise and she should say so.)*
+
+Add an **active stand test** once: supine 10 minutes, then HR and BP at 1, 3, 5 and 10 minutes
+standing. POTS is a sustained HR rise ≥30 bpm within 10 minutes without orthostatic hypotension.
+
+Prevalence is not a geriatric curiosity: **~25% in normotensive young adults**, and **23.2% of adults
+presenting with postprandial symptoms** who underwent a mixed-meal test. Most POTS patients report
+worsening specifically after **carbohydrate-rich** meals — a proposed mechanism being greater GIP
+release causing splanchnic vasodilation.
+
+### ⭐ And the one history question that may resolve most of the food-blaming
+
+> **"Does the urge to open your bowels come within 15–30 minutes of starting a meal, regardless of
+> what the meal was?"**
+>
+> If yes, **that is the gastrocolic response** — an exaggerated but normal reflex, prominent in IBS-D,
+> and **not a food-specific reaction.** IBS-D patients show significantly greater postprandial sigmoid
+> motor activity and faster postprandial transit. This single question could dissolve a large part of
+> a decade of food attribution.
+
+### The evidence against acute meal-triggered joint pain, stated plainly
+
+Because she deserves the counter-evidence, not just the hypothesis:
+
+- **The PIRA trial** — randomized controlled crossover, 25 patients, isocaloric red meat vs salmon vs
+  soy meals, blood sampled to 5 hours — found **no significant difference in postprandial IL-6 or
+  triglycerides between meals.** It was designed against exactly the belief that red meat aggravates
+  inflammatory joint disease.
+- **Metabolic endotoxemia** — the "meal → gut permeability → LPS → systemic inflammation → joints"
+  story — is not established. A 2025 critical review states it **remains unclear whether a meaningful
+  amount of bioactive gut-derived LPS reaches the bloodstream at all.**
+- **Celiac arthralgia is real** — 10.7% of celiac patients without rheumatic comorbidity have joint
+  complaints — but it is a **chronic immune-mediated phenomenon, not an acute per-meal event.** Celiac
+  would explain "joint pain in a person who eats gluten." It would not neatly explain "joint pain 90
+  minutes after this meal."
+- **The migraine parallel is the sharpest warning.** Patient-reported migraine food triggers
+  repeatedly fail blinded challenge, and some "triggers" — food craving, meal-skipping — are **early
+  manifestations of the premonitory phase of the attack itself.** The attack causes the eating, not
+  the reverse. She has chronic headache. This applies directly.
+
+**The three most probable explanations for her postprandial joint pain, in order: (1) time-of-day
+confounding, (2) undiagnosed celiac as a chronic rather than per-meal effect, (3) central pain
+sensitization in a gut–brain-interaction cluster.** The first is free to check and nobody has checked
+it.
+
+### 🔬 One zebra worth naming, because it costs nothing
+
+**Whipple's disease.** Rheumatic manifestations occur in **~60% of cases and precede the GI signs in
+three-quarters of patients** — often as the *first* symptom, with GI disease appearing years later.
+Diagnostic delay runs up to six years. Against her: it typically features weight loss, fever and
+malabsorption, and overwhelmingly affects middle-aged men.
+
+**Probability <0.5%. Cost of considering it: zero, if she has an endoscopy anyway.** Duodenal
+biopsies taken for celiac can be **PAS-stained** on the same specimen. Do not order a Whipple workup
+standalone — just say *"if I'm having duodenal biopsies, please include PAS staining."*
 
 ---
 
@@ -451,6 +532,10 @@ wrong labels — **which is precisely this patient's presenting problem.**
 | **Intestinal-permeability "leaky gut" testing** | No validated clinical utility |
 | **Untargeted broad food IgE panels** | Guarantee more clinically irrelevant positives in a patient who already carries one wrong label |
 | **Hair mineral analysis, urine mycotoxin panels** | No validity |
+| **Provocative OGTT for "reactive hypoglycemia"** | **25% of subjects have hypoglycemia-like symptoms with no significant glucose decline.** Insist on Whipple's triad instead — symptoms, a documented low glucose *at the time*, and relief on correction |
+| **MALS / mesenteric imaging** | Not without weight loss, which is the cardinal feature and which she does not have. Celiac artery compression is a common **incidental** finding; imaging now risks an incidentaloma that generates surgery she does not need |
+| **Gastric emptying scintigraphy, up front** | In postprandial distress syndrome, 44% have *normal* emptying despite classical symptoms, and the result rarely changes treatment |
+| **24-hour urinary mast cell mediators collected on an asymptomatic day** | A 24-hour collection containing no event is uninterpretable — it averages a short mediator burst toward invisibility |
 | **TPSAB1 genotyping before a baseline tryptase** | Wrong order. The cheap test is the rule-out |
 | **PEG/polysorbate skin testing as a screen** | 12.7% positivity in screening cohorts; utility openly debated. Only if excipient triangulation points there |
 
