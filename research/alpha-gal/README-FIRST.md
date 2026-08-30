@@ -7,7 +7,8 @@ The documents in this directory were written across a single investigation, and 
 
 | File | Status |
 | --- | --- |
-| **`FORMULATION.md`** | ✅ **Current. Start here.** The top-level answer: two separate illnesses, the ranked differential for the chronic one, the ten-year audit of what was never tested, the single consolidated blood draw, and the endoscopy biopsy protocol |
+| **`FORMULATION.md`** | ✅ **Current. Start here.** The top-level answer, rewritten after adversarial review: the two actions that matter today, why the allergy is relabelled rather than solved, the history nobody took, the re-ranked differential, a ~$150 first panel, and an explicit do-not-order list |
+| **`DRUG-REACTIONS.md`** | ✅ Current. What "reacts to multiple medications" actually means — and why the mammalian-excipient warnings she is probably carrying are wrong in both directions |
 | **`CASE-RECONSTRUCTION.md`** | ✅ Current, for the **food allergy** half. The corrected analysis: her alpha-gal IgE is undetectable, her meat allergy appears to be albumin-mediated and cat-driven, and a separate undiagnosed illness accounts for the chronic symptoms |
 | `case.html` | ✅ Current. Designed summary of the above, for handing to a clinician |
 | `toolkit.md` | ⚠️ Partially current. The **medication and supplement audit** and the **symptom diary** remain useful. The alpha-gal-specific framing in the safety card is superseded |

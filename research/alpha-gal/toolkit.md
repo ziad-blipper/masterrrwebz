@@ -73,20 +73,43 @@ to be used, not read.
 inventoried. Mammalian-derived ingredients are common and manufacturers are not required to disclose
 animal origin.
 
-## Check for these
+## ⚠️ Correction: the mammalian-derived list was wrong in both directions
 
-| Ingredient | Source | Found in |
-| --- | --- | --- |
-| **Gelatin capsule shells** | Bovine/porcine | Most soft and hard capsules. Substitute: HPMC (plant) |
-| **Bovine serum albumin** | Bovine blood | Some cell-culture-derived products, sealants |
-| **Bovine colostrum** | Bovine | "Gut healing" protocols — double hit given dairy reactivity |
-| **Collagen peptides** | Bovine/porcine | Ubiquitous. Marine collagen is the alternative |
-| **Desiccated glandulars** (adrenal, thymus, liver) | Bovine/porcine | Naturopathic "adrenal support" |
-| **Pancreatin, pepsin, ox bile** | Porcine/bovine | "Digestive enzyme complex" |
-| **Desiccated thyroid** (Armour, NP Thyroid) | Porcine thyroid | If prescribed for hypothyroid symptoms |
-| **Conjugated equine estrogens** (Premarin) | Mare urine | Hormone therapy |
-| **Serum-derived bovine immunoglobulin** | Bovine plasma | Marketed for "leaky gut" |
-| **Bone broth protein powders** | Bovine | Gut protocols |
+An earlier version of this card warned about gelatin capsules first. **That was over-warning.** Her
+sensitization is to **mammalian serum albumin**; she is **alpha-gal negative**, and most alpha-gal
+medication guidance does not apply to her.
+
+**The rule that does the work:** *serum albumin is a blood protein. To carry albumin, an excipient
+must be a crude protein or tissue extract. Purified carbohydrates, purified lipids and purified
+structural proteins do not carry it.*
+
+### ❌ Not a concern for her — stop avoiding these
+
+| Ingredient | Why it is fine |
+| --- | --- |
+| **Gelatin capsule shells** | Gelatin is **denatured type I collagen** — a purified structural protein. The gelatin allergens are the collagen α1/α2 chains, a different protein with no meaningful homology to albumin. The other gelatin risk is alpha-gal, and she is negative. **She does not need to avoid capsules** |
+| **Magnesium stearate** | A saponified purified **lipid**; proteins are removed in processing |
+| **Bovine-derived glycerin** | A three-carbon polyol. No protein of any kind |
+| **Human serum albumin** (MMR, IVIG) | It is albumin — but **human**. Self-protein, no cross-reactivity |
+| **Heparin / LMWH** | Highly purified glycosaminoglycan. **Do not withhold anticoagulation over this** |
+
+### 🔴 The ones that are actually real
+
+| Ingredient | Why it matters |
+| --- | --- |
+| **Porcine pancreatin / pancrelipase** (Creon, Zenpep, Pertzye) | ⭐ **The highest concern on this page.** A **crude porcine pancreatic tissue extract** from blood-perfused tissue — albumin contamination is expected, not theoretical. It may well be proposed during a GI workup. Flag it in advance |
+| **Residual bovine serum albumin** in cell-culture-derived biologics | Genuine trace Bos d 6 as a monitored manufacturing impurity. The theoretically correct concern — in contrast to the gelatin one she was probably warned about |
+| **Perioperative bovine/porcine products** — gelatin sponges, bovine thrombin, fibrin sealants (bovine aprotinin), gelatin colloids | Real bovine protein exposures. Belongs on a **pre-anesthetic plan**, not a daily avoidance list |
+| **Desiccated glandulars, ox bile, bone broth, serum-derived bovine immunoglobulin, colostrum** | Crude tissue and blood-derived preparations — exactly the category that does carry albumin. Common in naturopathic protocols |
+
+### 🟡 The one worth a test rather than avoidance
+
+**Lactose as a filler or inhaler carrier.** It routinely carries residual milk proteins — found in
+**all** lactose-containing dry powder inhalers tested, and dairy-derived excipients appear in **97% of
+inhaled anti-asthmatics** and **69% of film-coated NSAID tablets**. Bos d 6 *is* a minor milk protein,
+so trace carriage is plausible. But documented reactors are **cow's-milk-protein allergic**, which she
+is not established to be, and the inhaled route carries the real risk, not oral tablets.
+**Action: check milk sIgE and Bos d 6. Do not blanket-avoid lactose.**
 
 ## Supplements that may be *causing* symptoms
 
@@ -197,8 +220,15 @@ albumin allergy rather than alpha-gal syndrome?"
 
 ---
 
-## If only one thing gets done
+## If only two things get done
 
-**Celiac serology — tTG-IgA with total serum IgA — drawn before any gluten-free trial.** It is the
-only item with a deadline: the antibodies decay within weeks of stopping gluten, and a missed
-diagnosis here would explain a decade of symptoms that meat avoidance never touched.
+1. **Epinephrine — two auto-injectors and a written action plan.** Her reactions meet anaphylaxis
+   criteria and she has none. Independent of every diagnostic question.
+   ⚠️ **Urgent for a specific reason:** she was told SAAT cured her gluten allergy. If she or that
+   practitioner concludes it can also clear her *meat* allergy, she will deliberately eat steak to
+   prove it — with no epinephrine in the house.
+2. **Celiac serology — tTG-IgA with total serum IgA — drawn before any gluten-free trial.** The only
+   item with a deadline: the antibodies decay within weeks of stopping gluten, and the diagnosis
+   cannot be recovered without a formal gluten challenge she is unlikely to accept.
+
+**And therefore: do not change her diet until #2 has returned.**
