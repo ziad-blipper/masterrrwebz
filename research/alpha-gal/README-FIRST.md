@@ -3,6 +3,17 @@
 The documents in this directory were written across a single investigation, and the diagnosis
 **changed** partway through. Read them in this order, and note what is superseded.
 
+## 👉 Start here
+
+**[`action-plan.html`](action-plan.html) — published at https://claude.ai/code/artifact/fc8a4b95-0160-4a6b-ba09-1729c432601c**
+
+Everything consolidated into one page in plain language: the two urgent actions, what the meat
+allergy probably is, the ranked list for the chronic illness, the $150 blood draw, the free things
+to start this week, and the tests to refuse. This is the one to read and to hand to a doctor.
+
+⚠️ `case.html` and its earlier artifact link are **superseded** — they predate five rounds of
+correction.
+
 ## Current
 
 | File | Status |
@@ -10,7 +21,7 @@ The documents in this directory were written across a single investigation, and 
 | **`FORMULATION.md`** | ✅ **Current. Start here.** The top-level answer, rewritten after adversarial review: the two actions that matter today, why the allergy is relabelled rather than solved, the history nobody took, the re-ranked differential, a ~$150 first panel, and an explicit do-not-order list |
 | **`DRUG-REACTIONS.md`** | ✅ Current. What "reacts to multiple medications" actually means — and why the mammalian-excipient warnings she is probably carrying are wrong in both directions |
 | **`CASE-RECONSTRUCTION.md`** | ✅ Current, for the **food allergy** half. The corrected analysis: her alpha-gal IgE is undetectable, her meat allergy appears to be albumin-mediated and cat-driven, and a separate undiagnosed illness accounts for the chronic symptoms |
-| `case.html` | ✅ Current. Designed summary of the above, for handing to a clinician |
+| `case.html` | ❌ **Superseded** by `action-plan.html` |
 | `toolkit.md` | ⚠️ Partially current. The **medication and supplement audit** and the **symptom diary** remain useful. The alpha-gal-specific framing in the safety card is superseded |
 | `INTERIM-PLAN.md` | ✅ Current. Symptom relief while the workup runs — including the finding that the highest-evidence treatments for her GI symptoms are ones she has never been offered |
 | `CLINICIAN-BRIEF.md` | ✅ Current. The one-page version to hand across a desk |

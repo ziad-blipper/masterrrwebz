@@ -1,0 +1,385 @@
+<title>What To Do Next</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --paper:#FBFAF7; --raise:#FFFFFF; --ink:#1A1F1D; --body:#3A423E;
+  --muted:#6B7570; --rule:#E2DFD8; --rule-soft:#EDEAE4;
+  --accent:#2E5E5A; --accent-soft:#E6EFED;
+  --urgent:#A8442A; --urgent-soft:#F8EDE8; --urgent-rule:#E3C4B8;
+  --good:#3D6B45; --good-soft:#E9F1EA;
+  --stop:#8A3F3F;
+  --shadow:0 1px 2px rgba(26,31,29,.05),0 8px 24px -12px rgba(26,31,29,.14);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#131615; --raise:#1B201E; --ink:#EDEBE6; --body:#C3C8C4;
+    --muted:#8B948F; --rule:#2E3532; --rule-soft:#242A28;
+    --accent:#7FB8B0; --accent-soft:#1C2A28;
+    --urgent:#E29277; --urgent-soft:#2A1D18; --urgent-rule:#54332A;
+    --good:#8CBE94; --good-soft:#1B2620;
+    --stop:#D08A8A;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.5);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#131615; --raise:#1B201E; --ink:#EDEBE6; --body:#C3C8C4;
+  --muted:#8B948F; --rule:#2E3532; --rule-soft:#242A28;
+  --accent:#7FB8B0; --accent-soft:#1C2A28;
+  --urgent:#E29277; --urgent-soft:#2A1D18; --urgent-rule:#54332A;
+  --good:#8CBE94; --good-soft:#1B2620;
+  --stop:#D08A8A;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--body);
+  font-family:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16.5px; line-height:1.62; margin:0;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:820px;margin:0 auto;padding:0 22px 96px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--ink);text-wrap:balance;margin:0}
+h1{font-size:clamp(2.1rem,5.4vw,3.1rem);font-weight:600;line-height:1.06;letter-spacing:-.018em}
+h2{font-size:clamp(1.42rem,3.2vw,1.85rem);font-weight:600;line-height:1.16;letter-spacing:-.012em}
+h3{font-size:1.09rem;font-weight:700;line-height:1.3}
+p{margin:0}
+strong{color:var(--ink);font-weight:600}
+a{color:var(--accent)}
+em{font-style:normal;color:var(--muted)}
+
+.eyebrow{
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:.685rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;
+}
+
+/* header */
+header{padding:64px 0 12px;display:flex;flex-direction:column;gap:20px}
+.lede{font-size:1.14rem;line-height:1.55;color:var(--body);max-width:62ch}
+.lede b{color:var(--ink);font-weight:600}
+
+/* sections */
+section{padding-top:52px;display:flex;flex-direction:column;gap:20px}
+.sec-head{display:flex;flex-direction:column;gap:9px;padding-top:22px;border-top:1px solid var(--rule)}
+.stack{display:flex;flex-direction:column;gap:15px;max-width:68ch}
+
+/* urgent band */
+.urgent{
+  background:var(--urgent-soft);border:1px solid var(--urgent-rule);
+  border-radius:3px;padding:26px 26px 28px;display:flex;flex-direction:column;gap:22px;
+}
+.u-item{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
+.u-num{
+  font-family:"JetBrains Mono",monospace;font-size:.8rem;font-weight:600;
+  color:var(--paper);background:var(--urgent);
+  width:26px;height:26px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;margin-top:2px;
+}
+.u-body{display:flex;flex-direction:column;gap:8px}
+.u-body h3{color:var(--urgent)}
+.u-body p{font-size:.965rem;line-height:1.58}
+
+/* cards */
+.card{
+  background:var(--raise);border:1px solid var(--rule);border-radius:3px;
+  padding:20px 22px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow);
+}
+.card h3{font-family:"Public Sans",sans-serif;font-size:.94rem;font-weight:700;letter-spacing:.005em}
+.card p{font-size:.95rem;line-height:1.56}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:14px}
+
+.note{
+  border-left:2px solid var(--accent);background:var(--accent-soft);
+  padding:15px 18px;border-radius:0 3px 3px 0;display:flex;flex-direction:column;gap:8px;
+}
+.note p{font-size:.945rem;line-height:1.56}
+.note .eyebrow{color:var(--accent)}
+
+.warn{
+  border-left:2px solid var(--urgent);background:var(--urgent-soft);
+  padding:15px 18px;border-radius:0 3px 3px 0;display:flex;flex-direction:column;gap:8px;
+}
+.warn p{font-size:.945rem;line-height:1.56}
+.warn .eyebrow{color:var(--urgent)}
+
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--raise)}
+table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:520px}
+th{
+  text-align:left;font-family:"JetBrains Mono",monospace;font-size:.66rem;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600;
+  padding:12px 15px;border-bottom:1px solid var(--rule);white-space:nowrap;
+}
+td{padding:12px 15px;border-bottom:1px solid var(--rule-soft);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:none}
+td b{color:var(--ink)}
+.num{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap;font-size:.86rem}
+
+.pct{
+  font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums;
+  font-size:.8rem;font-weight:600;color:var(--accent);
+  background:var(--accent-soft);padding:2px 7px;border-radius:2px;white-space:nowrap;
+}
+
+/* lists */
+ul{margin:0;padding-left:1.15em;display:flex;flex-direction:column;gap:9px}
+li{line-height:1.56}
+li::marker{color:var(--muted)}
+.checks{list-style:none;padding:0;gap:11px}
+.checks li{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:baseline}
+.box{
+  width:13px;height:13px;border:1.5px solid var(--muted);border-radius:2px;
+  display:block;flex-shrink:0;transform:translateY(1px);
+}
+.stopmark{color:var(--stop);font-weight:700;font-family:"JetBrains Mono",monospace;font-size:.85rem}
+
+hr{border:none;border-top:1px solid var(--rule-soft);margin:2px 0}
+
+footer{
+  margin-top:72px;padding-top:24px;border-top:1px solid var(--rule);
+  display:flex;flex-direction:column;gap:10px;
+}
+footer p{font-size:.855rem;color:var(--muted);line-height:1.55}
+</style>
+
+<div class="wrap">
+
+<header>
+  <span class="eyebrow">Prepared August 2026 &middot; For discussion with her doctors</span>
+  <h1>What to do next</h1>
+  <p class="lede">The alpha-gal diagnosis does not hold up. <b>Her blood test for it was negative twice, a year apart.</b> She does have a real food allergy — but it is something else. And underneath it sits a separate ten-year illness that <b>has never actually been investigated.</b></p>
+</header>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Start here</span>
+    <h2>Two things that cannot wait</h2>
+  </div>
+  <p class="stack">Everything else on this page is discussion. These two are actions. Both are cheap. Neither depends on figuring out anything else first.</p>
+
+  <div class="urgent">
+    <div class="u-item">
+      <span class="u-num">1</span>
+      <div class="u-body">
+        <h3>Get an epinephrine prescription. Two auto-injectors.</h3>
+        <p>Her reactions hit three body systems at once — itchy mouth and throat, dizziness, nausea. That meets the definition of anaphylaxis. <strong>She has none.</strong></p>
+        <p>Blood test numbers do not predict how bad a reaction will be. Ten years of moderate reactions tell you nothing about the next one.</p>
+        <p><strong>And there is a specific risk here.</strong> She was told that three rounds of laser acupuncture cured her gluten allergy. If she or that practitioner decides the same thing could clear her meat allergy, <strong>she will eat steak to prove it</strong> — with no epinephrine in the house. That is a predictable path to a severe reaction.</p>
+      </div>
+    </div>
+    <div class="u-item">
+      <span class="u-num">2</span>
+      <div class="u-body">
+        <h3>Get the celiac blood test <em>before</em> she stops eating bread.</h3>
+        <p>This is the only test here with a deadline. The antibodies it looks for <strong>disappear within weeks of going gluten-free.</strong> Once they are gone, the only way back is eating gluten daily for six to eight weeks on purpose — which most people refuse.</p>
+        <p>Ask for <strong>tTG-IgA <em>and</em> total serum IgA</strong>, together. The second one is not optional: about 1 in 500 people cannot make the antibody the first test measures, and in celiac patients it is 10–15 times more common. Without it, a negative result means nothing.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="warn">
+    <span class="eyebrow">The one instruction that matters most</span>
+    <p><strong>Do not change her diet until that blood test comes back.</strong> The instinct after reading this will be to cut bread immediately. That would destroy the ability to diagnose the thing it may be reacting to. Two weeks of patience protects an answer that lasts a lifetime.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">The picture</span>
+    <h2>She has two problems, not one</h2>
+  </div>
+  <div class="stack">
+    <p>This is the whole story. One wrong label got stretched to cover everything, and so nothing underneath it was ever looked at.</p>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <h3>Problem 1 &middot; The food allergy</h3>
+      <p>Real, immediate, and IgE-driven. Minutes after eating, not hours. It starts in her mouth.</p>
+      <p>We have a good idea what it is and <strong>one blood draw settles it.</strong></p>
+    </div>
+    <div class="card">
+      <h3>Problem 2 &middot; The ten-year illness</h3>
+      <p>Stomach pain, nausea, loose stool, headaches, joint pain. Came on slowly, no clear start.</p>
+      <p><strong>Never investigated.</strong> No scope, no celiac test, no stool test, no basic bloods.</p>
+    </div>
+  </div>
+  <div class="note">
+    <span class="eyebrow">Why this matters</span>
+    <p>A full year of cutting out all meat and dairy did nothing for the second problem. That is not a failure — <strong>it is evidence.</strong> It tells you the chronic illness is not being driven by the foods she removed. Something else is going on, and nobody has looked for it.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Problem 1</span>
+    <h2>What the meat allergy probably is</h2>
+  </div>
+  <div class="stack">
+    <p>Her numbers: <span class="num">pork 14.40</span> &middot; <span class="num">lamb 10.20</span> &middot; <span class="num">beef 2.38</span> &middot; <span class="num">alpha-gal &lt;0.10</span> (undetectable).</p>
+    <p>The strange part: <strong>pork is her highest number and she has never eaten pork.</strong> Her lowest number, beef, is the food she actually reacts to. That pattern is the signature of a <em>shared protein</em> — one allergy showing up across several meats — not three separate allergies.</p>
+    <p>The leading suspect is <strong>serum albumin</strong>, a blood protein shared by cats and farm animals. She had cats for decades and reacts to them. This is a known syndrome.</p>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>What it could be</th><th>Odds</th><th>In plain terms</th></tr></thead>
+      <tbody>
+        <tr><td><b>Serum albumin</b> (from the cats)</td><td><span class="pct">45%</span></td><td>Best explains why pork is highest and beef lowest, plus the dairy reactions</td></tr>
+        <tr><td><b>A heat-proof muscle protein</b></td><td><span class="pct">18%</span></td><td>One good 2023 study. But there is no test for it yet</td></tr>
+        <tr><td><b>Two things at once</b></td><td><span class="pct">12%</span></td><td>Honestly the most realistic reading after ten years</td></tr>
+        <tr><td><b>A lab artifact</b></td><td><span class="pct">9%</span></td><td>Cannot even be checked until someone draws a <b>total IgE</b> — never done</td></tr>
+        <tr><td><b>Collagen / gelatin</b></td><td><span class="pct">8%</span></td><td>The only one that <em>predicts</em> reactions to slow-cooked meat, since braising increases gelatin</td></tr>
+        <tr><td>Three separate allergies</td><td><span class="pct">4%</span></td><td>Would need her to be allergic to a food she has never eaten. Barely coherent</td></tr>
+        <tr><td>Still alpha-gal</td><td><span class="pct">4%</span></td><td>Two undetectable results a year apart. Settled — <b>do not retest</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="warn">
+    <span class="eyebrow">The mistake that would waste the whole test</span>
+    <p><strong>Order Fel d 2 on its own — Quest test code 93382.</strong> Do not let it be ordered as part of a "cat allergy panel." Those panels only run the piece we need if her general cat number is above a cutoff, and she has been cat-free for three or four years. Ordered the wrong way, <strong>the single most important test in her workup silently never runs</strong> and comes back looking like a clean negative.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Problem 2</span>
+    <h2>The illness nobody has looked into</h2>
+  </div>
+  <div class="stack">
+    <p>Ranked by <em>how likely, how bad to miss, and how cheap to check</em> — not just by how common.</p>
+  </div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Possibility</th><th>Odds</th><th>How you check</th></tr></thead>
+      <tbody>
+        <tr><td><b>Migraine</b> (including the dizzy and stomach kinds)</td><td><span class="pct">50–60%</span></td><td>One conversation. It was missing from every list she has been given</td></tr>
+        <tr><td><b>Gut–brain disorder</b> (IBS-type, with pain amplification)</td><td><span class="pct">50–60%</span></td><td>A positive diagnosis, not a leftover. Has the best treatments on this page</td></tr>
+        <tr><td><b>Low iron</b> (even without anemia)</td><td><span class="pct">25–35%</span></td><td>The likeliest abnormal <em>result</em> in the whole case. One blood test</td></tr>
+        <tr><td><b>Celiac disease</b></td><td><span class="pct">10–12%</span></td><td>Cheap — but the only one with a deadline</td></tr>
+        <tr><td><b>Endometriosis</b></td><td><span class="pct">10–15%</span></td><td>Nobody has ever asked her about her periods</td></tr>
+        <tr><td><b>Pelvic floor problem</b></td><td><span class="pct">10–15%</span></td><td>The cheapest missed diagnosis here. One physical exam</td></tr>
+        <tr><td><b>A tryptase trait</b> (inherited)</td><td><span class="pct">10–15%</span></td><td>One $50 blood test rules it out</td></tr>
+        <tr><td><b>Sjögren's</b> (autoimmune, dry eyes/mouth)</td><td><span class="pct">8–12%</span></td><td>Ask about dry eyes and dry mouth. Free</td></tr>
+        <tr><td><b>Bile acid diarrhea</b></td><td><span class="pct">15–20%</span></td><td>Was our top guess. Demoted — her pattern does not fit it</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note">
+    <span class="eyebrow">The most likely truth</span>
+    <p>It is probably <strong>not one elegant answer.</strong> More likely three ordinary things at once — say, an IBS-type disorder plus migraine plus low iron. Less satisfying, considerably more likely to be true, and each part is treatable on its own.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Take this to the appointment</span>
+    <h2>The blood draw — about $150</h2>
+  </div>
+  <div class="stack">
+    <p>All of it in one sitting. This replaces the sprawling, expensive test list we first wrote. She has none of the warning signs that would justify going bigger straight away.</p>
+  </div>
+  <ul class="checks">
+    <li><span class="box"></span><span><b>tTG-IgA + total serum IgA</b> &mdash; celiac. <strong>While still eating gluten.</strong></span></li>
+    <li><span class="box"></span><span><b>CBC + ferritin + CRP</b> &mdash; iron. The CRP has to go with it, or the ferritin can read falsely normal.</span></li>
+    <li><span class="box"></span><span><b>Baseline tryptase</b> &mdash; the "histamine problem" she was labelled with, finally measured. Ten years overdue.</span></li>
+    <li><span class="box"></span><span><b>Total IgE</b> &mdash; without this, none of her meat numbers can be read properly.</span></li>
+    <li><span class="box"></span><span><b>Fel d 2 (Quest 93382)</b>, <b>Bos d 6 (Quest 2612)</b>, <b>gelatin c74 (Quest 35352)</b> &mdash; settles the allergy.</span></li>
+    <li><span class="box"></span><span><b>TSH, B12, folate, vitamin D</b> &mdash; cheap, and each could be contributing.</span></li>
+    <li><span class="box"></span><span><b>Corrected calcium</b> &mdash; already on any metabolic panel. Catches a curable parathyroid problem that gets missed for decades.</span></li>
+    <li><span class="box"></span><span><b>Stool: calprotectin + a GI infection panel</b> &mdash; calprotectin alone rules three things in or out for about $30.</span></li>
+  </ul>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">This week &middot; costs nothing</span>
+    <h2>Four things to start before any appointment</h2>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <h3>A diary with clock times</h3>
+      <p>Not "after food." Write <strong>"meal 1:10pm, joint pain 3:40pm."</strong></p>
+      <p>Then check one thing: does her joint pain track <em>time since eating</em>, or just <em>time of day</em>? Meals cluster in the afternoon — and so does being tired and sore. If it is really just the afternoon, <strong>a whole theory dies for free.</strong></p>
+    </div>
+    <div class="card">
+      <h3>Blood pressure around meals</h3>
+      <p>Sit five minutes, take a reading, eat, then read every 15 minutes for two hours. Three different days.</p>
+      <p>A drop of 20 points or more is a real, measurable finding — and it would explain her dizziness. Happens in about a quarter of healthy young adults. Costs a cuff.</p>
+    </div>
+    <div class="card">
+      <h3>Photograph every supplement</h3>
+      <p>A year of supplements, never once written down. Several common ones cause her exact symptoms: <strong>magnesium</strong> causes loose stool, <strong>vitamin A</strong> causes headache, nausea and joint pain together.</p>
+      <p>A cause could be sitting in the cupboard.</p>
+    </div>
+    <div class="card">
+      <h3>Track her cycle alongside symptoms</h3>
+      <p>Takes three months and cannot be reconstructed from memory, so it has to start now.</p>
+      <p>Do not ask "are your symptoms cyclical" — nobody knows that. Ask: <strong>in the two days before her period, is the pain worse, the same, or better than mid-month?</strong></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Never asked in ten years</span>
+    <h2>Questions worth more than most tests</h2>
+  </div>
+  <ul class="stack">
+    <li><strong>Does the urge to go to the bathroom come 15–30 minutes after starting a meal, no matter what the meal was?</strong> If yes, that is a normal reflex being overactive — not a food reaction. This one question could dissolve much of a decade of blaming food.</li>
+    <li><strong>Can she eat chicken, turkey and egg yolk?</strong> If she reacts to those too, the whole cat-protein theory weakens badly.</li>
+    <li><strong>Does she react to capsules but not plain tablets?</strong> If so, the thing she reacts to is the <em>shell</em>, not the medicines.</li>
+    <li><strong>Does butter on its own cause anything?</strong> She has probably already run this experiment without noticing.</li>
+    <li><strong>Dry eyes or dry mouth?</strong> The free question that opens up an autoimmune possibility.</li>
+    <li><strong>Straining, or feeling not-quite-finished in the bathroom?</strong> Points at a pelvic floor problem — common, missed, and treatable.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Just as important</span>
+    <h2>Tests to refuse</h2>
+  </div>
+  <div class="stack">
+    <p>Her actual problem is <strong>ten years of accumulated wrong labels.</strong> Each of these comes back "positive" far more often than the thing it claims to find — so each one risks manufacturing label number thirteen.</p>
+  </div>
+  <ul class="stack">
+    <li><span class="stopmark">✕</span> <strong>SIBO breath test.</strong> Under 5% chance it is the real answer. 30–40% chance it says "positive." That gap is the whole problem.</li>
+    <li><span class="stopmark">✕</span> <strong>IgG or IgG4 food sensitivity panels</strong>, ALCAT, MRT. These measure exposure and <em>tolerance</em>, not disease. They are the main engine of unnecessary food restriction.</li>
+    <li><span class="stopmark">✕</span> <strong>Serum DAO / histamine tests.</strong> Not a valid way to diagnose histamine intolerance.</li>
+    <li><span class="stopmark">✕</span> <strong>"Leaky gut" testing, hair mineral analysis, urine mycotoxin panels.</strong></li>
+    <li><span class="stopmark">✕</span> <strong>Repeating the alpha-gal test.</strong> Two undetectable results a year apart. It is settled.</li>
+    <li><span class="stopmark">✕</span> <strong>Genetic tryptase testing before the cheap blood test.</strong> Wrong order — the $50 one is the rule-out.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="eyebrow">Honesty</span>
+    <h2>Where we were wrong along the way</h2>
+  </div>
+  <div class="stack">
+    <p>This page went through six rounds of review, and several confident earlier claims did not survive. Keeping the record visible matters more than looking consistent.</p>
+  </div>
+  <ul class="stack">
+    <li><strong>We built a first version on the wrong number.</strong> It assumed her alpha-gal IgE was high. It is undetectable. That version was discarded entirely.</li>
+    <li><strong>We said "just cook it well done."</strong> Too optimistic — in the one proper study, 4 of 10 patients still reacted to heated protein.</li>
+    <li><strong>We said "she has never eaten pork" was near-proof.</strong> It is not. Shared proteins in beef or lamb explain a pork result without any pork. What the number really shows is the <em>ranking</em>, not the exposure.</li>
+    <li><strong>We ranked bile acid diarrhea first, from a statistic rather than from her.</strong> Her symptom pattern does not fit it. Dropped from first to eighth.</li>
+    <li><strong>We over-warned about gelatin capsules.</strong> Gelatin contains no albumin. The real one to watch is porcine pancreatin — a crude tissue extract that may well be offered during a stomach workup.</li>
+    <li><strong>We wrote a five-figure test list, then no treatment at all.</strong> Ten years of illness and not one suggestion of something to actually try. It is now a $150 panel — and worth asking about <strong>amitriptyline 10mg at night</strong>, which treats migraine, gut pain and sleep with one cheap tablet.</li>
+  </ul>
+  <div class="note">
+    <span class="eyebrow">What never changed</span>
+    <p>Through every one of those revisions, the same two items stayed at the top: <strong>get epinephrine</strong>, and <strong>get the celiac test before stopping bread.</strong> That they survived every round of criticism is the strongest signal on this page.</p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>This is research to discuss with her doctors — not a diagnosis, and not medical advice.</strong> Every test named here has to be ordered and interpreted by a physician. Figures were gathered under a network that blocked most journal full texts, so specifics should be confirmed against the original papers before being quoted clinically.</p>
+  <p>Full working documents, sources and reasoning are in the <span class="num">research/alpha-gal/</span> folder of the repository.</p>
+</footer>
+
+</div>
