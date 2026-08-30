@@ -87,7 +87,7 @@ structural proteins do not carry it.*
 
 | Ingredient | Why it is fine |
 | --- | --- |
-| **Gelatin capsule shells** | Gelatin is **denatured type I collagen** — a purified structural protein. The gelatin allergens are the collagen α1/α2 chains, a different protein with no meaningful homology to albumin. The other gelatin risk is alpha-gal, and she is negative. **She does not need to avoid capsules** |
+| **Gelatin capsule shells** | Gelatin is **denatured type I collagen** — a purified structural protein. The gelatin allergens are the collagen α1/α2 chains, a different protein with no meaningful homology to albumin. The other gelatin risk is alpha-gal, and she is negative. **She does not need to avoid capsules** — ⚠️ *with one caveat: this holds if her mechanism is albumin. There is a smaller (~8%) branch in which **collagen itself** is the allergen, which would make capsules relevant. **One test settles it — gelatin bovine c74** (Quest 35352 / Labcorp 602843). Order it rather than guessing* |
 | **Magnesium stearate** | A saponified purified **lipid**; proteins are removed in processing |
 | **Bovine-derived glycerin** | A three-carbon polyol. No protein of any kind |
 | **Human serum albumin** (MMR, IVIG) | It is albumin — but **human**. Self-protein, no cross-reactivity |

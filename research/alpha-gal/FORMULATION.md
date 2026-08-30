@@ -73,26 +73,40 @@ explained away.
 
 | Question | Answer | Consequence |
 | --- | --- | --- |
-| **Doneness** | **Mixed — reactions across cooking levels** | ⚠️ **The albumin hypothesis is weakened.** Serum albumin is thermolabile. Reactions to well-cooked meat point to **heat-stable** allergens — beef **myoglobin**, **Bos d 13** (myosin light chains) — or to a non-albumin mechanism. **Probability the meat allergy is albumin-mediated drops from 55–60% to roughly 40%** |
+| **Doneness** | **Mixed — reactions across cooking levels** | ⚠️ Weakens albumin — **but less than I first said.** See the re-correction below. **Revised probability: ~48%**, down about 10 points from 55–60%, not the 40% I posted |
 | **Alcohol** | **She doesn't drink** | ✅ Cleanly eliminated as a cofactor, a migraine trigger, a diarrhea cause and a joint-pain cause. It also means her reactions occurred **without** the classic threshold-lowering cofactor — which makes them more concerning, not less |
 | **Analgesic days** | **Under 10 per month** | ✅ **Medication-overuse headache is excluded.** A 40–60% conditional closed for free. It also weakens NSAID hypersensitivity as the explanation for her drug reactivity — she is not a high-exposure NSAID user |
 | **⭐ Joint pain character** | **"Happens after food"** | 🔄 **This reframes the case.** Not morning stiffness, not mechanical. **Postprandial.** See below |
 
-### What the doneness answer means, stated fairly
+### ⚠️ Re-correction: I over-adjusted, and the reason is that my prediction was wrong to begin with
 
-"Mixed" is weaker evidence than a clean "she reacted to a long-braised stew," and it may reflect
-unreliable recall rather than a true absence of a heat gradient — restaurant doneness is
-unverifiable and nobody was recording. But **I do not get to treat an inconvenient answer as noise
-after calling the question decisive.** The honest reading:
+I called doneness "close to decisive." **It never was**, because the textbook claim that serum
+albumin is thermolabile is itself overstated:
 
-- **Albumin remains the leading single mechanism, but it is no longer the confident one.**
-- **Heat-stable beef allergens rise materially.** Myoglobin and Bos d 13 survive 85 °C for two hours,
-  and six beef protein fractions survive prolonged heating.
-- This also **retroactively vindicates the earlier correction** in `CASE-RECONSTRUCTION.md` §3 —
-  "just cook it well done" was never a safe plan, and now there is history suggesting it does not
-  work for her.
-- **The Fel d 2 test matters more than ever.** It is now the only thing that can settle this, and it
-  already carried a ~40% chance of coming back negative.
+- **Restani et al. 1998** — the decisive datum. *Heat treatment and chemical denaturation were **not**
+  able to decrease BSA's capacity to bind circulating IgE.* Albumin's antigenicity is only partially
+  structural; much of the IgE response is to **sequential epitopes**, and sequential epitopes do not
+  care about cooking.
+- **Fiocchi et al. 1998** — of 11 beef-allergic children, **7 were skin-test positive to heated BSA
+  and 4 had a positive double-blind challenge to it.** Only industrially sterilized beef was
+  uniformly safe. **Domestic cooking is not enough.**
+- **Posthumus et al. 2013**, the original US pork-cat series, describes reactions to **smoked ham and
+  sausage** — fully cooked, cured products.
+- There is a published case report titled *"Pork-cat syndrome as cause of anaphylactic reaction to
+  well-cooked meat."*
+- Porcine albumin retained **52%** of its binding after 100 °C for 20 minutes and **29%** after
+  autoclaving at 121 °C — far more aggressive than any kitchen.
+
+**So a mixed-doneness history is roughly what an albumin mechanism predicts anyway.** Working the
+likelihood ratio: P(mixed | albumin) ≈ 0.55, P(mixed | heat-stable allergen) ≈ 0.90, LR ≈ 0.61 —
+attenuated toward 1 by unverifiable restaurant doneness, decade-old recall, and cofactor variability.
+**Posterior ≈ 45–50%. Call it 48%.** The answer costs the hypothesis about ten points, not thirty.
+
+**It is a nudge, not a refutation, and the right response is to test rather than re-rank.**
+
+What still stands from my first reading: the correction in `CASE-RECONSTRUCTION.md` §3 was right —
+"just cook it well done" was never a safe plan, and now there is history suggesting it does not work
+for her. And Fel d 2 remains the fulcrum.
 
 ---
 
@@ -269,7 +283,9 @@ pork sensitization with zero pork exposure would require occupational or inhalat
 
 | Problem | Detail |
 | --- | --- |
-| **The hierarchies are inverted** | Pork is her **highest** IgE (14.40) and has **no clinical correlate** — she has never eaten it. Beef is her **lowest** (2.38) and is her **main clinical trigger** (steak). The formulation leans on the number with no clinical correlate |
+| **⚠️ My "never eaten pork" argument did less work than I claimed** | I treated *"you cannot be sensitized by something you have never ingested"* as near-decisive proof of a non-oral route. **That was wrong.** It requires only **cross-reactivity**: any pan-mammalian epitope in **beef or lamb** — foods she *has* eaten — generates pork IgE with zero pork exposure and no non-oral route at all. **Every candidate mechanism clears that bar.** The non-oral route is needed to explain something narrower |
+| **What the pork value actually argues** | Not that pork IgE *exists*, but that pork is **highest (14.40) while beef is lowest (2.38)** — despite beef being her named trigger. Under a beef- or lamb-driven muscle-protein model you would expect the sensitizing species to be highest; beef being lowest is discordant. Under pork-cat syndrome, **pork > beef is the signature pattern.** That hierarchy is the real evidence, and it still favors albumin |
+| **The clinical correlate is missing where the number is highest** | Her highest value has never been clinically tested; her main trigger food has her weakest number |
 | **Cat IgE has never actually been measured** | The cat history is *patient recall* about a pet she no longer has. **e1, Fel d 1 and Fel d 2 have never been run.** A load-bearing assumption has been presented as a finding |
 | **"Cat" was assumed because cats are famous** | Guinea pig, rabbit, hamster, dog and horse albumins all cross-react in the same family. Nobody asked about other pets, raw pet food handling, or pig contact |
 | **⭐ Beef 2.38 sits inside the interference band** | Cross-reactive carbohydrate determinant interference on ImmunoCAP's cellulose solid phase **"predominantly affects low-positive IgE results (0.35–3.00 kUA/L)."** ~35% of sensitized patients carry CCD-IgE; **17% of CCD-positive sera gave false positives.** This exonerates pork 14.40 and lamb 10.20 — far above the band — but **the one number connecting lab to clinic is the least trustworthy in the panel** |
@@ -300,10 +316,28 @@ removed exposure, and her clinical picture is beef and lamb, not pork. Pushing t
 **Best value: one tube, five analytes** — e220 (Fel d 2), e94 (Fel d 1), e1 (cat), Bos d 6, and
 **total IgE**. That either confirms the formulation or destroys it in a single draw.
 
-**Probability the meat allergy is albumin-mediated: ~40%.** Not the 70–80% originally claimed, and
-now below the 55–60% this section carried before the doneness answer came back mixed (§0b). **Heat-stable
-beef allergens — myoglobin and Bos d 13 — are now a live competing mechanism**, and the Fel d 2 test
-is the only thing that separates them.
+**Probability the meat allergy is albumin-mediated: ~48%.** Not the 70–80% originally claimed, and
+not the 40% I posted after the doneness answer — see §0b for why that was an over-correction. Full
+mechanism table below.
+
+### The competing mechanisms, with revised probabilities
+
+| Mechanism | P | Why it is or isn't in play |
+| --- | --- | --- |
+| **Mammalian serum albumin** (Fel d 2 → Sus s 1 / Bos d 6) | **45%** | Still uniquely explains **pork highest / beef lowest**, the dairy reactions, and decades of cat exposure |
+| **Heat-stable muscle protein** — **Bos d 13** (myosin light chain 1/3) leading | **18%** | ⬆️ MYL1 is heat-stable, digestion-stable, and **demonstrably bovine↔porcine cross-reactive**. Held back by: one 2023 study, **lamb never tested**, no non-oral route, **no clinical test exists**, and it fails to explain why beef is lowest |
+| **Mixed / dual mechanism** | **12%** | The most honest reading of a mixed history in a decade-long polysensitized patient. Ayuso identified **18 beef allergens**, only 7 characterized — multi-epitope responses are the norm |
+| **Assay artifact / irrelevant sensitization** | **9%** | **Cannot be assessed at all without a total IgE**, which has never been drawn |
+| **⭐ Collagen / gelatin (type I collagen)** | **8%** | ⬆️ **New, and it is the one hypothesis that makes a *positive* prediction fitting her data.** Gelatin is already denatured, so cooking cannot destroy it — and **braising converts insoluble collagen to soluble gelatin, so slow-cooking *increases* exposure.** It is pan-mammalian and reachable through **gelatin capsules**, vaccines and colloids — which connects to her medication reactions. Held back by: adult gelatin–meat allergy is overwhelmingly α-gal-driven (20 of 22 gelatin-positive subjects were α-gal positive) and hers is undetectable |
+| **⭐ Bovine IgG (Bos d 7)** | *folded into the above* | ⬆️ **A candidate nobody had raised.** Present in **cow's milk**, which she consumes and reacts to. Found in **83% (10/12)** of beef-allergic subjects, with complete IgE inhibition by **lamb, venison and milk** — genuinely pan-mammalian, with an oral route she has actually taken |
+| **Three independent sensitizations** | **4%** | Requires a primary sensitization to a food never eaten. Near-incoherent |
+| **Residual alpha-gal or other** | **4%** | Settled |
+
+**Two allergens can now be dropped from consideration:** **tropomyosin** — Ayuso 1999 tested four
+mammalian tropomyosins across 57 sera and concluded it is *not* an important vertebrate meat
+allergen; vertebrate tropomyosin is too homologous to human tropomyosin to be seen as foreign. There
+is **no mammalian-meat analogue of the shellfish tropomyosin problem.** And **myoglobin** — the
+entire evidence base is a **single 2004 case report**, never replicated, with no commercial test.
 
 ---
 
@@ -463,8 +497,34 @@ leaves a treatable contributor untreated for another decade.
 
 ### Tier 2: conditional, not automatic
 
-- **Fel d 2 (e220) + Fel d 1 + e1 + Bos d 6** — the allergy question. Same draw as above if the
-  allergist agrees; see §2
+#### ⭐ The allergy panel — with the exact codes, because the ordering is where this goes wrong
+
+| Test | Where to order | ⚠️ |
+| --- | --- | --- |
+| **Fel d 2 — cat serum albumin (e220)** | **Quest 93382**, orderable **standalone** | ⭐ **The fulcrum.** **Do not order through any cat panel.** Labcorp's reflex runs components only if whole-cat IgE ≥0.35 kU/L — she has been cat-free 3–4 years, so the one test that matters could silently never run and return looking like a clean negative workup. (Mayo's reflex threshold of 0.10 is safer, but a standalone order removes the risk entirely) |
+| **Bos d 6 — bovine serum albumin (e204)** | **Quest 2612** · Eurofins-Viracor 84110A | — |
+| **⭐ Gelatin, bovine (c74)** | **Quest 35352** · Labcorp 602843 · Viracor 46810S | New addition. Given her undetectable alpha-gal, a **positive here would be unusually informative** — it would have to be protein-epitope collagen sensitization, a different disease with different avoidance rules (capsules, vaccines, colloids). Correspondingly unlikely a priori |
+| **Cat epithelium, whole (e1)** | — | Context for e220 |
+| **Sus s 1 — pork albumin (e222)** | ⚠️ **Not verifiably available at any US reference lab.** Mayo, ARUP and Viracor offer whole pork (f26), not the component | It would be **more** informative than Fel d 2 — it interrogates the 14.40 directly rather than by inference. Worth having the office call Quest and Labcorp client services and ask for **ImmunoCAP e222** by name |
+| ~~Repeat alpha-gal~~ | **Drop it** | ⬅️ **Correction to an earlier draft**, which recommended repeating it "for formal closure." The assay is reported at **100% sensitivity / 92.3% specificity at ≥0.1 kU/L**, and she has two undetectable results a year apart. It is settled. Save the money |
+
+**If serology is equivocal, two techniques go further — both specialist:**
+
+- **CAP-inhibition.** Pre-incubate her serum with cat extract, then re-run pork, beef and lamb. **A
+  substantial fall in pork IgE proves the cat→pork route directly; no fall kills the pork-cat framing
+  outright.** This is the experiment that founded the syndrome. Research labs only — not a catalogue
+  test at Quest, Labcorp, Mayo or Viracor.
+- **Basophil activation test.** Measures *functional* reactivity rather than sensitization, and
+  uniquely **can be run against different preparations of the same allergen — native BSA versus
+  heated BSA, raw versus cooked meat extract.** That is precisely the discriminator this case needs,
+  without an oral challenge. About eight US labs run BAT under CLIA/CAP; **Amerimmune** (Fairfax, VA)
+  has a validated food-allergy BAT. Custom allergen preparation must be arranged in advance.
+
+**A sobering note on the whole field:** in the original published US pork-cat cohort, **confirmatory
+food challenges were performed in 0 of 8 patients.** The syndrome's evidence base rests on
+unchallenged history. A physician-supervised graded challenge — well-done beef one day, rare beef
+another — remains the only thing that settles the doneness question, and it requires epinephrine in
+hand first.
 - **8 a.m. serum cortisol** — low prior, catastrophic if missed. ⚠️ If a naturopathic **salivary
   cortisol "adrenal stress index"** was ever run, set it aside: it is not validated for diagnosing
   adrenal insufficiency
@@ -573,6 +633,10 @@ Recorded rather than quietly fixed, because the pattern matters more than the in
 | **Proposed no treatment at all** | Amitriptyline 10 mg nocte treats three of four symptom domains |
 | **Over-warned on gelatin capsules and magnesium stearate** | Gelatin is denatured collagen and contains **no albumin**; she is alpha-gal negative. See `DRUG-REACTIONS.md` |
 | **Never noted the SAAT → steak safety consequence** | A foreseeable route to severe anaphylaxis in a woman with no epinephrine. §0 |
+| **Treated "she has never eaten pork" as near-decisive** | It proves only cross-reactivity, not a non-oral route. Any pan-mammalian epitope in beef or lamb produces pork IgE. What the pork value actually argues is about the **hierarchy** — pork highest, beef lowest — not about existence |
+| **Called doneness "close to decisive," then over-corrected when it came back mixed** | The thermolability prediction was overstated to begin with (Restani 1998: heat did not reduce BSA IgE binding). Albumin lands at ~48%, not 40% |
+| **Recommended repeating the alpha-gal test** | Unnecessary. 100% sensitivity at ≥0.1 kU/L, two undetectable results a year apart. Settled |
+| **Missed bovine IgG (Bos d 7) and collagen/gelatin as candidate mechanisms** | Both are pan-mammalian with oral routes she has actually taken; gelatin is the one hypothesis that *predicts* reactions to slow-cooked meat |
 | **Took no age, no menstrual history, no joint characterization, no headache history** | §3 |
 
 ---
