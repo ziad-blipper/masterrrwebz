@@ -6,6 +6,10 @@ establishes she does not have it.
 *August 2026. Research synthesis for discussion with treating clinicians. Not a diagnosis and not
 medical advice. Every test named here must be ordered and interpreted by a physician.*
 
+> **➡️ For the chronic illness — the unsolved half — see [`FORMULATION.md`](FORMULATION.md).**
+> That document supersedes §5 below. This one establishes what her *food allergy* is; that one
+> ranks what her *illness* is, and carries the consolidated blood draw and biopsy protocol.
+
 ---
 
 ## ⚠️ Safety first
@@ -80,7 +84,12 @@ Sensitization requires exposure. A pork IgE of 14.40 in someone who has never ea
 arisen in the gut. It must be cross-reactive from a non-oral route — and the classic route is
 **respiratory/epidermal exposure to cat albumin**, which is the defining mechanism of this syndrome.
 
-She had cats for most of her life, stopping 3–4 years ago.
+She had cats for most of her life, stopping 3–4 years ago — **and she reacted to them.**
+
+This is worth flagging as more than a supporting detail. The albumin hypothesis *required* a
+non-oral sensitization route, and therefore predicted clinical cat reactivity **before that history
+was known**. The prediction could have failed. It held. A confirmed prediction carries considerably
+more weight than a fact gathered after the model was built to fit it.
 
 ### 1.4 The clinical phenotype fits
 
@@ -196,22 +205,19 @@ syndrome" explains her *meat allergy*. It does not explain her *illness*.
 
 ### Leading candidates for the separate process
 
-**Untreated celiac disease** — would account for the GI symptoms, the headache, the bread-associated
-joint pain, and potentially the histamine problem itself: **diamine oxidase, the enzyme that degrades
-histamine, is a brush-border enzyme produced by the small intestinal lining that celiac destroys.**
-Adult onset after lifelong gluten tolerance is the norm (mean diagnosis age 46–56; ~25% after 60).
+**➡️ Moved and expanded.** The full ranked differential — eight candidates with priors, what each
+explains, what each fails to explain, and the test that settles it — is now in
+**[`FORMULATION.md`](FORMULATION.md) §3**, together with the two findings that reorganized it:
 
-⏳ **Time-critical: tTG-IgA falls roughly by half within 30–60 days off gluten. Test before any
-gluten-free trial.** And **total serum IgA must be drawn on the same specimen** — IgA deficiency runs
-2–3% in celiac, ten to fifteen times background, and renders a negative tTG-IgA uninterpretable. That
-is the likeliest reason a prior "not celiac" result was wrong.
+- **The failed year of elimination is evidence, not just disappointment.** Any candidate must
+  survive a year of complete mammalian avoidance. Only two categories do: those that are
+  **diet-independent**, and those that depend on **a food she did not eliminate** — gluten.
+- **The two leading models are sequential, not competing.** Celiac as root and hereditary
+  alpha-tryptasemia as amplifier co-occur as a described entity: HaT is present in **12.3% of celiac
+  patients with symptoms persisting on a gluten-free diet** (AJG, Feb 2026). Both are on the same
+  blood draw. Do not pick between them.
 
-If she is already off gluten: **HLA-DQ2/DQ8** is diet-independent, and a negative result carries
->99% negative predictive value.
-
-**A mast cell / tryptase trait** — hereditary alpha-tryptasemia (~5% prevalence) produces GI symptoms
-mimicking IBS, migraine, multi-substance reactivity, and **amplifies the severity of other allergies**,
-which would explain disproportionate reactions. **No baseline tryptase has ever been drawn.**
+The two time-critical items remain as stated below.
 
 ---
 

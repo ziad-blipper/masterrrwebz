@@ -7,9 +7,12 @@ The documents in this directory were written across a single investigation, and 
 
 | File | Status |
 | --- | --- |
-| **`CASE-RECONSTRUCTION.md`** | ✅ **Current. Start here.** The corrected analysis: her alpha-gal IgE is undetectable, her meat allergy appears to be albumin-mediated and cat-driven, and a separate undiagnosed illness accounts for the chronic symptoms |
+| **`FORMULATION.md`** | ✅ **Current. Start here.** The top-level answer: two separate illnesses, the ranked differential for the chronic one, the ten-year audit of what was never tested, the single consolidated blood draw, and the endoscopy biopsy protocol |
+| **`CASE-RECONSTRUCTION.md`** | ✅ Current, for the **food allergy** half. The corrected analysis: her alpha-gal IgE is undetectable, her meat allergy appears to be albumin-mediated and cat-driven, and a separate undiagnosed illness accounts for the chronic symptoms |
 | `case.html` | ✅ Current. Designed summary of the above, for handing to a clinician |
 | `toolkit.md` | ⚠️ Partially current. The **medication and supplement audit** and the **symptom diary** remain useful. The alpha-gal-specific framing in the safety card is superseded |
+| `INTERIM-PLAN.md` | ✅ Current. Symptom relief while the workup runs — including the finding that the highest-evidence treatments for her GI symptoms are ones she has never been offered |
+| `CLINICIAN-BRIEF.md` | ✅ Current. The one-page version to hand across a desk |
 | `VERIFICATION.md` | ⚠️ Applies to the superseded documents below |
 
 ## Superseded
@@ -33,8 +36,13 @@ immediate reactions opening with oral itching, and trigger foods that are the tw
 habitually served under-cooked, the evidence points to **mammalian serum albumin allergy** rather
 than alpha-gal syndrome.
 
-**The most important single action, because it has a deadline:** celiac serology — tTG-IgA **with
-total serum IgA** — drawn **before** any gluten-free trial. The antibodies decay off gluten within
-weeks.
+## The three things that do not wait
+
+1. **Epinephrine — two auto-injectors.** Her reactions involve three organ systems and meet the
+   criteria for anaphylaxis, and she has none. Independent of every diagnostic question here.
+2. **Celiac serology — tTG-IgA with total serum IgA — drawn before any gluten-free trial.** The only
+   test with a deadline: the antibodies decay off gluten within weeks.
+3. **Therefore, do not go gluten-free until #2 is drawn.** The instinct after reading this will be to
+   cut bread immediately. That would destroy the ability to diagnose the thing it is reacting to.
 
 *Research synthesis for discussion with treating clinicians. Not medical advice.*
