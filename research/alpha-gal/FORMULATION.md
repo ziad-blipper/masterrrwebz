@@ -64,6 +64,91 @@ already off gluten, not a first-line test.
 
 ---
 
+## 0b. ⚠️ Four answers, and a prediction that partly failed
+
+I pre-registered the doneness question as "close to decisive," and said in writing that reacting
+equally to rare and slow-cooked meat would put the albumin hypothesis "close to falsified." The
+answer came back **mixed — she has reacted across cooking levels.** That has to be honored, not
+explained away.
+
+| Question | Answer | Consequence |
+| --- | --- | --- |
+| **Doneness** | **Mixed — reactions across cooking levels** | ⚠️ **The albumin hypothesis is weakened.** Serum albumin is thermolabile. Reactions to well-cooked meat point to **heat-stable** allergens — beef **myoglobin**, **Bos d 13** (myosin light chains) — or to a non-albumin mechanism. **Probability the meat allergy is albumin-mediated drops from 55–60% to roughly 40%** |
+| **Alcohol** | **She doesn't drink** | ✅ Cleanly eliminated as a cofactor, a migraine trigger, a diarrhea cause and a joint-pain cause. It also means her reactions occurred **without** the classic threshold-lowering cofactor — which makes them more concerning, not less |
+| **Analgesic days** | **Under 10 per month** | ✅ **Medication-overuse headache is excluded.** A 40–60% conditional closed for free. It also weakens NSAID hypersensitivity as the explanation for her drug reactivity — she is not a high-exposure NSAID user |
+| **⭐ Joint pain character** | **"Happens after food"** | 🔄 **This reframes the case.** Not morning stiffness, not mechanical. **Postprandial.** See below |
+
+### What the doneness answer means, stated fairly
+
+"Mixed" is weaker evidence than a clean "she reacted to a long-braised stew," and it may reflect
+unreliable recall rather than a true absence of a heat gradient — restaurant doneness is
+unverifiable and nobody was recording. But **I do not get to treat an inconvenient answer as noise
+after calling the question decisive.** The honest reading:
+
+- **Albumin remains the leading single mechanism, but it is no longer the confident one.**
+- **Heat-stable beef allergens rise materially.** Myoglobin and Bos d 13 survive 85 °C for two hours,
+  and six beef protein fractions survive prolonged heating.
+- This also **retroactively vindicates the earlier correction** in `CASE-RECONSTRUCTION.md` §3 —
+  "just cook it well done" was never a safe plan, and now there is history suggesting it does not
+  work for her.
+- **The Fel d 2 test matters more than ever.** It is now the only thing that can settle this, and it
+  already carried a ~40% chance of coming back negative.
+
+---
+
+## 0c. ⭐ The postprandial pattern — the most useful new observation in the case
+
+Her joint pain **happens after food.** That single word changes the shape of the problem.
+
+Not inflammatory (no morning stiffness). Not mechanical (not use-related). **Meal-linked.** And if
+the joint pain is postprandial, the obvious question is whether **everything else is too** — the
+nausea, the abdominal pain, the loose stool, the headache.
+
+If it is, she does not have four unrelated chronic symptoms. **She has one postprandial multi-system
+symptom complex**, and that is a far more tractable object than what has been described for ten
+years.
+
+### ❓ The question this generates — and it is now the most important one
+
+> **Do her GI symptoms, headache and joint aching all cluster after meals — and how long after?**
+>
+> And: **after *all* meals, or only some?** If only some, which — and is size, fat content or
+> carbohydrate load the variable, rather than any specific food?
+
+### What a postprandial multi-system complex can be
+
+| Candidate | Fit |
+| --- | --- |
+| **⭐ Food-triggered mast cell mediator release** | **The one that would finally make the "histamine problem" label testable.** A postprandial multi-system complex is exactly what that label was gesturing at — and it has never once been measured |
+| **Postprandial distress syndrome** (Rome IV functional dyspepsia) | Postprandial fullness, early satiety, nausea. A positive diagnosis with real treatments |
+| **Postprandial hypotension / dysautonomia** | Explains meal-linked **dizziness** specifically — and she has dizziness |
+| **Bile acid diarrhea** | Classically **postprandial**. This partially resurrects it from the demotion in §5 — though it still explains neither the joints nor the headache |
+| **Carbohydrate malabsorption** | Postprandial bloating, pain, loose stool. Doesn't reach the joints |
+| **Celiac** | Fits the bread–joint observation directly |
+
+### ⭐ The test that follows, and it is the best idea in this document
+
+**A postprandial tryptase.**
+
+She has a "serious histamine problem" that has never been tested, and the reason is that **nobody
+ever drew a baseline** — so no acute value could ever be interpreted. But now there is a
+*predictable* trigger window.
+
+1. Draw a **baseline serum tryptase** on a symptom-free day, ≥24 h from any reaction.
+2. Then draw an **acute tryptase within 1–4 hours of a meal that produces her symptoms.**
+3. Apply the consensus rule: a rise exceeding **baseline × 1.2 + 2 ng/mL** is objective evidence of
+   systemic mast cell degranulation.
+
+**Ten years of symptoms have generated zero tryptase measurements.** This converts an untested label
+into a yes-or-no answer for about $100, and it is the single most direct route to settling the
+question she has been managed on for a year.
+
+⚠️ Two caveats to attach: the formula proves **that** mast cells degranulated, not **why** — it
+cannot separate IgE from non-IgE mechanisms. And a flat tryptase does not exclude a reaction,
+particularly a mild one.
+
+---
+
 ## 1. The formulation
 
 She has **two problems that were merged into one wrong label**, and the merger is the central
@@ -134,7 +219,10 @@ removed exposure, and her clinical picture is beef and lamb, not pork. Pushing t
 **Best value: one tube, five analytes** — e220 (Fel d 2), e94 (Fel d 1), e1 (cat), Bos d 6, and
 **total IgE**. That either confirms the formulation or destroys it in a single draw.
 
-**Probability the meat allergy is albumin-mediated: 55–60%.** Not the 70–80% claimed earlier.
+**Probability the meat allergy is albumin-mediated: ~40%.** Not the 70–80% originally claimed, and
+now below the 55–60% this section carried before the doneness answer came back mixed (§0b). **Heat-stable
+beef allergens — myoglobin and Bos d 13 — are now a live competing mechanism**, and the Fel d 2 test
+is the only thing that separates them.
 
 ---
 
@@ -148,9 +236,9 @@ differential built on a history nobody took is not a differential.
 
 | Question | Why it is nearly decisive |
 | --- | --- |
-| **⭐ Doneness.** Does she react to rare/medium steak but tolerate a long-cooked braise or stew? | Serum albumin is **thermolabile**. Reacts to rare, tolerates slow-cooked → strong positive evidence for albumin. Reacts equally to both → **albumin is close to falsified.** Free, historical, and the single most informative question available |
+| ~~**Doneness**~~ ✅ **ANSWERED: mixed — reactions across cooking levels.** | ⚠️ Weakens albumin; raises heat-stable beef allergens. See §0b |
 | **Butter alone.** Does butter without meat reproduce anything? | Bos d 6 is present in dairy. A free natural experiment she has probably already run without noticing |
-| **⭐ Alcohol.** Was there wine with the steak? | **Not mentioned once in the entire record.** Alcohol is simultaneously an anaphylaxis cofactor, a migraine trigger, a diarrhea cause and a joint-pain cause. Steak + wine is the archetypal scenario. It is the most likely unrecorded variable in the whole reaction history |
+| ~~**Alcohol**~~ ✅ **ANSWERED: she does not drink.** | Cleanly eliminated as cofactor, migraine trigger, diarrhea cause and joint-pain cause. Her reactions occurred **without** the classic cofactor |
 | **Chicken, turkey, egg yolk.** Tolerated? | If she reacts to poultry too, the mammalian-albumin hypothesis weakens badly and something broader or non-IgE is in play |
 | **Capsules vs. plain tablets.** Does she react to capsules but tolerate tablets? | See `DRUG-REACTIONS.md`. If so, the common factor across "multiple unrelated medications" is the **shell**, not the drugs |
 
@@ -160,8 +248,8 @@ differential built on a history nobody took is not a differential.
 | --- | --- |
 | **Her age** | Governs the prior for endometriosis, perimenopause, microscopic colitis (peaks 60s–70s), celiac, malignancy, and **whether guidelines support endoscopy at all.** A case reconstruction without an age is not a case reconstruction |
 | **⭐ Any menstrual history at all** | No cycle relationship to pain, no dysmenorrhea, no dyspareunia, no cyclical dyschezia, no note of hormonal contraception. **The absence of a gynecologic history in a ten-year abdominal-pain workup in a woman is a glaring omission.** If she is perimenopausal, hormonal flux explains headache + joint pain + GI change simultaneously |
-| **⭐ What kind of joint pain** | Inflammatory or mechanical? Axial or peripheral? Symmetric? Swollen? Morning stiffness >30 min? Better with exercise or with rest? **"Joint pain" as an undifferentiated token is a history-taking failure**, and no honest probability can be assigned to spondyloarthropathy without it |
-| **⭐ Any headache history** | No frequency, no aura, no photophobia, no analgesic-days count. See §4 — migraine may be the largest missing diagnosis in the case |
+| ~~**What kind of joint pain**~~ ✅ **ANSWERED: it happens after food.** | 🔄 Not inflammatory, not mechanical — **postprandial.** Spondyloarthropathy drops below 2%. See §0c, which reorganizes the case around this |
+| **Any headache history** — partially answered | ✅ Analgesic use is **under 10 days/month**, so **medication-overuse headache is excluded.** Still missing: frequency, aura, photophobia, and whether the headache is also postprandial. See §4 |
 | **Sicca — dry eyes, dry mouth** | The free question that opens Sjögren's. Almost never asked |
 | **Straining, incomplete evacuation, digital manoeuvres, time on the toilet** | Pelvic floor dyssynergia. Her pattern — loose alternating with normal, no nocturnal symptoms, with pain — is a textbook overflow presentation |
 | **⭐ Her supplement and medication list** | She is under naturopathic care. High-dose magnesium, vitamin C, herbals and "detox" protocols **cause diarrhea directly.** A live, plausible, iatrogenic cause of her GI symptoms is hiding in plain sight — and it has been asked for twice in this investigation and never provided |
@@ -197,11 +285,13 @@ corrects the method, not just the order.
 | **Migraine ± vestibular/abdominal** | **50–60%** | Was missing entirely |
 | **DGBI / IBS by Rome IV** | **50–60%** | Was ranked last. **A positive diagnosis, not one of exclusion** — and common does not mean wrong |
 | **Mood/anxiety component, treatable** | **35–45%** | Absent from the previous document. See §7 |
+| **⭐ Food-triggered mast cell mediator release** | **Now testable, not estimable** | §0c. A postprandial tryptase against her own baseline settles a ten-year label for ~$100 |
+| **Postprandial distress syndrome** (Rome IV) | **25–35%** | New, following §0c. A positive diagnosis with real treatments |
 | **⭐ Iron deficiency without anemia** (ferritin <30) | **25–35%** | **The highest-probability abnormal *result* in the whole case**, and it was on the "never done" list rather than the differential |
 | **Hypermobility spectrum / hEDS** | 25–30% | Beighton score takes 90 seconds. Descriptive rather than mechanistic — but it stops the zebra hunt |
 | **Drug / supplement / sweetener contribution** | 20–25% | No medication list exists |
 | **Vitamin D deficiency** | ~40% low, ~10% explanatory | Cheap partial explanation for diffuse joint pain |
-| **Bile acid diarrhea** | **12–15%** | **Was #1. Wrong phenotype** — no nocturnal diarrhea, no urgency, alternating with normal stool |
+| **Bile acid diarrhea** | **15–20%** | ⬆️ Slightly restored: BAD is classically **postprandial**, and §0c establishes a postprandial pattern. Still no nocturnal diarrhea and no urgency, and it explains neither joints nor headache |
 | **Celiac disease** | 10–12% | Prior is moderate; **urgency is maximal.** See §0 |
 | **Endometriosis** | 10–15% | Underranked previously. ~10% of reproductive-age women; 7–10 year diagnostic delay |
 | **Hereditary alpha-tryptasemia** | 10–15% | Prior is defensible; **the ranking was still wrong** — see §6 |
@@ -211,7 +301,7 @@ corrects the method, not just the order.
 | **Thyroid disease** | 5–8% | TSH never drawn |
 | **Eosinophilic gastritis/duodenitis** | 5–8% | Atopy raises odds — but needs biopsy, and see §8 on whether to scope |
 | **Microscopic colitis** | 3–5% | Age-dependent, peaks 60s–70s, and we do not know her age |
-| **Seronegative spondyloarthropathy** | **Cannot be scored** | Conditional on characterizing the joint pain: inflammatory features → 15–20%; purely mechanical → <2% |
+| **Seronegative spondyloarthropathy** | **<2%** | ⬇️ Resolved by the answer in §0b — postprandial joint pain is not an inflammatory-arthritis pattern |
 | **Chronic giardiasis / parasitic** | 3–5% | One stool PCR panel |
 | **Lactose malabsorption** | **<5%** | **Largely excluded by her own data** — a full year off dairy with no improvement |
 | **MCAS by consensus criteria** | **<5%** | See §6 |
