@@ -110,6 +110,86 @@ for her. And Fel d 2 remains the fulcrum.
 
 ---
 
+## 0b-2. ⭐ SEPTEMBER 2026 — The well-done beef result
+
+**New data, and it is the strongest clinical evidence in the entire case.**
+
+> **They tested her. Well-done beef, multiple separate times. No reaction, every time.**
+
+### Why this matters more than anything in her chart
+
+Serum albumin is **heat-labile**. The albumin hypothesis therefore made a hard, falsifiable
+prediction: *she should tolerate thoroughly cooked beef.* It was written down before this was tested.
+
+**It held, and it held on repeat.** A single tolerated meal could be luck — dose, threshold, a
+forgiving day. **Repeated tolerance across multiple separate occasions is a different order of
+evidence**, and it is the kind that no blood test can give you.
+
+### This also resolves the contradiction from the last round
+
+The earlier history answer was "mixed — reactions across cooking levels," and I down-weighted albumin
+on the strength of it. **Structured repeat testing beats decade-old recall**, and this is exactly the
+measurement-error problem that was flagged at the time: restaurant doneness is unverifiable, and a
+patient asked "did it happen with well-done meat too?" is being invited to endorse a mixed pattern.
+
+⚠️ **One open question:** were the well-done tests **beef only**? She reacts to **lamb** as well, and
+lamb IgE is **10.20 — more than four times her beef value of 2.38.** If the earlier "mixed" answer was
+about lamb rather than beef, both answers can be true at once.
+
+### Revised probabilities
+
+| Mechanism | Was | **Now** | Why it moved |
+| --- | --- | --- | --- |
+| **Mammalian serum albumin** | 45% | **~70%** | ⬆️ A pre-registered prediction held under repeat testing |
+| **Heat-stable muscle protein** (Bos d 13, myoglobin) | 18% | **~8%** | ⬇️ These survive cooking. If they were driving it, well-done beef would still react |
+| **Mixed / dual mechanism** | 12% | **~8%** | ⬇️ |
+| **Collagen / gelatin** | 8% | **~5%** | ⬇️ It predicted the *opposite* — braising converts collagen to gelatin and raises exposure. ⚠️ Not fully excluded: a **well-done steak (dry heat, short)** is not the same as a **slow-braised pot roast (moist heat, long)**, and gelatin release is far higher in the second |
+| **Assay artifact** | 9% | **~5%** | ⬇️ A reproducible clinical pattern is hard to square with a lab artifact |
+| **Three independent sensitizations** | 4% | **~2%** | ⬇️ |
+| **Residual alpha-gal** | 4% | **~2%** | Alpha-gal is **heat-stable** — tolerating well-cooked beef is one more nail |
+
+**The conclusion the family has reached — that this is an albumin allergy — is now well supported.**
+
+### ⚠️ But the safety envelope is narrower than "well-done meat is fine"
+
+Four limits, and the first is the one that could actually hurt her.
+
+1. **🛑 Do not extend this result to lamb or pork.** Tolerating her **lowest-titer** meat says little
+   about her higher ones. Lamb is **4× beef**. Pork is **6× beef and has never been eaten at all.**
+   "Well-done beef was fine, so let's try well-done lamb" is the single most dangerous sentence
+   available right now.
+2. **Heat reduces albumin allergenicity — it does not abolish it.** In the one properly controlled
+   study, **4 of 11 beef-allergic children still reacted to heated albumin** on double-blind
+   challenge. Repeated tolerance lowers her personal risk a lot; it does not make cooked beef
+   categorically safe.
+3. **Cofactors move the threshold.** Exercise, NSAIDs, and intercurrent illness can turn a tolerated
+   food into a reactive one on a given day. *(Alcohol is already ruled out — she does not drink.)*
+4. **🛑 No more home challenges.** These were run **without epinephrine in the house.** The result was
+   good; the method was a gamble. Everything further belongs in the allergist's office.
+
+### What to bring to the allergist
+
+**This tolerance data is better than anything currently in her chart.** Write it down before the
+appointment: how many times, what cut, cooking method (grilled/pan versus braised), roughly how much,
+and whether anything was eaten alongside.
+
+**Two questions worth putting directly:**
+
+- *"She tolerates well-done beef repeatedly. Does that mean well-done lamb and pork are safe?"*
+  (The answer should be **no, not automatically** — and if an allergist says otherwise, press on the
+  titer difference.)
+- *"Can you do prick-to-prick testing with raw versus well-done beef side by side?"* There is now a
+  specific prediction to test: **raw should wheal and cooked should not.** That is the in-office
+  version of what they found at home, done safely.
+
+### And one thing this does *not* settle
+
+**Albumin as the mechanism is not the same as cat as the sensitizer.** Fel d 2 is still worth drawing.
+If it comes back negative, the answer is probably still albumin — just **bovine albumin via dairy
+(Bos d 6)** rather than cat albumin. That changes the counselling, not the diagnosis.
+
+---
+
 ## 0c. The postprandial pattern — a search heuristic, not a syndrome
 
 Her joint pain **happens after food.** Not inflammatory (no morning stiffness), not mechanical (not
@@ -316,7 +396,9 @@ removed exposure, and her clinical picture is beef and lamb, not pork. Pushing t
 **Best value: one tube, five analytes** — e220 (Fel d 2), e94 (Fel d 1), e1 (cat), Bos d 6, and
 **total IgE**. That either confirms the formulation or destroys it in a single draw.
 
-**Probability the meat allergy is albumin-mediated: ~48%.** Not the 70–80% originally claimed, and
+**Probability the meat allergy is albumin-mediated: ~70%** (updated September 2026 — see §0b-2; repeat tolerance of well-done beef).
+
+*Superseded figure: ~48%.* Not the 70–80% originally claimed, and
 not the 40% I posted after the doneness answer — see §0b for why that was an over-correction. Full
 mechanism table below.
 
