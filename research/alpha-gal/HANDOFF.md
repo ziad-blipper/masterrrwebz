@@ -13,6 +13,25 @@ focused.**
 
 ---
 
+## ⭐ UPDATE 23 Oct 2026 — the confirming results are in
+
+**Read `RESULTS-2026-10-20.md` immediately after this file.** A Quest respiratory + component panel
+ordered by an allergist returned:
+
+- **Fel d 2 (cat serum albumin) = 83.70 kU/L, class 5** — the fulcrum test, confirmed. Her highest
+  value in the entire profile. **Pork-cat syndrome is now molecularly established (~90%).**
+- **Can f 3 (dog albumin) = 58.30** — the predicted cross-reaction.
+- **Total IgE = 281** — moderate; her signals are far above noise.
+- **Milk proteins Bos d 4/5/8 all negative** — the dairy reaction is albumin cross-reactivity, not
+  milk allergy. Bos d 6 not yet tested.
+- **Egg white Gal d 1/2 both negative** — only egg yolk (Gal d 5) remains in question.
+- **Every nut and peanut component negative** — weak whole-extract positives are CCD/profilin
+  noise; the lab itself recommends Quest 39151.
+- **Broad low-level pollen sensitization** across all families; dust mite positive.
+
+The top-10 list in §10 is partly done. Seven items are now answered. See the "still missing" table
+in the results file for the reassessed list.
+
 ## 0. The constraints that override everything
 
 1. **She is PREGNANT.** Gestational age **unknown — asked, never answered.** Everything about
