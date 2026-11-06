@@ -142,3 +142,60 @@ Carried from HANDOFF §11: figures were derived from search summaries, not full 
 ranking leans on most are the celiac pregnancy RRs (1.57, 1.68), the 46.5% Gal d 5–Fel d 2 identity,
 the 53% acute-tryptase sensitivity, and the ~57% iodine-per-cup figure. Verify against primary
 sources before clinical use.
+
+---
+
+## 7. Update 6 November 2026 — reconciled against the 20 October Quest panel
+
+*`RESULTS-2026-10-20.md` records the panel in full. This section only states what it does to the
+ranking above and what remains.*
+
+### What the panel settled
+
+| Result | Consequence for the list |
+| --- | --- |
+| **Fel d 2 = 83.70 kU/L** (class 5), Can f 3 = 58.30, whole cat 46.60, Fel d 1 26.30 | **Item 2 complete.** Pork-cat syndrome is established: the albumin ladder (cat 83.7 > dog 58.3 > pork 14.4 > lamb 10.2 > beef 2.38) is monotonic with homology. ~90%. Gelatin c74 reflex cancelled. |
+| **Total IgE = 281** | **Item 3 complete.** Moderate; every meat and albumin value is far above the noise floor (specific/total ≥ 0.0085). The low nut and pollen values are at or near it. |
+| **Bos d 4, Bos d 5, Bos d 8 all negative; whole milk f2 = 3.24** | Milk protein allergy excluded. The whole-milk signal has one plausible source left: **Bos d 6**, the protein she is allergic to. Item 4 narrows to Bos d 6 alone. |
+| **Gal d 1 and Gal d 2 negative** | Egg-white allergy excluded. Baked, cooked and raw egg white are not the problem. Item 6 narrows to **Gal d 5 (yolk)**, now ~30–35% because very high primary albumin IgE can drive cross-reactivity below the usual identity threshold. |
+| **Every nut and peanut component negative**, weak whole-extract positives | Nuts are almost certainly not allergens. The lab recommends Quest 39151 (CCD + profilin) four times. |
+| **Broad low-level pollen positivity, no dominant family; mites positive (Der p 1.31)** | Substrate for pollen-food syndrome, or a profilin/CCD pan-signature. Same test resolves both. Der p 10 is now mandatory with any shrimp test. |
+
+### The remaining list — eight tests
+
+| # | Test | Decides | Gate |
+| --- | --- | --- | --- |
+| **1** | **tTG-IgA + total IgA** | Gluten. Still the only test with a deadline. Nothing in the panel touches it. | None. Draw first. |
+| **2** | **Bos d 6 (Quest 2612)** | Closes the milk question. Expected positive by cross-reactivity; that would mean her dairy avoidance rests on a minor, heat-labile protein, and heated dairy (boiled milk, hard cheese, baked) is the supervised route back to iodine and calcium. A negative leaves the 3.24 unexplained and dairy still probably fine. | None. |
+| **3** | **Quest 39151 (CCD + profilin) + Pru p 3 (f420)** | The plant rule. Profilin or CCD positive → the pan-pollen and nut results are artefact, raw-fruit mouth symptoms are low-risk, cooked plants are safe. Pru p 3 positive → LTP syndrome, the one plant mechanism that is systemic, cooked-food-resistant and dangerous without epinephrine. Add Bet v 1 (t215) if the allergist will, since the regional panel had no birch. | Soft. The sensitisation substrate is now real, and the lab asked for it. |
+| **4** | **Gal d 5 egg yolk, ordered separately (Mayo 82753)** | Whether egg is an albumin problem. Positive → yolk and **chicken meat** (reflex chicken IgE) come under the same rule as mammals; negative → egg goes back, and with it choline. | Soft. White is already excluded, so any real egg reaction must be yolk. |
+| **5** | **Ferritin + CBC + B12 + vitamin D** | Whether a year of restriction is already costing her and the fetus. Unchanged. Check prenatal booking labs first. | None. |
+| **6** | **Baseline tryptase** | Mast cell disease; reference for any acute tryptase; delivery plan. Unchanged. | ≥24 h from any reaction. |
+| **7** | **Shrimp f24 + Pen m 1 + Pen m 2 + Der p 10 + fish extract + Gad c 1** | Whether fish stays. Mite positivity makes Der p 10 non-negotiable or a shrimp positive will be over-read. | **Hard: oral itch at onset of the restaurant episode. Without it, do not draw.** |
+| **8** | **Faecal calprotectin + CRP** | Whether the chronic gut illness is inflammatory. Unchanged. | None. |
+
+**Removed since §1:** Fel d 2, total IgE, Gal d 1/2, MUXF3 as a standalone (39151 covers it), Sus s 1
+(the ladder is complete without it), gelatin c74, chicken meat (reflex only if Gal d 5 is positive).
+
+### What the mechanism now makes portable
+
+- **All mammals, by homology.** Pork, venison, rabbit, goat, horse, bison, species never eaten. Rare,
+  pink, raw, blood-rich and organ preparations are the danger. Well-done beef remains an observed
+  exception, not a rule; no extension to lamb or pork.
+- **Furred animals, by the same protein.** Can f 3 at 58.30 means dogs can provoke her the way cats
+  did; mouse urine 0.81. **Whether a dog lives in or visits the house is now a question.** Fel d 1
+  at 26.30 means she is also an ordinary cat-allergic person: no cat again.
+- **Porcine DAO and porcine pancreatin** are contraindicated by a confirmed mechanism. Gelatin,
+  magnesium stearate and heparin are not albumin and remain fine.
+- **No procedure clears a class-5 serum-albumin IgE.** The SAAT belief is directly dangerous.
+
+### Unchanged
+
+Epinephrine, two auto-injectors, written plan with the positioning rule for her gestational age.
+A class-5 result with an anaphylaxis-pattern history is a reason for more urgency. Celiac first.
+No home challenges. Gluten until tTG-IgA is drawn.
+
+### Still owed by the family
+
+Gestational age · oral itch at onset for egg, plants, seafood · butter at home · dog in the house ·
+supplement list · baseline flare rate.
